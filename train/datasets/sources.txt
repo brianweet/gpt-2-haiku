@@ -1,0 +1,5 @@
+docmarionum1-haikurnn-haikus.csv
+https://github.com/docmarionum1/haikurnn/blob/master/input/poems/haikus.csv
+
+herval-creative-machines.txt
+https://github.com/herval/creative_machines/blob/master/haikuzao/src/main/resources/haiku.txt
