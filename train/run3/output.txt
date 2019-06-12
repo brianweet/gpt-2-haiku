@@ -1,0 +1,8366 @@
+2019-06-10 19:13:51.693426: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 2300000000 Hz
+2019-06-10 19:13:51.693983: I tensorflow/compiler/xla/service/service.cc:150] XLA service 0x3041700 executing computations on platform Host. Devices:
+2019-06-10 19:13:51.694038: I tensorflow/compiler/xla/service/service.cc:158]   StreamExecutor device (0): <undefined>, <undefined>
+2019-06-10 19:13:51.960828: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:998] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2019-06-10 19:13:51.961345: I tensorflow/compiler/xla/service/service.cc:150] XLA service 0x3041440 executing computations on platform CUDA. Devices:
+2019-06-10 19:13:51.961376: I tensorflow/compiler/xla/service/service.cc:158]   StreamExecutor device (0): Tesla T4, Compute Capability 7.5
+2019-06-10 19:13:51.961761: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1433] Found device 0 with properties: 
+name: Tesla T4 major: 7 minor: 5 memoryClockRate(GHz): 1.59
+pciBusID: 0000:00:04.0
+totalMemory: 14.73GiB freeMemory: 14.60GiB
+2019-06-10 19:13:51.961791: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1512] Adding visible gpu devices: 0
+2019-06-10 19:13:53.458565: I tensorflow/core/common_runtime/gpu/gpu_device.cc:984] Device interconnect StreamExecutor with strength 1 edge matrix:
+2019-06-10 19:13:53.458656: I tensorflow/core/common_runtime/gpu/gpu_device.cc:990]      0 
+2019-06-10 19:13:53.458675: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1003] 0:   N 
+2019-06-10 19:13:53.459007: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1115] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 14115 MB memory) -> physical GPU (device: 0, name: Tesla T4, pci bus id: 0000:00:04.0, compute capability: 7.5)
+WARNING:tensorflow:From /usr/local/lib/python3.6/dist-packages/tensorflow/python/framework/op_def_library.py:263: colocate_with (from tensorflow.python.framework.ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Colocations handled automatically by placer.
+WARNING:tensorflow:From /content/gpt-2/src/sample.py:65: to_float (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.cast instead.
+WARNING:tensorflow:From /content/gpt-2/src/sample.py:70: multinomial (from tensorflow.python.ops.random_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.random.categorical instead.
+WARNING:tensorflow:From /usr/local/lib/python3.6/dist-packages/tensorflow/python/ops/math_ops.py:3066: to_int32 (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.cast instead.
+WARNING:tensorflow:From /usr/local/lib/python3.6/dist-packages/tensorflow/python/ops/math_grad.py:102: div (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Deprecated in favor of operator or tf.math.divide.
+Loading checkpoint models/345M/model.ckpt
+WARNING:tensorflow:From /usr/local/lib/python3.6/dist-packages/tensorflow/python/training/saver.py:1266: checkpoint_exists (from tensorflow.python.training.checkpoint_management) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use standard file APIs to check for files with this prefix.
+Loading dataset...
+100% 1/1 [00:01<00:00,  1.97s/it]
+dataset has 329618 tokens
+Training...
+2019-06-10 19:14:45.557152: I tensorflow/stream_executor/dso_loader.cc:152] successfully opened CUDA library libcublas.so.10.0 locally
+[1 | 11.15] loss=2.65 avg=2.65
+[2 | 12.65] loss=2.49 avg=2.57
+[3 | 14.16] loss=2.38 avg=2.51
+[4 | 15.67] loss=2.48 avg=2.50
+[5 | 17.18] loss=2.57 avg=2.51
+[6 | 18.69] loss=2.52 avg=2.51
+[7 | 20.21] loss=2.44 avg=2.50
+[8 | 21.72] loss=2.42 avg=2.49
+[9 | 23.25] loss=2.48 avg=2.49
+[10 | 24.77] loss=2.57 avg=2.50
+[11 | 26.30] loss=2.40 avg=2.49
+[12 | 27.82] loss=2.39 avg=2.48
+[13 | 29.36] loss=2.30 avg=2.47
+[14 | 30.89] loss=2.37 avg=2.46
+[15 | 32.43] loss=2.39 avg=2.45
+[16 | 33.97] loss=2.33 avg=2.45
+[17 | 35.52] loss=2.43 avg=2.45
+[18 | 37.07] loss=2.42 avg=2.44
+[19 | 38.62] loss=2.30 avg=2.44
+[20 | 40.17] loss=2.36 avg=2.43
+[21 | 41.72] loss=2.35 avg=2.43
+[22 | 43.28] loss=2.39 avg=2.43
+[23 | 44.85] loss=2.33 avg=2.42
+[24 | 46.41] loss=2.27 avg=2.41
+[25 | 47.98] loss=2.44 avg=2.42
+[26 | 49.56] loss=2.33 avg=2.41
+[27 | 51.13] loss=2.42 avg=2.41
+[28 | 52.70] loss=2.29 avg=2.41
+[29 | 54.29] loss=2.26 avg=2.40
+[30 | 55.86] loss=2.38 avg=2.40
+[31 | 57.45] loss=2.37 avg=2.40
+[32 | 59.04] loss=2.28 avg=2.40
+[33 | 60.63] loss=2.19 avg=2.39
+[34 | 62.22] loss=2.21 avg=2.38
+[35 | 63.82] loss=2.21 avg=2.38
+[36 | 65.42] loss=2.45 avg=2.38
+[37 | 67.03] loss=2.46 avg=2.38
+[38 | 68.64] loss=2.26 avg=2.38
+[39 | 70.24] loss=2.37 avg=2.38
+[40 | 71.86] loss=2.35 avg=2.38
+[41 | 73.49] loss=2.24 avg=2.37
+[42 | 75.12] loss=2.45 avg=2.37
+[43 | 76.74] loss=2.27 avg=2.37
+[44 | 78.38] loss=2.21 avg=2.37
+[45 | 80.02] loss=2.21 avg=2.36
+[46 | 81.67] loss=2.28 avg=2.36
+[47 | 83.31] loss=2.20 avg=2.36
+[48 | 84.97] loss=2.28 avg=2.35
+[49 | 86.62] loss=2.25 avg=2.35
+[50 | 88.28] loss=2.32 avg=2.35
+[51 | 89.94] loss=2.35 avg=2.35
+[52 | 91.61] loss=2.22 avg=2.35
+[53 | 93.29] loss=2.41 avg=2.35
+[54 | 94.95] loss=2.30 avg=2.35
+[55 | 96.62] loss=2.09 avg=2.34
+[56 | 98.29] loss=2.13 avg=2.34
+[57 | 99.94] loss=2.20 avg=2.33
+[58 | 101.60] loss=2.18 avg=2.33
+[59 | 103.25] loss=2.30 avg=2.33
+[60 | 104.89] loss=2.04 avg=2.32
+[61 | 106.53] loss=2.29 avg=2.32
+[62 | 108.17] loss=2.52 avg=2.33
+[63 | 109.80] loss=2.34 avg=2.33
+[64 | 111.43] loss=2.14 avg=2.32
+[65 | 113.06] loss=2.31 avg=2.32
+[66 | 114.68] loss=2.33 avg=2.32
+[67 | 116.30] loss=2.24 avg=2.32
+[68 | 117.92] loss=2.09 avg=2.32
+[69 | 119.53] loss=2.32 avg=2.32
+[70 | 121.14] loss=2.30 avg=2.32
+[71 | 122.76] loss=2.63 avg=2.32
+[72 | 124.37] loss=2.24 avg=2.32
+[73 | 125.98] loss=2.18 avg=2.32
+[74 | 127.60] loss=2.24 avg=2.32
+[75 | 129.20] loss=2.15 avg=2.31
+[76 | 130.81] loss=2.30 avg=2.31
+[77 | 132.42] loss=2.21 avg=2.31
+[78 | 134.02] loss=2.36 avg=2.31
+[79 | 135.63] loss=2.36 avg=2.31
+[80 | 137.23] loss=2.21 avg=2.31
+[81 | 138.83] loss=2.55 avg=2.32
+[82 | 140.44] loss=2.24 avg=2.31
+[83 | 142.05] loss=2.28 avg=2.31
+[84 | 143.65] loss=2.20 avg=2.31
+[85 | 145.25] loss=2.09 avg=2.31
+[86 | 146.85] loss=2.38 avg=2.31
+[87 | 148.47] loss=2.15 avg=2.31
+[88 | 150.08] loss=2.52 avg=2.31
+[89 | 151.69] loss=2.24 avg=2.31
+[90 | 153.29] loss=2.34 avg=2.31
+[91 | 154.90] loss=2.05 avg=2.30
+[92 | 156.52] loss=2.19 avg=2.30
+[93 | 158.13] loss=2.22 avg=2.30
+[94 | 159.74] loss=2.13 avg=2.30
+[95 | 161.36] loss=2.53 avg=2.30
+[96 | 162.98] loss=2.22 avg=2.30
+[97 | 164.60] loss=2.18 avg=2.30
+[98 | 166.22] loss=2.14 avg=2.30
+[99 | 167.84] loss=2.40 avg=2.30
+Generating samples...
+======== SAMPLE 1 ========
+spring
+
+in the sky
+by a water slide
+
+a little baby
+
+meets
+
+a dragon
+
+the snow
+
+winter solstice
+
+and a
+cold cloud
+
+after the
+snowmelt
+
+dawn
+
+cold day
+
+winter solstice
+
+frosty day
+
+after the
+snow
+
+snowmelt
+
+winter solstice
+
+the wind
+
+chilling
+at night
+
+wet snow
+
+on the floor
+
+wet day
+
+lazy spring
+
+myself
+
+in a dream
+
+by the
+the snowman
+
+the rain
+
+falling snow
+
+sunrise
+
+snow storm
+
+lunar eclipse
+
+the wind
+
+on
+doughnut
+
+my way
+to
+the sun
+downtown
+
+lunar eclipse
+
+the wind on
+my
+side
+a sunbeam
+on
+the edge of
+the rain (for a
+morning)
+on
+a bridge
+with a
+robin tree
+on the bridge
+(for a
+sunny)
+wet day
+the rain
+turns red
+the rain
+on
+my lawn
+red clouds
+in my room
+on the edge of
+lunar eclipse
+snowy
+the rain
+on my
+hatch
+the snowflake
+on a log
+snowy
+
+snowstorm
+on my
+front porch (snow
+mist)
+a river
+on the shore
+a bird
+watches
+the water
+from
+his
+mouth
+a black cat
+walks
+through the fog
+from
+the rain
+on a bridge
+on a river
+bark
+on the bridge
+the river
+in the snow
+a grey owl
+in the
+snow
+the rain
+on the
+babbling
+bird
+in the
+snow
+on my
+fountain .
+snow fog
+in my
+headdress
+snowstorm
+in the rain
+on my
+mother's
+chair (the
+cold)
+i sit on
+the water lily
+in wintertime
+snow storm
+a dog
+walks on snow
+in the
+rain
+in a river
+the snow
+on the edge .
+the dog
+is
+looking at me
+through the snow
+on my shoes
+my mother's
+clothes
+(her face)
+in the frosty
+morning
+water
+in the storm
+a grey ewe
+talks
+in snow
+towards the
+light
+in wintertime (snow
+snow
+ice)
+snow storm
+a cloud
+on a rock
+in the storm .
+the
+dog walks
+in silence
+the first ice
+in snow
+snow
+ice
+on my
+snow dog
+snowstorm
+on my
+dog's ears
+(a) snowman
+snow storm
+in the snow
+my dog goes
+off
+the rock
+a grey owl
+sounds the
+same snow
+in
+the snow
+snowstorm<|endoftext|>The story of the baby's life
+
+From birth to death
+
+This is the story of that one day
+
+When her name was
+
+T.A.L - To the Living
+
+- April 21, 2005
+
+The day the old man died
+He was warm
+with his touch
+the same
+warm touch
+and my father's voice
+in the silence
+his body
+was like
+his own
+I wonder how long
+our conversations
+have just gone on like this
+
+topsy-turvy
+when we are no longer here ,
+the sound of
+horses
+fostered by the sound
+of rain
+the long winter night
+the door to the garage
+is cracked
+but the door
+of the garage
+in the morning
+has its own air
+her fragrance
+in my heart .
+"Why are you taking such a long time?"
+"We're married," she replied 
+in the morning,
+"I wish I would've stayed ."
+- the spring equinox
+- May 19, 2005
+
+to the baby's mom
+"I think you are just as interested in your baby as you are in yourself."
+"It isn't too late, my love."
+"The old man has had his day." 
+- her friend's
+- June 10, 2005
+
+the time I took a photograph
+of her with her hair parted
+- June 17, 2005
+
+my wife's birthday
+and me
+a baby on my shoulder
+- June 24, 2005
+
+the door for the baby
+is still open
+- April 2, 2006
+
+his mother's body
+in the closet
+the baby sips my ?
+- June 9, 2006
+
+the baby
+
+[100 | 194.47] loss=2.22 avg=2.30
+[101 | 196.10] loss=2.18 avg=2.30
+[102 | 197.73] loss=2.07 avg=2.29
+[103 | 199.36] loss=2.03 avg=2.29
+[104 | 200.98] loss=2.14 avg=2.29
+[105 | 202.60] loss=2.28 avg=2.29
+[106 | 204.22] loss=2.26 avg=2.29
+[107 | 205.84] loss=2.18 avg=2.28
+[108 | 207.46] loss=2.56 avg=2.29
+[109 | 209.08] loss=2.20 avg=2.29
+[110 | 210.69] loss=2.17 avg=2.28
+[111 | 212.31] loss=2.16 avg=2.28
+[112 | 213.93] loss=2.17 avg=2.28
+[113 | 215.54] loss=2.21 avg=2.28
+[114 | 217.15] loss=2.18 avg=2.28
+[115 | 218.76] loss=2.24 avg=2.28
+[116 | 220.37] loss=2.08 avg=2.28
+[117 | 221.99] loss=2.12 avg=2.27
+[118 | 223.60] loss=2.15 avg=2.27
+[119 | 225.21] loss=2.15 avg=2.27
+[120 | 226.83] loss=2.34 avg=2.27
+[121 | 228.44] loss=2.16 avg=2.27
+[122 | 230.06] loss=2.25 avg=2.27
+[123 | 231.68] loss=2.30 avg=2.27
+[124 | 233.30] loss=2.49 avg=2.27
+[125 | 234.91] loss=2.22 avg=2.27
+[126 | 236.53] loss=2.10 avg=2.27
+[127 | 238.15] loss=2.24 avg=2.27
+[128 | 239.78] loss=2.10 avg=2.27
+[129 | 241.40] loss=2.36 avg=2.27
+[130 | 243.02] loss=2.15 avg=2.27
+[131 | 244.64] loss=2.06 avg=2.26
+[132 | 246.26] loss=2.35 avg=2.26
+[133 | 247.89] loss=2.19 avg=2.26
+[134 | 249.51] loss=2.23 avg=2.26
+[135 | 251.14] loss=2.21 avg=2.26
+[136 | 252.76] loss=2.24 avg=2.26
+[137 | 254.39] loss=2.13 avg=2.26
+[138 | 256.01] loss=2.14 avg=2.26
+[139 | 257.64] loss=2.30 avg=2.26
+[140 | 259.26] loss=2.20 avg=2.26
+[141 | 260.88] loss=2.19 avg=2.26
+[142 | 262.51] loss=2.21 avg=2.26
+[143 | 264.13] loss=2.23 avg=2.26
+[144 | 265.77] loss=2.17 avg=2.26
+[145 | 267.39] loss=2.27 avg=2.26
+[146 | 269.02] loss=2.06 avg=2.25
+[147 | 270.65] loss=2.11 avg=2.25
+[148 | 272.27] loss=2.29 avg=2.25
+[149 | 273.90] loss=2.39 avg=2.25
+[150 | 275.53] loss=1.97 avg=2.25
+[151 | 277.16] loss=2.24 avg=2.25
+[152 | 278.79] loss=1.98 avg=2.25
+[153 | 280.42] loss=2.19 avg=2.25
+[154 | 282.05] loss=2.16 avg=2.24
+[155 | 283.67] loss=2.27 avg=2.24
+[156 | 285.30] loss=2.26 avg=2.25
+[157 | 286.93] loss=2.31 avg=2.25
+[158 | 288.56] loss=2.41 avg=2.25
+[159 | 290.19] loss=2.27 avg=2.25
+[160 | 291.82] loss=2.25 avg=2.25
+[161 | 293.45] loss=2.37 avg=2.25
+[162 | 295.07] loss=2.47 avg=2.25
+[163 | 296.70] loss=2.05 avg=2.25
+[164 | 298.32] loss=1.98 avg=2.25
+[165 | 299.95] loss=2.37 avg=2.25
+[166 | 301.58] loss=2.08 avg=2.25
+[167 | 303.21] loss=2.14 avg=2.24
+[168 | 304.83] loss=2.13 avg=2.24
+[169 | 306.45] loss=2.14 avg=2.24
+[170 | 308.08] loss=2.32 avg=2.24
+[171 | 309.70] loss=2.28 avg=2.24
+[172 | 311.33] loss=2.06 avg=2.24
+[173 | 312.95] loss=2.32 avg=2.24
+[174 | 314.58] loss=2.29 avg=2.24
+[175 | 316.20] loss=2.05 avg=2.24
+[176 | 317.83] loss=2.31 avg=2.24
+[177 | 319.46] loss=2.18 avg=2.24
+[178 | 321.09] loss=2.14 avg=2.24
+[179 | 322.72] loss=2.19 avg=2.24
+[180 | 324.34] loss=2.17 avg=2.24
+[181 | 325.96] loss=2.10 avg=2.24
+[182 | 327.59] loss=2.23 avg=2.24
+[183 | 329.22] loss=1.97 avg=2.23
+[184 | 330.84] loss=2.29 avg=2.23
+[185 | 332.47] loss=2.30 avg=2.23
+[186 | 334.10] loss=2.09 avg=2.23
+[187 | 335.72] loss=2.07 avg=2.23
+[188 | 337.35] loss=2.18 avg=2.23
+[189 | 338.97] loss=2.27 avg=2.23
+[190 | 340.60] loss=2.19 avg=2.23
+[191 | 342.22] loss=2.14 avg=2.23
+[192 | 343.85] loss=2.12 avg=2.23
+[193 | 345.48] loss=2.28 avg=2.23
+[194 | 347.11] loss=2.16 avg=2.23
+[195 | 348.73] loss=2.20 avg=2.23
+[196 | 350.36] loss=2.01 avg=2.23
+[197 | 351.99] loss=2.10 avg=2.22
+[198 | 353.62] loss=2.06 avg=2.22
+[199 | 355.25] loss=1.95 avg=2.22
+Generating samples...
+======== SAMPLE 1 ========
+l>
+
+<|endoftext|>
+
+dusk moon
+the way
+all the time
+<|endoftext|>
+
+winter's end
+towells
+the moon
+<|endoftext|>
+
+winter's end
+the way it turns
+into autumn
+<|endoftext|>
+
+falling leaf
+the cold wind
+from the lake
+<|endoftext|>
+
+winter evening
+the old house
+still cold
+<|endoftext|>
+
+winter sky
+my son says,
+"the dog has gone!"
+<|endoftext|>
+
+evening rain
+the old boat
+on the river
+<|endoftext|>
+
+snow storm
+the old man sits
+with his feet up in the snow
+<|endoftext|>
+
+blunder
+a piece of glass
+tipped
+<|endoftext|>
+
+dwarf home
+a small child comes
+to the bottom
+<|endoftext|>
+
+frosty winter
+the dog searches
+the old house
+<|endoftext|>
+
+frosty winter
+the ice cream pops
+in my mouth
+<|endoftext|>
+
+winter's end
+a couple kiss?
+in the snow
+<|endoftext|>
+
+bruises
+in the door
+and snowflakes
+<|endoftext|>
+
+a small snowflake
+on the door
+the moon
+<|endoftext|>
+
+late winter
+the way
+the moon
+<|endoftext|>
+
+snow day
+on the road
+the dog
+<|endoftext|>
+
+foggy day
+the old man with the
+trench coat
+<|endoftext|>
+
+winter snow
+all our plans fall apart
+in a flood
+<|endoftext|>
+
+winter wind
+she whispers something
+into my ear
+<|endoftext|>
+
+snow storm
+the woman
+in the moonlight
+<|endoftext|>
+
+morning dew
+the little one
+knows what it is
+<|endoftext|>
+
+winter rain
+a bird calls
+from the birdhouse
+<|endoftext|>
+
+early morning
+the moon's reflection
+on icicles
+<|endoftext|>
+
+late winter
+a squirrel's call
+in the snow
+<|endoftext|>
+
+winter sunlight
+the child picks the lock?
+on the other side
+<|endoftext|>
+
+old man's room
+a fire cracker in the
+windowsill
+<|endoftext|>
+
+winter morning
+the baby's breath
+in her throat
+<|endoftext|>
+
+cold dawn
+my son's voice
+in my ear
+<|endoftext|>
+
+old home
+a small dog
+rumbles
+<|endoftext|>
+
+foggy afternoon
+a firework rocket?
+falls on top of the firework
+<|endoftext|>
+
+windy snow
+the snowman
+has a crush
+<|endoftext|>
+
+snowy day
+the little girl
+walks
+<|endoftext|>
+
+cold day
+a snowman's face
+on the wall
+<|endoftext|>
+
+morning fog
+a blue flower
+sprints across
+<|endoftext|>
+
+winter snow
+the kid picks out
+the blue flower
+<|endoftext|>
+
+creekside
+the last day of school
+all the birds
+<|endoftext|>
+
+winter sun
+a little boy
+throws his hat as
+the sun sinks
+<|endoftext|>
+
+new year
+the man in
+the mirror
+<|endoftext|>
+
+snow day
+mushroom seeds
+on the sidewalk
+<|endoftext|>
+
+snow day
+all summer
+the baby
+<|endoftext|>
+
+thunder
+the last flower
+in the bush
+<|endoftext|>
+
+autumn mist
+the last sunflower
+pours
+<|endoftext|>
+
+spring wind
+the child
+at a park
+<|endoftext|>
+
+waking up early
+the sound of the wind
+in my ears
+<|endoftext|>
+
+the garden door
+a light
+in the window
+<|endoftext|>
+
+a boy on the bus
+with a broken arm
+the last word
+<|end
+
+[200 | 378.98] loss=1.88 avg=2.21
+[201 | 380.59] loss=2.12 avg=2.21
+[202 | 382.21] loss=2.03 avg=2.21
+[203 | 383.84] loss=2.03 avg=2.21
+[204 | 385.45] loss=2.50 avg=2.21
+[205 | 387.07] loss=2.05 avg=2.21
+[206 | 388.69] loss=2.65 avg=2.22
+[207 | 390.30] loss=2.17 avg=2.22
+[208 | 391.91] loss=2.04 avg=2.21
+[209 | 393.53] loss=2.30 avg=2.21
+[210 | 395.14] loss=2.27 avg=2.22
+[211 | 396.76] loss=2.07 avg=2.21
+[212 | 398.38] loss=1.98 avg=2.21
+[213 | 399.99] loss=2.04 avg=2.21
+[214 | 401.61] loss=2.40 avg=2.21
+[215 | 403.22] loss=2.06 avg=2.21
+[216 | 404.84] loss=2.23 avg=2.21
+[217 | 406.46] loss=2.05 avg=2.21
+[218 | 408.08] loss=2.10 avg=2.21
+[219 | 409.69] loss=1.98 avg=2.20
+[220 | 411.31] loss=2.24 avg=2.20
+[221 | 412.94] loss=2.08 avg=2.20
+[222 | 414.56] loss=2.10 avg=2.20
+[223 | 416.18] loss=2.11 avg=2.20
+[224 | 417.80] loss=2.25 avg=2.20
+[225 | 419.42] loss=2.15 avg=2.20
+[226 | 421.04] loss=2.11 avg=2.20
+[227 | 422.67] loss=1.81 avg=2.20
+[228 | 424.29] loss=2.21 avg=2.20
+[229 | 425.91] loss=2.17 avg=2.20
+[230 | 427.53] loss=2.04 avg=2.19
+[231 | 429.15] loss=2.28 avg=2.19
+[232 | 430.77] loss=2.13 avg=2.19
+[233 | 432.40] loss=2.14 avg=2.19
+[234 | 434.02] loss=2.15 avg=2.19
+[235 | 435.64] loss=2.79 avg=2.20
+[236 | 437.26] loss=2.15 avg=2.20
+[237 | 438.89] loss=1.91 avg=2.20
+[238 | 440.51] loss=2.22 avg=2.20
+[239 | 442.13] loss=2.14 avg=2.20
+[240 | 443.76] loss=2.18 avg=2.20
+[241 | 445.38] loss=2.28 avg=2.20
+[242 | 447.01] loss=2.21 avg=2.20
+[243 | 448.64] loss=2.37 avg=2.20
+[244 | 450.26] loss=2.21 avg=2.20
+[245 | 451.89] loss=2.01 avg=2.20
+[246 | 453.51] loss=2.26 avg=2.20
+[247 | 455.14] loss=1.95 avg=2.19
+[248 | 456.76] loss=2.06 avg=2.19
+[249 | 458.39] loss=2.10 avg=2.19
+[250 | 460.01] loss=2.06 avg=2.19
+[251 | 461.64] loss=2.06 avg=2.19
+[252 | 463.26] loss=2.11 avg=2.19
+[253 | 464.89] loss=2.13 avg=2.19
+[254 | 466.52] loss=2.10 avg=2.19
+[255 | 468.15] loss=1.94 avg=2.18
+[256 | 469.78] loss=2.14 avg=2.18
+[257 | 471.41] loss=2.05 avg=2.18
+[258 | 473.04] loss=2.09 avg=2.18
+[259 | 474.66] loss=2.34 avg=2.18
+[260 | 476.30] loss=2.06 avg=2.18
+[261 | 477.93] loss=2.01 avg=2.18
+[262 | 479.56] loss=1.99 avg=2.18
+[263 | 481.19] loss=1.96 avg=2.17
+[264 | 482.83] loss=1.91 avg=2.17
+[265 | 484.46] loss=2.16 avg=2.17
+[266 | 486.09] loss=1.92 avg=2.17
+[267 | 487.72] loss=2.11 avg=2.17
+[268 | 489.35] loss=2.15 avg=2.17
+[269 | 490.98] loss=2.10 avg=2.17
+[270 | 492.61] loss=2.04 avg=2.17
+[271 | 494.24] loss=2.12 avg=2.17
+[272 | 495.88] loss=2.35 avg=2.17
+[273 | 497.51] loss=2.01 avg=2.17
+[274 | 499.13] loss=1.89 avg=2.16
+[275 | 500.76] loss=2.19 avg=2.16
+[276 | 502.39] loss=2.03 avg=2.16
+[277 | 504.02] loss=2.12 avg=2.16
+[278 | 505.66] loss=2.07 avg=2.16
+[279 | 507.28] loss=2.23 avg=2.16
+[280 | 508.91] loss=1.98 avg=2.16
+[281 | 510.54] loss=2.05 avg=2.16
+[282 | 512.17] loss=2.42 avg=2.16
+[283 | 513.79] loss=1.87 avg=2.16
+[284 | 515.42] loss=2.28 avg=2.16
+[285 | 517.05] loss=2.14 avg=2.16
+[286 | 518.68] loss=2.13 avg=2.16
+[287 | 520.30] loss=2.00 avg=2.16
+[288 | 521.93] loss=2.05 avg=2.16
+[289 | 523.56] loss=2.11 avg=2.16
+[290 | 525.19] loss=2.08 avg=2.15
+[291 | 526.81] loss=2.18 avg=2.15
+[292 | 528.44] loss=2.14 avg=2.15
+[293 | 530.07] loss=1.93 avg=2.15
+[294 | 531.69] loss=2.10 avg=2.15
+[295 | 533.32] loss=2.04 avg=2.15
+[296 | 534.94] loss=2.28 avg=2.15
+[297 | 536.57] loss=2.18 avg=2.15
+[298 | 538.20] loss=2.21 avg=2.15
+[299 | 539.82] loss=2.09 avg=2.15
+Generating samples...
+======== SAMPLE 1 ========
+|w|m|t
+
+Christmas
+the sky
+a light-year away
+-
+<|endoftext|>
+
+pumpkins
+after all the harvest
+i put them back
+<|endoftext|>
+
+Christmas in the mountains:
+he talks about
+the dog he doesn't want
+<|endoftext|>
+
+morning wind
+her mother's face
+in his fingers
+<|endoftext|>
+
+faint light of dawn?
+he looks like he
+has no clothes on
+<|endoftext|>
+
+pale moon
+my husband and i
+play some cards
+<|endoftext|>
+
+hanging a chicken coop
+her fingers curl around
+an ewe egg
+<|endoftext|>
+
+wishing
+with this little note
+i can tell you the truth
+<|endoftext|>
+
+dinner ready
+to fall down
+and leave a trail
+<|endoftext|>
+
+sad autumn day.
+the kitchen light
+turning on on me
+<|endoftext|>
+
+autumn leaves
+the old man in
+a new suit
+<|endoftext|>
+
+fallen maple
+in the dark forest
+i am her only memory
+<|endoftext|>
+
+i make the snow fall
+after the last
+pumpkin
+<|endoftext|>
+
+the winter wind
+that fills my hands
+with a note from
+<|endoftext|>
+
+the moon and i
+at the foot of the mountain
+autumn evening
+<|endoftext|>
+
+autumn moon
+the last call
+out from the dead
+<|endoftext|>
+
+evening train ride
+a light on the track
+starts to fall
+<|endoftext|>
+
+autumn dusk
+the noise
+of children laughing
+<|endoftext|>
+
+a child cries
+and suddenly
+a moon
+<<endoftext|>
+
+evening fog
+my husband watches
+the world go away
+<<endoftext|>
+
+still in the shadow
+she makes
+with each step
+<<endoftext|>
+
+evening train
+a man in a trench coat
+taps my window
+<<endoftext|>
+
+fog
+the sound of her voice
+downstairs
+<<endoftext|>
+
+rain on a cloudy day
+on the wall to one side
+her old man hat
+<<endoftext|>
+
+evening rush
+a child's hand
+on her breast
+<<endoftext|>
+
+the wind-chimes
+in the rain cloud
+even the world goes away
+<<endoftext|>
+
+crows
+in the morning light
+and the baby's breath
+<<endoftext|>
+
+bombshells
+the old clock on the floor
+still ticking
+<<endoftext|>
+
+falling leaves
+one last time
+to wake up
+<<endoftext|>
+
+the wind
+and the child's hair
+for the first time
+<<endoftext|>
+
+first day of winter
+in the cold dark
+even more cold
+<<endoftext|>
+
+the cold morning
+where there's ice
+and stars
+<<endoftext|>
+
+snow melt
+out of her mother's hair
+a little green gem
+<<endoftext|>
+
+summer sunset
+the old dog's face
+behind the screen
+<<endoftext|>
+
+the new dog
+her tongue
+around my lips
+<<endoftext|>
+
+frost in the sky
+one of the lizards picks up the scent
+by a small piece of the branch
+<<endoftext|>
+
+a storm
+in my daughter's stocking
+this time again the baby
+<<endoftext|>
+
+the wind
+on the door
+winter rain
+<<endoftext|>
+
+summer twilight
+a boy playing
+on the fence
+<<endoftext|>
+
+a snow man
+in the rain
+summer moon
+<<endoftext|>
+
+lots of stars . . .
+the smell of the hay
+<<endoftext|>
+
+summer fog
+a girl's voice
+to my window
+<<endoftext|>
+
+the dog leaves
+sparks
+<<endoftext|>
+
+night wind
+the smell of dog food
+<<endoftext|>
+
+sunday night
+she has the dog
+back
+
+[300 | 563.50] loss=2.09 avg=2.15
+[301 | 565.11] loss=2.19 avg=2.15
+[302 | 566.72] loss=2.23 avg=2.15
+[303 | 568.34] loss=2.14 avg=2.15
+[304 | 569.96] loss=2.03 avg=2.15
+[305 | 571.58] loss=2.09 avg=2.15
+[306 | 573.19] loss=2.24 avg=2.15
+[307 | 574.80] loss=1.98 avg=2.15
+[308 | 576.41] loss=1.99 avg=2.15
+[309 | 578.03] loss=2.08 avg=2.15
+[310 | 579.64] loss=2.07 avg=2.15
+[311 | 581.25] loss=2.22 avg=2.15
+[312 | 582.86] loss=2.10 avg=2.15
+[313 | 584.47] loss=2.35 avg=2.15
+[314 | 586.09] loss=2.02 avg=2.15
+[315 | 587.70] loss=2.26 avg=2.15
+[316 | 589.32] loss=2.08 avg=2.15
+[317 | 590.93] loss=2.29 avg=2.15
+[318 | 592.55] loss=2.10 avg=2.15
+[319 | 594.17] loss=1.94 avg=2.15
+[320 | 595.79] loss=2.08 avg=2.15
+[321 | 597.42] loss=1.98 avg=2.14
+[322 | 599.04] loss=1.88 avg=2.14
+[323 | 600.67] loss=1.95 avg=2.14
+[324 | 602.29] loss=2.40 avg=2.14
+[325 | 603.92] loss=1.78 avg=2.14
+[326 | 605.54] loss=2.62 avg=2.14
+[327 | 607.17] loss=1.98 avg=2.14
+[328 | 608.79] loss=1.96 avg=2.14
+[329 | 610.42] loss=2.33 avg=2.14
+[330 | 612.05] loss=2.27 avg=2.14
+[331 | 613.68] loss=2.04 avg=2.14
+[332 | 615.31] loss=2.09 avg=2.14
+[333 | 616.94] loss=2.16 avg=2.14
+[334 | 618.57] loss=2.31 avg=2.14
+[335 | 620.20] loss=2.03 avg=2.14
+[336 | 621.83] loss=1.93 avg=2.14
+[337 | 623.46] loss=2.00 avg=2.14
+[338 | 625.09] loss=2.38 avg=2.14
+[339 | 626.72] loss=1.96 avg=2.14
+[340 | 628.35] loss=2.02 avg=2.14
+[341 | 629.98] loss=2.17 avg=2.14
+[342 | 631.60] loss=2.11 avg=2.14
+[343 | 633.23] loss=1.77 avg=2.13
+[344 | 634.86] loss=1.96 avg=2.13
+[345 | 636.49] loss=2.08 avg=2.13
+[346 | 638.12] loss=2.16 avg=2.13
+[347 | 639.74] loss=2.12 avg=2.13
+[348 | 641.37] loss=2.32 avg=2.13
+[349 | 643.00] loss=2.01 avg=2.13
+[350 | 644.62] loss=2.31 avg=2.13
+[351 | 646.25] loss=2.02 avg=2.13
+[352 | 647.88] loss=2.00 avg=2.13
+[353 | 649.50] loss=2.16 avg=2.13
+[354 | 651.13] loss=2.13 avg=2.13
+[355 | 652.75] loss=2.08 avg=2.13
+[356 | 654.37] loss=2.00 avg=2.13
+[357 | 656.00] loss=2.16 avg=2.13
+[358 | 657.62] loss=2.02 avg=2.13
+[359 | 659.24] loss=2.27 avg=2.13
+[360 | 660.86] loss=2.04 avg=2.13
+[361 | 662.48] loss=1.89 avg=2.13
+[362 | 664.10] loss=2.46 avg=2.13
+[363 | 665.72] loss=2.19 avg=2.13
+[364 | 667.34] loss=2.04 avg=2.13
+[365 | 668.96] loss=1.92 avg=2.13
+[366 | 670.58] loss=1.75 avg=2.12
+[367 | 672.20] loss=2.15 avg=2.12
+[368 | 673.82] loss=1.95 avg=2.12
+[369 | 675.44] loss=1.99 avg=2.12
+[370 | 677.06] loss=1.95 avg=2.12
+[371 | 678.67] loss=2.27 avg=2.12
+[372 | 680.29] loss=1.91 avg=2.12
+[373 | 681.92] loss=1.98 avg=2.12
+[374 | 683.54] loss=2.08 avg=2.12
+[375 | 685.16] loss=2.12 avg=2.12
+[376 | 686.78] loss=2.10 avg=2.12
+[377 | 688.39] loss=1.95 avg=2.12
+[378 | 690.01] loss=1.86 avg=2.11
+[379 | 691.62] loss=1.83 avg=2.11
+[380 | 693.24] loss=2.09 avg=2.11
+[381 | 694.86] loss=2.07 avg=2.11
+[382 | 696.48] loss=2.18 avg=2.11
+[383 | 698.10] loss=1.98 avg=2.11
+[384 | 699.71] loss=2.23 avg=2.11
+[385 | 701.33] loss=1.89 avg=2.11
+[386 | 702.95] loss=1.80 avg=2.10
+[387 | 704.57] loss=1.89 avg=2.10
+[388 | 706.19] loss=2.11 avg=2.10
+[389 | 707.81] loss=2.37 avg=2.11
+[390 | 709.43] loss=1.94 avg=2.10
+[391 | 711.05] loss=2.02 avg=2.10
+[392 | 712.66] loss=1.87 avg=2.10
+[393 | 714.28] loss=2.19 avg=2.10
+[394 | 715.90] loss=2.25 avg=2.10
+[395 | 717.52] loss=2.09 avg=2.10
+[396 | 719.14] loss=2.02 avg=2.10
+[397 | 720.76] loss=2.08 avg=2.10
+[398 | 722.37] loss=2.07 avg=2.10
+[399 | 723.99] loss=2.04 avg=2.10
+Generating samples...
+======== SAMPLE 1 ========
+endend -
+the river
+has closed
+{pause}
+
+<|endoftext|>
+
+solar eclipse
+my mother
+watches from the window
+<|endoftext|>
+
+her eyes glow
+through the clouds
+sunlight in
+<|endoftext|>
+
+sunrise
+the child
+still playing
+<|endoftext|>
+
+crows
+they are not all
+as tall now
+<|endoftext|>
+
+moonless night
+the cat that's
+almost the cat
+<|endoftext|>
+
+a casket
+in the churchyard?
+a little boy?s dreams.
+<|endoftext|>
+
+a shadow
+the boy from kindergarten
+a year old?
+<|endoftext|>
+
+dusk
+i open the door?
+i am not sleepy
+<|endoftext|>
+
+moonlight
+towards the road
+fishing nets
+<|endoftext|>
+
+on the windowsill
+some trees
+i never saw
+<|endoftext|>
+
+a crow
+a small boy
+crows again
+<|endoftext|>
+
+first light.
+the cat that ate it
+thinks i am crazy
+<|endoftext|>
+
+her mother's name
+on the baby monitor?
+an hour of rain
+<|endoftext|>
+
+a dog bark
+she shows me her face
+in the mirror
+<|endoftext|>
+
+my baby's
+dawn rose
+wondering why
+<|endoftext|>
+
+the door
+still closed
+after the rain
+<|endoftext|>
+
+after an eclipse
+the empty house?
+the smell
+<|endoftext|>
+
+after the rain
+the baby's cry
+in the mirror
+<|endoftext|>
+
+the boy's
+eyes
+at the window
+<|endoftext|>
+
+solitary
+with the others
+the dog
+<|endoftext|>
+
+a young girl's? eyes?
+blink out of
+her headband
+<|endoftext|>
+
+tent
+a mouse takes the food?
+trees grow in the rain
+<|endoftext|>
+
+late afternoon
+she picks up the empty glasses?
+his name and his hair
+<|endoftext|>
+
+foggy
+trees
+without leaves
+<|endoftext|>
+
+a mosquito
+its shadow
+touches them
+<|endoftext|>
+
+first love?
+the shadow on the baby's
+head
+<|endoftext|>
+
+the dog?s eyes
+on the man?s feet
+<|endoftext|>
+
+first day?
+the baby's
+mouth
+<|endoftext|>
+
+still in shock
+when the sun goes down
+the old bird song
+<|endoftext|>
+
+the first moon
+a spider's web
+touches my hand
+<|endoftext|>
+
+my hand
+in the spider's web
+february sunshine
+<|endoftext|>
+
+first mover
+the first leaf
+i think
+<|endoftext|>
+
+the baby's
+crouching place
+in the rain
+<|endoftext|>
+
+one by one
+my hands touch
+the baby's
+<|endoftext|>
+
+in the garden
+the little girl?s
+the little boy's
+<|endoftext|>
+
+the little moon?
+the baby on the countertop
+and the boy waiting
+<|endoftext|>
+
+one day
+the sky blue
+dark blue
+<|endoftext|>
+
+his shadow
+the river turns down
+from mountain to mountain
+<|endoftext|>
+
+the sound
+of a boat
+the rain drops
+<|endoftext|>
+
+still the same
+the boy with the bow
+on the beach
+<|endoftext|>
+
+toward the river
+she has a way
+of telling my father
+<|endoftext|>
+
+no wind
+the shadow of the river
+on our sandals
+<|endoftext|>
+
+his back
+the long shadow
+of the river
+<|endoftext|>
+
+first light
+the spider's web
+with a tail
+<|endoftext|>
+
+lazy
+the river
+of flies
+<|endoftext|>
+
+crows
+the cat
+behind a screen door
+
+
+[400 | 747.66] loss=2.18 avg=2.10
+[401 | 749.28] loss=2.12 avg=2.10
+[402 | 750.90] loss=2.14 avg=2.10
+[403 | 752.52] loss=2.09 avg=2.10
+[404 | 754.14] loss=2.12 avg=2.10
+[405 | 755.77] loss=2.14 avg=2.10
+[406 | 757.38] loss=2.11 avg=2.10
+[407 | 759.00] loss=2.23 avg=2.10
+[408 | 760.62] loss=2.12 avg=2.10
+[409 | 762.24] loss=1.78 avg=2.10
+[410 | 763.86] loss=1.98 avg=2.10
+[411 | 765.48] loss=1.94 avg=2.10
+[412 | 767.10] loss=1.85 avg=2.10
+[413 | 768.72] loss=2.24 avg=2.10
+[414 | 770.34] loss=2.00 avg=2.10
+[415 | 771.97] loss=1.93 avg=2.09
+[416 | 773.59] loss=2.16 avg=2.09
+[417 | 775.21] loss=1.85 avg=2.09
+[418 | 776.83] loss=2.19 avg=2.09
+[419 | 778.44] loss=2.15 avg=2.09
+[420 | 780.06] loss=2.07 avg=2.09
+[421 | 781.69] loss=1.87 avg=2.09
+[422 | 783.31] loss=2.22 avg=2.09
+[423 | 784.93] loss=1.87 avg=2.09
+[424 | 786.55] loss=2.05 avg=2.09
+[425 | 788.17] loss=2.16 avg=2.09
+[426 | 789.79] loss=1.82 avg=2.09
+[427 | 791.41] loss=1.88 avg=2.09
+[428 | 793.03] loss=1.75 avg=2.08
+[429 | 794.65] loss=2.10 avg=2.08
+[430 | 796.28] loss=1.92 avg=2.08
+[431 | 797.90] loss=1.74 avg=2.08
+[432 | 799.52] loss=2.12 avg=2.08
+[433 | 801.13] loss=1.97 avg=2.08
+[434 | 802.76] loss=2.08 avg=2.08
+[435 | 804.38] loss=2.12 avg=2.08
+[436 | 806.00] loss=1.99 avg=2.08
+[437 | 807.62] loss=2.03 avg=2.08
+[438 | 809.24] loss=1.88 avg=2.07
+[439 | 810.86] loss=2.08 avg=2.07
+[440 | 812.48] loss=1.95 avg=2.07
+[441 | 814.10] loss=2.17 avg=2.07
+[442 | 815.72] loss=2.17 avg=2.08
+[443 | 817.34] loss=1.85 avg=2.07
+[444 | 818.97] loss=2.23 avg=2.07
+[445 | 820.59] loss=1.98 avg=2.07
+[446 | 822.21] loss=1.79 avg=2.07
+[447 | 823.83] loss=1.83 avg=2.07
+[448 | 825.44] loss=1.90 avg=2.07
+[449 | 827.07] loss=2.06 avg=2.07
+[450 | 828.69] loss=2.32 avg=2.07
+[451 | 830.31] loss=2.74 avg=2.08
+[452 | 831.93] loss=2.02 avg=2.08
+[453 | 833.56] loss=2.37 avg=2.08
+[454 | 835.18] loss=1.93 avg=2.08
+[455 | 836.80] loss=1.89 avg=2.07
+[456 | 838.42] loss=1.88 avg=2.07
+[457 | 840.04] loss=1.87 avg=2.07
+[458 | 841.66] loss=2.11 avg=2.07
+[459 | 843.28] loss=1.79 avg=2.07
+[460 | 844.91] loss=1.78 avg=2.07
+[461 | 846.53] loss=2.09 avg=2.07
+[462 | 848.15] loss=2.30 avg=2.07
+[463 | 849.77] loss=2.09 avg=2.07
+[464 | 851.40] loss=2.16 avg=2.07
+[465 | 853.02] loss=1.74 avg=2.07
+[466 | 854.64] loss=1.94 avg=2.06
+[467 | 856.26] loss=1.94 avg=2.06
+[468 | 857.88] loss=2.04 avg=2.06
+[469 | 859.51] loss=2.20 avg=2.06
+[470 | 861.14] loss=1.90 avg=2.06
+[471 | 862.76] loss=2.07 avg=2.06
+[472 | 864.39] loss=1.92 avg=2.06
+[473 | 866.01] loss=1.89 avg=2.06
+[474 | 867.64] loss=1.80 avg=2.06
+[475 | 869.26] loss=2.18 avg=2.06
+[476 | 870.88] loss=2.14 avg=2.06
+[477 | 872.51] loss=2.20 avg=2.06
+[478 | 874.13] loss=2.43 avg=2.06
+[479 | 875.75] loss=2.15 avg=2.07
+[480 | 877.38] loss=2.59 avg=2.07
+[481 | 879.00] loss=1.85 avg=2.07
+[482 | 880.63] loss=1.88 avg=2.07
+[483 | 882.25] loss=1.95 avg=2.06
+[484 | 883.87] loss=1.89 avg=2.06
+[485 | 885.50] loss=2.03 avg=2.06
+[486 | 887.12] loss=2.46 avg=2.07
+[487 | 888.74] loss=2.03 avg=2.07
+[488 | 890.37] loss=2.23 avg=2.07
+[489 | 891.99] loss=2.14 avg=2.07
+[490 | 893.62] loss=2.21 avg=2.07
+[491 | 895.24] loss=2.06 avg=2.07
+[492 | 896.86] loss=2.08 avg=2.07
+[493 | 898.48] loss=1.96 avg=2.07
+[494 | 900.11] loss=1.89 avg=2.07
+[495 | 901.73] loss=2.11 avg=2.07
+[496 | 903.36] loss=2.09 avg=2.07
+[497 | 904.98] loss=2.05 avg=2.07
+[498 | 906.60] loss=2.06 avg=2.07
+[499 | 908.23] loss=2.06 avg=2.07
+Generating samples...
+======== SAMPLE 1 ========
+ime
+he's wearing my shirt again
+<|endoftext|>
+
+fading sunlight
+the white boughs
+fade into the blue
+<|endoftext|>
+
+the first raindrop
+still on the rose petal
+summer heat
+<|endoftext|>
+
+summer wind
+thickets of cottonwood
+in the yard
+<|endoftext|>
+
+morning chill
+the bowing of the gardener
+to the radio
+<|endoftext|>
+
+gibbous moon
+the water fowls
+toss and turn
+<|endoftext|>
+
+new moon
+the boughs
+clasp into the shade
+<|endoftext|>
+
+monday morning
+the door swings open
+by itself
+<|endoftext|>
+
+monday snow
+the boughs change shape
+with the swing
+<|endoftext|>
+
+moonless night
+a cicada buzzes its way
+through the leaves
+<|endoftext|>
+
+labor day
+the scent of a new sweater
+on my fingers
+<|endoftext|>
+
+sultry evening
+the cat stops moving
+to greet me
+<|endoftext|>
+
+the last of the leaves
+the cat returns
+to his nest
+<|endoftext|>
+
+new year's day
+in his footprints
+the cat's name
+<|endoftext|>
+
+morning light
+the blue tip of the owl's beak
+swings out by itself
+<|endoftext|>
+
+federal holiday
+the white boughs
+fade into the blue
+<|endoftext|>
+
+warm morning
+the smell of a new bedspread
+and old blankets
+<|endoftext|>
+
+new year's day
+the dog still stands
+even on the pavement
+<|endoftext|>
+
+sunny morning
+the empty cage
+of a cat
+<|endoftext|>
+
+autumn leaves . . .
+a small breeze
+and a fly
+<|endoftext|>
+
+autumn dusk
+her shadow in the leaves
+that did come down
+<|endoftext|>
+
+first night of autumn
+i close my eyes at dinner
+and the silence
+<|endoftext|>
+
+autumn dusk
+the wind sings at my back
+a bit more softly
+<|endoftext|>
+
+slam dunk
+a new season begins
+of autumn
+<|endoftext|>
+
+autumn rain
+an acorn
+in the oak
+<|endoftext|>
+
+autumn dusk
+the sun on top of the water
+dusk
+<|endoftext|>
+
+after rain
+the white boughs
+continue to bend
+<|endoftext|>
+
+sunny morning
+the dog's ears poke at
+the coffee table
+<|endoftext|>
+
+autumn dusk
+a stray cat
+pokes around
+<|endoftext|>
+
+autumn dusk
+when the moon
+sets
+<|endoftext|>
+
+first day of school
+a flock of geese
+flying south
+<|endoftext|>
+
+autumn evening
+i watch the rain
+crackle the leaves
+<|endoftext|>
+
+migrating birds . . .
+weighing up the pros
+autumn dusk
+<|endoftext|>
+
+sunny morning
+the sound of someone
+waltzing
+<|endoftext|>
+
+early autumn
+her fingers on my
+white coat
+<|endoftext|>
+
+first frost
+a dog starts to bark
+in the moonlight
+<|endoftext|>
+
+autumn chill
+a cicada sings
+in the grass
+<|endoftext|>
+
+late fall
+the dog in the cat house
+and his cat
+<|endoftext|>
+
+hazy day
+the cat returns its
+sport
+<|endoftext|>
+
+autumn dusk
+the sound of a spring sky
+turning blue
+<|endoftext|>
+
+autumn chill
+the sounds
+of summer rain
+<|endoftext|>
+
+autumn heat
+the dog's belly
+shifted a little
+<|endoftext|>
+
+autumn haze
+the rain drops
+swish through the mist
+<|endoftext|>
+
+morning rain
+we scrape together
+the last few dollars
+<|endoftext|>
+
+autumn light . . .
+
+[500 | 931.92] loss=1.96 avg=2.07
+[501 | 933.54] loss=1.87 avg=2.06
+[502 | 935.16] loss=2.26 avg=2.07
+[503 | 936.78] loss=1.97 avg=2.07
+[504 | 938.40] loss=2.07 avg=2.07
+[505 | 940.01] loss=1.93 avg=2.06
+[506 | 941.63] loss=1.91 avg=2.06
+[507 | 943.24] loss=1.63 avg=2.06
+[508 | 944.85] loss=1.86 avg=2.06
+[509 | 946.47] loss=1.95 avg=2.06
+[510 | 948.08] loss=2.21 avg=2.06
+[511 | 949.69] loss=2.16 avg=2.06
+[512 | 951.31] loss=1.79 avg=2.06
+[513 | 952.92] loss=2.16 avg=2.06
+[514 | 954.54] loss=2.12 avg=2.06
+[515 | 956.16] loss=2.33 avg=2.06
+[516 | 957.77] loss=1.84 avg=2.06
+[517 | 959.39] loss=1.87 avg=2.06
+[518 | 961.00] loss=1.84 avg=2.05
+[519 | 962.62] loss=2.21 avg=2.06
+[520 | 964.24] loss=2.02 avg=2.05
+[521 | 965.87] loss=1.66 avg=2.05
+[522 | 967.49] loss=1.99 avg=2.05
+[523 | 969.11] loss=2.11 avg=2.05
+[524 | 970.73] loss=2.34 avg=2.05
+[525 | 972.35] loss=1.90 avg=2.05
+[526 | 973.98] loss=1.69 avg=2.05
+[527 | 975.61] loss=2.02 avg=2.05
+[528 | 977.23] loss=2.27 avg=2.05
+[529 | 978.85] loss=1.98 avg=2.05
+[530 | 980.48] loss=2.12 avg=2.05
+[531 | 982.11] loss=1.79 avg=2.05
+[532 | 983.74] loss=2.06 avg=2.05
+[533 | 985.37] loss=1.95 avg=2.05
+[534 | 986.99] loss=2.31 avg=2.05
+[535 | 988.62] loss=1.85 avg=2.05
+[536 | 990.25] loss=2.69 avg=2.05
+[537 | 991.87] loss=2.13 avg=2.05
+[538 | 993.50] loss=1.99 avg=2.05
+[539 | 995.13] loss=1.85 avg=2.05
+[540 | 996.75] loss=2.51 avg=2.06
+[541 | 998.39] loss=2.04 avg=2.06
+[542 | 1000.02] loss=2.60 avg=2.06
+[543 | 1001.65] loss=2.16 avg=2.06
+[544 | 1003.28] loss=2.11 avg=2.06
+[545 | 1004.90] loss=2.25 avg=2.07
+[546 | 1006.53] loss=1.86 avg=2.06
+[547 | 1008.16] loss=1.97 avg=2.06
+[548 | 1009.78] loss=1.94 avg=2.06
+[549 | 1011.41] loss=2.04 avg=2.06
+[550 | 1013.03] loss=2.13 avg=2.06
+[551 | 1014.66] loss=2.02 avg=2.06
+[552 | 1016.29] loss=2.01 avg=2.06
+[553 | 1017.91] loss=1.86 avg=2.06
+[554 | 1019.54] loss=2.20 avg=2.06
+[555 | 1021.16] loss=2.14 avg=2.06
+[556 | 1022.78] loss=1.94 avg=2.06
+[557 | 1024.41] loss=2.18 avg=2.06
+[558 | 1026.03] loss=1.77 avg=2.06
+[559 | 1027.66] loss=1.99 avg=2.06
+[560 | 1029.28] loss=2.05 avg=2.06
+[561 | 1030.90] loss=1.99 avg=2.06
+[562 | 1032.53] loss=1.90 avg=2.05
+[563 | 1034.15] loss=1.70 avg=2.05
+[564 | 1035.76] loss=1.92 avg=2.05
+[565 | 1037.39] loss=2.09 avg=2.05
+[566 | 1039.01] loss=1.88 avg=2.05
+[567 | 1040.63] loss=2.03 avg=2.05
+[568 | 1042.25] loss=1.94 avg=2.05
+[569 | 1043.88] loss=1.99 avg=2.05
+[570 | 1045.50] loss=2.07 avg=2.05
+[571 | 1047.12] loss=1.99 avg=2.05
+[572 | 1048.74] loss=1.86 avg=2.04
+[573 | 1050.37] loss=2.04 avg=2.04
+[574 | 1051.99] loss=2.01 avg=2.04
+[575 | 1053.61] loss=2.00 avg=2.04
+[576 | 1055.23] loss=1.87 avg=2.04
+[577 | 1056.86] loss=2.02 avg=2.04
+[578 | 1058.48] loss=1.52 avg=2.04
+[579 | 1060.10] loss=1.88 avg=2.04
+[580 | 1061.72] loss=1.74 avg=2.03
+[581 | 1063.35] loss=1.75 avg=2.03
+[582 | 1064.97] loss=2.00 avg=2.03
+[583 | 1066.59] loss=2.03 avg=2.03
+[584 | 1068.21] loss=2.39 avg=2.03
+[585 | 1069.83] loss=1.90 avg=2.03
+[586 | 1071.45] loss=2.04 avg=2.03
+[587 | 1073.07] loss=1.86 avg=2.03
+[588 | 1074.69] loss=2.11 avg=2.03
+[589 | 1076.31] loss=1.74 avg=2.03
+[590 | 1077.93] loss=2.07 avg=2.03
+[591 | 1079.54] loss=1.88 avg=2.03
+[592 | 1081.17] loss=1.95 avg=2.03
+[593 | 1082.78] loss=2.13 avg=2.03
+[594 | 1084.40] loss=1.85 avg=2.02
+[595 | 1086.01] loss=1.97 avg=2.02
+[596 | 1087.64] loss=1.70 avg=2.02
+[597 | 1089.25] loss=1.75 avg=2.02
+[598 | 1090.87] loss=2.02 avg=2.02
+[599 | 1092.49] loss=1.81 avg=2.02
+Generating samples...
+======== SAMPLE 1 ========
+chop
+in the mist
+<|endoftext|>
+
+wren
+on a small branch
+a song of singing wrens
+<|endoftext|>
+
+moonlight
+on the jasmine leaves
+mating vortices
+<|endoftext|>
+
+frost
+in the windowpanes
+starry night
+<|endoftext|>
+
+cloudless sky
+the wren's song
+of the wren
+<|endoftext|>
+
+spring
+a crow flies by
+in mid-flight
+<|endoftext|>
+
+spring morning
+my daughter and her friend
+hold the door
+<|endoftext|>
+
+dusk
+an albatross flies by
+in the blue-gray
+<|endoftext|>
+
+first flower
+in the springtime
+in the silence
+<|endoftext|>
+
+cicada
+from my old cell ...
+the smell of apples
+<|endoftext|>
+
+magnolia leaves
+the wren again
+mating at the end
+<|endoftext|>
+
+morning mist
+the red fox
+just as he says
+<|endoftext|>
+
+spring wind
+the green leaf
+grows
+<|endoftext|>
+
+summer night
+the red fox
+turns the corner
+<|endoftext|>
+
+sugar glider ...
+a starlings chirp
+in the distance
+<|endoftext|>
+
+the red fox
+has passed me
+my shadow
+<|endoftext|>
+
+cicada song
+the sound of the wind
+inside a book
+<|endoftext|>
+
+lazy day
+reading the morning stars
+by the fountain
+<|endoftext|>
+
+a loon ...
+the rain stopped ...
+my shadow
+<|endoftext|>
+
+afternoon heat
+the wren again
+mating at the end
+<|endoftext|>
+
+chrysanthemum
+in the leaves
+a rose petal
+<|endoftext|>
+
+first frost
+an insect glides
+with the wind
+<|endoftext|>
+
+the sky
+evening moon
+in a bowl of raspberries
+<|endoftext|>
+
+summer heat
+the garden gate
+locked
+<|endoftext|>
+
+dandelion
+i find him still
+after all these years
+<|endoftext|>
+
+summer wind
+moths in the garden
+and the cat too
+<|endoftext|>
+
+evening coolness
+water sprouting
+from the cicada
+<|endoftext|>
+
+a new season
+a wren's song
+through the leaves
+<|endoftext|>
+
+a crumb
+on the old tree
+a crumb
+<|endoftext|>
+
+migrating geese
+the scent of her perfume
+in the wind
+<|endoftext|>
+
+cicada song
+the sound of the wind
+inside a book
+<|endoftext|>
+
+sunrise
+the white crickets
+still
+<|endoftext|>
+
+winter darkness
+the long shadow
+of the old oak
+<|endoftext|>
+
+the shadow of the old tree
+on the ground
+a long night
+<|endoftext|>
+
+first frost
+i keep looking
+for her
+<|endoftext|>
+
+prairie sunset
+a little way off
+the edge of the mountain
+<|endoftext|>
+
+fall foliage
+a little breeze
+touches the wren
+<|endoftext|>
+
+a breeze
+from the fire pit
+the scent of sage
+<|endoftext|>
+
+winter sun
+a white wren
+slightly flutter
+<|endoftext|>
+
+winter morning
+his long arm swings
+on his shoulders
+<|endoftext|>
+
+snowbound
+i move the snowman
+from end to end
+<|endoftext|>
+
+snowmelt
+the wren again
+mating
+<|endoftext|>
+
+dawn . . .
+on the edge of a hill
+the empty window
+<|endoftext|>
+
+winter sun
+one leaf falls
+as we leave
+<|endoftext|>
+
+fishing
+on the opposite side of the lake
+fishing nets
+<|endoftext|>
+
+autumn equinox
+the white flag
+
+[600 | 1116.16] loss=2.16 avg=2.02
+[601 | 1117.78] loss=1.83 avg=2.02
+[602 | 1119.40] loss=1.96 avg=2.02
+[603 | 1121.02] loss=1.81 avg=2.01
+[604 | 1122.63] loss=1.87 avg=2.01
+[605 | 1124.25] loss=1.98 avg=2.01
+[606 | 1125.87] loss=1.82 avg=2.01
+[607 | 1127.49] loss=2.10 avg=2.01
+[608 | 1129.11] loss=2.19 avg=2.01
+[609 | 1130.72] loss=2.17 avg=2.01
+[610 | 1132.34] loss=2.09 avg=2.01
+[611 | 1133.96] loss=1.88 avg=2.01
+[612 | 1135.59] loss=1.59 avg=2.01
+[613 | 1137.20] loss=1.74 avg=2.01
+[614 | 1138.82] loss=2.07 avg=2.01
+[615 | 1140.44] loss=2.16 avg=2.01
+[616 | 1142.06] loss=2.03 avg=2.01
+[617 | 1143.67] loss=1.97 avg=2.01
+[618 | 1145.29] loss=1.83 avg=2.01
+[619 | 1146.90] loss=3.12 avg=2.02
+[620 | 1148.52] loss=2.37 avg=2.02
+[621 | 1150.14] loss=2.08 avg=2.02
+[622 | 1151.76] loss=2.14 avg=2.02
+[623 | 1153.38] loss=1.81 avg=2.02
+[624 | 1155.00] loss=1.84 avg=2.02
+[625 | 1156.62] loss=2.02 avg=2.02
+[626 | 1158.24] loss=1.98 avg=2.02
+[627 | 1159.86] loss=2.70 avg=2.03
+[628 | 1161.47] loss=2.32 avg=2.03
+[629 | 1163.08] loss=1.80 avg=2.03
+[630 | 1164.70] loss=1.61 avg=2.02
+[631 | 1166.32] loss=2.10 avg=2.02
+[632 | 1167.93] loss=1.86 avg=2.02
+[633 | 1169.55] loss=2.11 avg=2.02
+[634 | 1171.16] loss=2.06 avg=2.02
+[635 | 1172.79] loss=1.74 avg=2.02
+[636 | 1174.42] loss=2.10 avg=2.02
+[637 | 1176.04] loss=1.71 avg=2.02
+[638 | 1177.65] loss=1.98 avg=2.02
+[639 | 1179.28] loss=2.05 avg=2.02
+[640 | 1180.90] loss=1.78 avg=2.01
+[641 | 1182.52] loss=1.73 avg=2.01
+[642 | 1184.14] loss=2.02 avg=2.01
+[643 | 1185.77] loss=2.74 avg=2.02
+[644 | 1187.39] loss=2.15 avg=2.02
+[645 | 1189.01] loss=1.84 avg=2.02
+[646 | 1190.63] loss=2.09 avg=2.02
+[647 | 1192.26] loss=1.65 avg=2.02
+[648 | 1193.87] loss=2.46 avg=2.02
+[649 | 1195.50] loss=1.73 avg=2.02
+[650 | 1197.12] loss=2.19 avg=2.02
+[651 | 1198.74] loss=1.83 avg=2.02
+[652 | 1200.36] loss=1.54 avg=2.01
+[653 | 1201.99] loss=2.05 avg=2.01
+[654 | 1203.62] loss=2.11 avg=2.01
+[655 | 1205.24] loss=2.22 avg=2.02
+[656 | 1206.86] loss=2.31 avg=2.02
+[657 | 1208.49] loss=2.14 avg=2.02
+[658 | 1210.11] loss=1.75 avg=2.02
+[659 | 1211.73] loss=2.06 avg=2.02
+[660 | 1213.36] loss=2.05 avg=2.02
+[661 | 1214.98] loss=1.76 avg=2.02
+[662 | 1216.61] loss=2.03 avg=2.02
+[663 | 1218.24] loss=1.88 avg=2.01
+[664 | 1219.86] loss=1.82 avg=2.01
+[665 | 1221.48] loss=1.91 avg=2.01
+[666 | 1223.10] loss=2.17 avg=2.01
+[667 | 1224.73] loss=2.03 avg=2.01
+[668 | 1226.36] loss=2.48 avg=2.02
+[669 | 1227.98] loss=1.85 avg=2.02
+[670 | 1229.61] loss=2.08 avg=2.02
+[671 | 1231.24] loss=2.13 avg=2.02
+[672 | 1232.86] loss=2.12 avg=2.02
+[673 | 1234.48] loss=1.66 avg=2.02
+[674 | 1236.11] loss=1.88 avg=2.01
+[675 | 1237.74] loss=1.75 avg=2.01
+[676 | 1239.36] loss=1.92 avg=2.01
+[677 | 1240.99] loss=2.04 avg=2.01
+[678 | 1242.62] loss=1.81 avg=2.01
+[679 | 1244.24] loss=2.11 avg=2.01
+[680 | 1245.87] loss=1.90 avg=2.01
+[681 | 1247.50] loss=2.48 avg=2.01
+[682 | 1249.13] loss=2.04 avg=2.01
+[683 | 1250.75] loss=1.64 avg=2.01
+[684 | 1252.37] loss=1.89 avg=2.01
+[685 | 1254.00] loss=2.26 avg=2.01
+[686 | 1255.63] loss=2.47 avg=2.02
+[687 | 1257.26] loss=1.97 avg=2.02
+[688 | 1258.88] loss=1.74 avg=2.01
+[689 | 1260.51] loss=2.00 avg=2.01
+[690 | 1262.14] loss=1.73 avg=2.01
+[691 | 1263.77] loss=1.94 avg=2.01
+[692 | 1265.40] loss=1.85 avg=2.01
+[693 | 1267.02] loss=1.94 avg=2.01
+[694 | 1268.65] loss=1.89 avg=2.01
+[695 | 1270.27] loss=1.76 avg=2.00
+[696 | 1271.90] loss=1.97 avg=2.00
+[697 | 1273.52] loss=1.92 avg=2.00
+[698 | 1275.15] loss=1.95 avg=2.00
+[699 | 1276.78] loss=1.70 avg=2.00
+Generating samples...
+======== SAMPLE 1 ========
+|>
+
+pink musk
+my long-lost daughter and I
+across the street
+<|endoftext|>
+
+moonlit
+moths crawl
+into the spider
+<|endoftext|>
+
+a butterfly
+thickens with the rain
+summer's end
+<|endoftext|>
+
+lonely moon
+scent of fresh daisies
+at the window
+<|endoftext|>
+
+the red-tailed hawk
+somewhat less sharp
+last night's rain
+<|endoftext|>
+
+the full moon
+in all its brilliance
+summer's end
+<|endoftext|>
+
+lazy afternoon
+a little girl asks
+where am I?
+<|endoftext|>
+
+long day's
+in the grocery store?
+pines are for
+the birds
+<|endoftext|>
+
+hush in the breeze
+the last leaves fall
+from the trees
+<|endoftext|>
+
+warm day
+shifting the shadows
+of the barn
+<|endoftext|>
+
+a long day's march
+the smell of old roses
+on every rock
+<|endoftext|>
+
+cold evening
+the breeze is still
+with a hint of snow
+<|endoftext|>
+
+frost
+on the ice
+thistledown
+<|endoftext|>
+
+in the snow
+an old sign
+describes the store
+<|endoftext|>
+
+first frost
+the lark finds
+the ripe berry
+<|endoftext|>
+
+spring rain
+the cat looks up
+in the distance
+<|endoftext|>
+
+in the middle of the forest
+the sound
+of a frog
+<|endoftext|>
+
+distant thunder
+the car breaks down
+in the middle of the way
+<|endoftext|>
+
+new year's eve
+circling the casket
+one more rose
+<|endoftext|>
+
+a moment's silence . . .
+the smell of cinnamon
+in the soup
+<|endoftext|>
+
+midday heat . . .
+we talk about where
+we're going
+<|endoftext|>
+
+summer's end
+damp rain
+scraping dust
+<|endoftext|>
+
+first of December . . .
+we can see the stars
+in full glare
+<|endoftext|>
+
+sunset
+the long shadow
+of the old oak
+<|endoftext|>
+
+summer's end
+on a steep embankment
+a hawk
+<|endoftext|>
+
+hot morning
+a crow hovers
+over the trellis bridge
+<|endoftext|>
+
+sudden rain
+a young boy stands here
+for an hour
+<|endoftext|>
+
+winter rain . . .
+a butterfly
+finds a way
+<|endoftext|>
+
+hiking trail
+moths find the leaves . . .
+summer rain
+<|endoftext|>
+
+the long road
+the first signs of frost
+of a tree
+<|endoftext|>
+
+hazy sun
+wind chimes
+at the end of the line
+<|endoftext|>
+
+a moment of silence
+for the lost
+bird
+<|endoftext|>
+
+a long-lost friend
+from college . . .
+snowy afternoon
+<|endoftext|>
+
+the last of the light
+a star falls
+from a cloud
+<|endoftext|>
+
+first blossoms
+of a large birch leaf
+a gust of wind
+<|endoftext|>
+
+a foggy night
+an old man sleeps
+on the roof ledge
+<|endoftext|>
+
+toweling off
+a moment's regret
+summer sunshine
+<|endoftext|>
+
+raindrops
+from my phone:
+smiley face
+<|endoftext|>
+
+new year's eve
+a small flower
+in the flower pot
+<|endoftext|>
+
+in the wind
+the sound of a dog
+swaying
+<|endoftext|>
+
+snow covered
+a tiny seed
+touched by the wind
+<|endoftext|>
+
+winter rain
+an old adage
+returns
+<|endoftext|>
+
+the wind gust
+on my window
+summer snow
+<|endoftext|>
+
+prairie solitude
+the sounds of geese
+and
+
+[700 | 1300.51] loss=2.35 avg=2.00
+[701 | 1302.13] loss=1.80 avg=2.00
+[702 | 1303.75] loss=1.40 avg=1.99
+[703 | 1305.37] loss=1.93 avg=1.99
+[704 | 1306.99] loss=2.25 avg=2.00
+[705 | 1308.61] loss=2.07 avg=2.00
+[706 | 1310.22] loss=1.85 avg=2.00
+[707 | 1311.83] loss=1.90 avg=1.99
+[708 | 1313.45] loss=1.77 avg=1.99
+[709 | 1315.06] loss=2.09 avg=1.99
+[710 | 1316.67] loss=1.72 avg=1.99
+[711 | 1318.28] loss=1.80 avg=1.99
+[712 | 1319.89] loss=2.03 avg=1.99
+[713 | 1321.50] loss=1.91 avg=1.99
+[714 | 1323.11] loss=1.93 avg=1.99
+[715 | 1324.72] loss=1.97 avg=1.99
+[716 | 1326.33] loss=2.29 avg=1.99
+[717 | 1327.94] loss=2.06 avg=1.99
+[718 | 1329.56] loss=1.79 avg=1.99
+[719 | 1331.18] loss=1.86 avg=1.99
+[720 | 1332.79] loss=2.20 avg=1.99
+[721 | 1334.42] loss=2.05 avg=1.99
+[722 | 1336.04] loss=2.00 avg=1.99
+[723 | 1337.66] loss=1.88 avg=1.99
+[724 | 1339.28] loss=1.51 avg=1.98
+[725 | 1340.90] loss=2.03 avg=1.99
+[726 | 1342.53] loss=1.76 avg=1.98
+[727 | 1344.15] loss=1.81 avg=1.98
+[728 | 1345.77] loss=1.90 avg=1.98
+[729 | 1347.39] loss=1.67 avg=1.98
+[730 | 1349.02] loss=1.93 avg=1.98
+[731 | 1350.64] loss=1.93 avg=1.98
+[732 | 1352.27] loss=1.72 avg=1.97
+[733 | 1353.89] loss=1.82 avg=1.97
+[734 | 1355.52] loss=1.85 avg=1.97
+[735 | 1357.15] loss=1.97 avg=1.97
+[736 | 1358.77] loss=2.72 avg=1.98
+[737 | 1360.40] loss=2.02 avg=1.98
+[738 | 1362.03] loss=2.06 avg=1.98
+[739 | 1363.66] loss=2.09 avg=1.98
+[740 | 1365.29] loss=1.46 avg=1.98
+[741 | 1366.92] loss=1.55 avg=1.97
+[742 | 1368.55] loss=1.56 avg=1.97
+[743 | 1370.18] loss=1.79 avg=1.97
+[744 | 1371.81] loss=1.69 avg=1.96
+[745 | 1373.44] loss=1.77 avg=1.96
+[746 | 1375.06] loss=1.89 avg=1.96
+[747 | 1376.69] loss=2.09 avg=1.96
+[748 | 1378.32] loss=1.55 avg=1.96
+[749 | 1379.95] loss=1.68 avg=1.95
+[750 | 1381.59] loss=2.23 avg=1.96
+[751 | 1383.22] loss=1.64 avg=1.95
+[752 | 1384.84] loss=1.83 avg=1.95
+[753 | 1386.47] loss=2.05 avg=1.95
+[754 | 1388.10] loss=1.42 avg=1.95
+[755 | 1389.73] loss=1.69 avg=1.95
+[756 | 1391.36] loss=2.03 avg=1.95
+[757 | 1392.99] loss=1.98 avg=1.95
+[758 | 1394.62] loss=2.14 avg=1.95
+[759 | 1396.25] loss=2.21 avg=1.95
+[760 | 1397.87] loss=1.99 avg=1.95
+[761 | 1399.51] loss=1.80 avg=1.95
+[762 | 1401.13] loss=1.98 avg=1.95
+[763 | 1402.76] loss=1.59 avg=1.95
+[764 | 1404.39] loss=1.72 avg=1.94
+[765 | 1406.02] loss=1.62 avg=1.94
+[766 | 1407.64] loss=1.91 avg=1.94
+[767 | 1409.27] loss=2.09 avg=1.94
+[768 | 1410.90] loss=2.19 avg=1.95
+[769 | 1412.53] loss=2.03 avg=1.95
+[770 | 1414.16] loss=2.07 avg=1.95
+[771 | 1415.79] loss=1.73 avg=1.95
+[772 | 1417.42] loss=1.82 avg=1.94
+[773 | 1419.05] loss=2.06 avg=1.94
+[774 | 1420.68] loss=1.96 avg=1.95
+[775 | 1422.30] loss=1.68 avg=1.94
+[776 | 1423.93] loss=1.95 avg=1.94
+[777 | 1425.56] loss=1.92 avg=1.94
+[778 | 1427.19] loss=1.81 avg=1.94
+[779 | 1428.82] loss=2.03 avg=1.94
+[780 | 1430.45] loss=2.13 avg=1.94
+[781 | 1432.07] loss=1.70 avg=1.94
+[782 | 1433.70] loss=1.93 avg=1.94
+[783 | 1435.32] loss=1.53 avg=1.94
+[784 | 1436.95] loss=1.94 avg=1.94
+[785 | 1438.58] loss=1.76 avg=1.94
+[786 | 1440.20] loss=1.89 avg=1.94
+[787 | 1441.83] loss=2.02 avg=1.94
+[788 | 1443.45] loss=1.59 avg=1.93
+[789 | 1445.07] loss=1.61 avg=1.93
+[790 | 1446.70] loss=1.96 avg=1.93
+[791 | 1448.33] loss=1.73 avg=1.93
+[792 | 1449.96] loss=1.83 avg=1.93
+[793 | 1451.59] loss=2.06 avg=1.93
+[794 | 1453.21] loss=1.99 avg=1.93
+[795 | 1454.84] loss=1.95 avg=1.93
+[796 | 1456.46] loss=2.30 avg=1.93
+[797 | 1458.09] loss=1.76 avg=1.93
+[798 | 1459.72] loss=1.91 avg=1.93
+[799 | 1461.34] loss=1.81 avg=1.93
+Generating samples...
+======== SAMPLE 1 ========
+the sun set behind the white house;
+the old man's voice
+in the rain
+<|endoftext|>
+
+midnight
+the car with the muffler
+in mud splats
+<|endoftext|>
+
+grazing rations
+on the fields of spring
+empty cups . . .
+<|endoftext|>
+
+mama's kitchen
+her milk-filled plate
+empty
+<|endoftext|>
+
+filling my lungs
+with fog
+snow
+<|endoftext|>
+
+snow cover
+the old woman places
+a wooden chair
+<|endoftext|>
+
+winter rain—
+she doesn?t move her head
+too fast
+<|endoftext|>
+
+new spring
+wearing a bathrobe
+winter sun
+<|endoftext|>
+
+autumn rain
+it doesn?t matter
+that I?m older
+<|endoftext|>
+
+a cat
+out of the gate . . .
+autumn moon
+<|endoftext|>
+
+the fall
+the fullness
+of my harvest
+<|endoftext|>
+
+pink umbrellas
+the color of my shadow
+in her hands
+<|endoftext|>
+
+wearing a bra
+to the grocery store —
+new moon
+<|endoftext|>
+
+snowmelt
+in the coffee shop
+autumn sunset
+<|endoftext|>
+
+early morning . . .
+the sound of the water
+from the well
+<|endoftext|>
+
+snowbound
+an egg thuds
+on the table
+<|endoftext|>
+
+mountain summit—
+this time
+my shadow
+<|endoftext|>
+
+a long way
+to my destination
+cold rain
+<|endoftext|>
+
+the light
+of the moon
+morning mist
+<|endoftext|>
+
+summit
+the first star
+on the horizon
+<|endoftext|>
+
+tossing snow . . .
+my toes on the snow
+toothpicks
+<|endoftext|>
+
+fallen tree leaves
+a child's drawing
+of a dog
+<|endoftext|>
+
+spring day
+he puts blue raspberries
+in the orange juice bottle . . .
+<|endoftext|>
+
+daylight rain . . .
+a butterfly's
+glide across the air
+<|endoftext|>
+
+spring thaw-
+the last nail
+scuffed with snow
+<|endoftext|>
+
+the same face
+behind my back
+blue sky
+<|endoftext|>
+
+bouquet of apples . . .
+the moon
+on the tree
+<|endoftext|>
+
+cricket song . . .
+a bird
+loses its place
+<|endoftext|>
+
+a moth drifts . . .
+the silence of winter
+with the moth
+<|endoftext|>
+
+winter blues
+a stray dog
+nudging its shadow
+<|endoftext|>
+
+cold snap
+the dog's tail
+is in the snow
+<|endoftext|>
+
+the first stars
+in an old song
+distant thunder
+<|endoftext|>
+
+new year's fireworks
+the jangling
+of snowflakes
+<|endoftext|>
+
+winter rain
+the child
+in the snow
+<|endoftext|>
+
+the smell
+of old clothes --
+a cold snap
+<|endoftext|>
+
+after the storm
+the old oak
+still glowing
+<|endoftext|>
+
+winter haze
+fog settling
+on the road
+<|endoftext|>
+
+new year's eve --
+the cat's shadow
+on the cat's fur
+<|endoftext|>
+
+snowflake in the evening
+a bird
+not as black
+<|endoftext|>
+
+new year --
+she still carries
+the snow shovel
+<|endoftext|>
+
+the snow
+in my car
+winter sunset
+<|endoftext|>
+
+frost frost
+the old friend
+doesn?t show up
+<|endoftext|>
+
+after the storm
+i can still hear
+your laughter
+<|endoftext|>
+
+early morning --
+the moon
+still in my eye
+<|endoftext|>
+
+after the storm
+my phone light
+on the night stand
+<|endoftext|>
+
+winter storm
+
+[800 | 1484.98] loss=1.68 avg=1.93
+[801 | 1486.61] loss=2.12 avg=1.93
+[802 | 1488.23] loss=1.91 avg=1.93
+[803 | 1489.85] loss=2.05 avg=1.93
+[804 | 1491.47] loss=2.16 avg=1.93
+[805 | 1493.09] loss=1.87 avg=1.93
+[806 | 1494.70] loss=2.19 avg=1.93
+[807 | 1496.32] loss=1.61 avg=1.93
+[808 | 1497.94] loss=1.89 avg=1.93
+[809 | 1499.55] loss=2.60 avg=1.94
+[810 | 1501.16] loss=1.82 avg=1.94
+[811 | 1502.77] loss=2.16 avg=1.94
+[812 | 1504.39] loss=2.14 avg=1.94
+[813 | 1506.00] loss=1.92 avg=1.94
+[814 | 1507.62] loss=1.91 avg=1.94
+[815 | 1509.24] loss=1.87 avg=1.94
+[816 | 1510.86] loss=2.02 avg=1.94
+[817 | 1512.47] loss=2.03 avg=1.94
+[818 | 1514.09] loss=1.83 avg=1.94
+[819 | 1515.70] loss=2.07 avg=1.94
+[820 | 1517.32] loss=1.65 avg=1.94
+[821 | 1518.94] loss=1.80 avg=1.94
+[822 | 1520.55] loss=2.08 avg=1.94
+[823 | 1522.17] loss=1.78 avg=1.94
+[824 | 1523.79] loss=2.10 avg=1.94
+[825 | 1525.40] loss=1.96 avg=1.94
+[826 | 1527.02] loss=2.30 avg=1.94
+[827 | 1528.64] loss=2.02 avg=1.94
+[828 | 1530.26] loss=2.04 avg=1.94
+[829 | 1531.88] loss=1.92 avg=1.94
+[830 | 1533.50] loss=1.75 avg=1.94
+[831 | 1535.12] loss=1.63 avg=1.94
+[832 | 1536.75] loss=2.00 avg=1.94
+[833 | 1538.37] loss=1.76 avg=1.94
+[834 | 1539.99] loss=1.83 avg=1.94
+[835 | 1541.61] loss=1.74 avg=1.93
+[836 | 1543.23] loss=1.70 avg=1.93
+[837 | 1544.86] loss=2.17 avg=1.93
+[838 | 1546.48] loss=2.07 avg=1.94
+[839 | 1548.11] loss=2.05 avg=1.94
+[840 | 1549.74] loss=1.76 avg=1.93
+[841 | 1551.36] loss=1.87 avg=1.93
+[842 | 1552.99] loss=1.80 avg=1.93
+[843 | 1554.61] loss=1.77 avg=1.93
+[844 | 1556.23] loss=1.82 avg=1.93
+[845 | 1557.86] loss=1.84 avg=1.93
+[846 | 1559.48] loss=1.84 avg=1.93
+[847 | 1561.11] loss=1.89 avg=1.93
+[848 | 1562.74] loss=2.15 avg=1.93
+[849 | 1564.37] loss=2.26 avg=1.93
+[850 | 1566.00] loss=1.86 avg=1.93
+[851 | 1567.63] loss=1.72 avg=1.93
+[852 | 1569.26] loss=1.73 avg=1.93
+[853 | 1570.90] loss=2.27 avg=1.93
+[854 | 1572.52] loss=2.15 avg=1.93
+[855 | 1574.16] loss=2.06 avg=1.94
+[856 | 1575.79] loss=1.97 avg=1.94
+[857 | 1577.42] loss=1.59 avg=1.93
+[858 | 1579.05] loss=2.01 avg=1.93
+[859 | 1580.69] loss=1.92 avg=1.93
+[860 | 1582.32] loss=1.65 avg=1.93
+[861 | 1583.95] loss=1.86 avg=1.93
+[862 | 1585.58] loss=1.97 avg=1.93
+[863 | 1587.21] loss=1.73 avg=1.93
+[864 | 1588.84] loss=1.80 avg=1.93
+[865 | 1590.47] loss=1.59 avg=1.92
+[866 | 1592.10] loss=2.06 avg=1.92
+[867 | 1593.72] loss=1.92 avg=1.92
+[868 | 1595.35] loss=1.94 avg=1.92
+[869 | 1596.98] loss=1.76 avg=1.92
+[870 | 1598.61] loss=1.75 avg=1.92
+[871 | 1600.24] loss=1.88 avg=1.92
+[872 | 1601.87] loss=2.08 avg=1.92
+[873 | 1603.50] loss=1.95 avg=1.92
+[874 | 1605.12] loss=1.73 avg=1.92
+[875 | 1606.75] loss=1.97 avg=1.92
+[876 | 1608.37] loss=1.84 avg=1.92
+[877 | 1610.00] loss=1.78 avg=1.92
+[878 | 1611.62] loss=1.41 avg=1.91
+[879 | 1613.24] loss=2.68 avg=1.92
+[880 | 1614.87] loss=1.91 avg=1.92
+[881 | 1616.49] loss=2.04 avg=1.92
+[882 | 1618.12] loss=2.12 avg=1.92
+[883 | 1619.74] loss=1.65 avg=1.92
+[884 | 1621.37] loss=2.27 avg=1.93
+[885 | 1622.99] loss=2.12 avg=1.93
+[886 | 1624.62] loss=1.96 avg=1.93
+[887 | 1626.25] loss=1.83 avg=1.93
+[888 | 1627.88] loss=2.04 avg=1.93
+[889 | 1629.49] loss=1.69 avg=1.93
+[890 | 1631.12] loss=1.90 avg=1.92
+[891 | 1632.74] loss=2.53 avg=1.93
+[892 | 1634.37] loss=1.79 avg=1.93
+[893 | 1636.00] loss=2.13 avg=1.93
+[894 | 1637.62] loss=1.61 avg=1.93
+[895 | 1639.24] loss=2.01 avg=1.93
+[896 | 1640.86] loss=2.19 avg=1.93
+[897 | 1642.49] loss=2.14 avg=1.93
+[898 | 1644.11] loss=1.83 avg=1.93
+[899 | 1645.74] loss=1.88 avg=1.93
+Generating samples...
+======== SAMPLE 1 ========
+
+
+the moon shining in
+her hair
+<|endoftext|>
+
+my first kiss
+a blue bird sings
+from a car window
+<|endoftext|>
+
+gibbous moon
+a flock of sandpiper
+pokes its beak
+<|endoftext|>
+
+winter clouds . . .
+a cuckoo
+louder than usual
+<|endoftext|>
+
+first snow
+a butterfly on the curb
+sounds like a jet
+<|endoftext|>
+
+shifting sands
+and the clink of a fork
+my brother gives me
+<|endoftext|>
+
+deep winter
+my daughter asks me
+if I've seen the moon
+<|endoftext|>
+
+moonrise
+the only voice I don?t ignore
+is my own
+<|endoftext|>
+
+crisp morning air
+the wind blows another shell
+onto the beach
+<|endoftext|>
+
+cold rain
+a fish
+at my mercy
+<|endoftext|>
+
+autumn chill -
+the last drop of orange
+smells salty
+<|endoftext|>
+
+autumn chill-
+my neighbour watches her cat
+at dusk
+<|endoftext|>
+
+autumn chill
+scent of orange
+breathes into the room
+<|endoftext|>
+
+autumn chill
+i wait for the end
+of the summer
+<|endoftext|>
+
+autumn chill<|endoftext|>In a time when millions of immigrants arrive in one way or another—on foot, on bicycle, in the back of a bus—fewer women in senior management
+
+The weather outside is cool. The silence of the cicada. There is no rain.
+
+The window behind her
+blues.
+
+I am not the same person.
+
+(Aida: ????)
+
+
+We speak of this.
+the sun moon. It is bright, warm,
+dawn, dusk.
+
+distant church bells.
+
+<|endoftext|>
+
+the rain
+in my eyes
+it is cloudy day.
+<|endoftext|>
+
+february
+an old man walks alone
+to the church
+<|endoftext|>
+
+this morning's news
+the sky is blue
+and this is not autumn
+<|endoftext|>
+
+the rain
+i have fallen
+into autumn
+<|endoftext|>
+
+old city
+the cat has changed
+a little.
+<|endoftext|>
+
+in the twilight . . .
+dense forest.
+<|endoftext|>
+
+morning light, 
+
+
+on the dog's face, but no eyes.
+<|endoftext|>
+
+autumn haze
+her garden hose
+in two hoses.
+<|endoftext|>
+
+autumn breeze
+our hands in the snow machine
+ice cream machine
+<|endoftext|>
+
+first love
+on the wind in the pines
+our faces touch
+<|endoftext|>
+
+summer sun
+a tree's shadow
+between us
+<|endoftext|>
+
+warm summer night
+the weight of the evening
+on my daughter's face
+<|endoftext|>
+
+early morning light
+a woman's face
+studded with grass
+<|endoftext|>
+
+the morning sun
+on the flower-bed.
+i am afraid of heights
+<|endoftext|>
+
+distant train whistle
+cicadas
+on the train
+<|endoftext|>
+
+evening
+no rain, no snow
+but her garden hose
+<|endoftext|>
+
+a full moon rising
+the red sun
+between the hills
+<|endoftext|>
+
+summer snowglobe
+a couple holding each
+their arms beyond reach
+<|endoftext|>
+
+a full moon rising
+the smell of rain
+between the hills
+<|endoftext|>
+
+dawn in the rain forest
+her daughter's shadow
+on a branch.
+<|endoftext|>
+
+in the rain forest
+as in the home.
+<|endoftext|>
+
+summer rain
+the smell of earthy soil
+between the mountains
+<|endoftext|>
+
+cicada wings
+i do not know where
+our conversation will take us
+<|endoftext|>
+
+summer wind
+a green butterfly on my finger
+and a blue sun
+<|endoftext|>
+
+dawn
+
+[900 | 1669.39] loss=1.79 avg=1.93
+[901 | 1671.02] loss=1.72 avg=1.93
+[902 | 1672.64] loss=1.78 avg=1.93
+[903 | 1674.26] loss=1.68 avg=1.92
+[904 | 1675.87] loss=1.80 avg=1.92
+[905 | 1677.49] loss=1.73 avg=1.92
+[906 | 1679.11] loss=1.65 avg=1.92
+[907 | 1680.73] loss=1.78 avg=1.92
+[908 | 1682.34] loss=1.59 avg=1.91
+[909 | 1683.96] loss=2.08 avg=1.92
+[910 | 1685.57] loss=2.05 avg=1.92
+[911 | 1687.18] loss=1.52 avg=1.91
+[912 | 1688.80] loss=1.51 avg=1.91
+[913 | 1690.42] loss=1.76 avg=1.91
+[914 | 1692.04] loss=1.57 avg=1.90
+[915 | 1693.66] loss=1.63 avg=1.90
+[916 | 1695.27] loss=1.41 avg=1.90
+[917 | 1696.89] loss=1.76 avg=1.90
+[918 | 1698.51] loss=1.48 avg=1.89
+[919 | 1700.12] loss=2.03 avg=1.89
+[920 | 1701.74] loss=1.50 avg=1.89
+[921 | 1703.35] loss=2.02 avg=1.89
+[922 | 1704.98] loss=1.93 avg=1.89
+[923 | 1706.60] loss=2.10 avg=1.89
+[924 | 1708.22] loss=1.89 avg=1.89
+[925 | 1709.83] loss=2.03 avg=1.89
+[926 | 1711.45] loss=1.89 avg=1.89
+[927 | 1713.08] loss=2.26 avg=1.90
+[928 | 1714.69] loss=1.68 avg=1.90
+[929 | 1716.32] loss=1.61 avg=1.89
+[930 | 1717.94] loss=2.26 avg=1.90
+[931 | 1719.56] loss=1.95 avg=1.90
+[932 | 1721.18] loss=1.66 avg=1.89
+[933 | 1722.80] loss=1.69 avg=1.89
+[934 | 1724.41] loss=1.81 avg=1.89
+[935 | 1726.04] loss=2.03 avg=1.89
+[936 | 1727.66] loss=1.60 avg=1.89
+[937 | 1729.28] loss=1.50 avg=1.89
+[938 | 1730.90] loss=1.79 avg=1.88
+[939 | 1732.53] loss=1.91 avg=1.89
+[940 | 1734.15] loss=1.76 avg=1.88
+[941 | 1735.77] loss=2.10 avg=1.89
+[942 | 1737.40] loss=1.96 avg=1.89
+[943 | 1739.02] loss=2.14 avg=1.89
+[944 | 1740.64] loss=1.81 avg=1.89
+[945 | 1742.26] loss=1.79 avg=1.89
+[946 | 1743.88] loss=1.76 avg=1.89
+[947 | 1745.50] loss=2.09 avg=1.89
+[948 | 1747.13] loss=1.37 avg=1.88
+[949 | 1748.74] loss=1.74 avg=1.88
+[950 | 1750.37] loss=1.81 avg=1.88
+[951 | 1751.99] loss=1.43 avg=1.88
+[952 | 1753.61] loss=2.21 avg=1.88
+[953 | 1755.24] loss=2.62 avg=1.89
+[954 | 1756.87] loss=1.46 avg=1.88
+[955 | 1758.48] loss=1.64 avg=1.88
+[956 | 1760.11] loss=1.81 avg=1.88
+[957 | 1761.73] loss=1.29 avg=1.87
+[958 | 1763.36] loss=1.68 avg=1.87
+[959 | 1764.98] loss=1.53 avg=1.87
+[960 | 1766.61] loss=1.96 avg=1.87
+[961 | 1768.23] loss=1.72 avg=1.87
+[962 | 1769.86] loss=1.98 avg=1.87
+[963 | 1771.48] loss=1.64 avg=1.87
+[964 | 1773.10] loss=1.78 avg=1.87
+[965 | 1774.73] loss=2.19 avg=1.87
+[966 | 1776.35] loss=1.65 avg=1.87
+[967 | 1777.98] loss=1.55 avg=1.86
+[968 | 1779.61] loss=2.00 avg=1.87
+[969 | 1781.24] loss=1.68 avg=1.86
+[970 | 1782.87] loss=1.77 avg=1.86
+[971 | 1784.50] loss=1.96 avg=1.86
+[972 | 1786.12] loss=1.86 avg=1.86
+[973 | 1787.74] loss=1.97 avg=1.86
+[974 | 1789.37] loss=1.61 avg=1.86
+[975 | 1791.00] loss=1.74 avg=1.86
+[976 | 1792.62] loss=1.57 avg=1.86
+[977 | 1794.26] loss=1.80 avg=1.86
+[978 | 1795.89] loss=1.64 avg=1.85
+[979 | 1797.52] loss=1.57 avg=1.85
+[980 | 1799.15] loss=1.76 avg=1.85
+[981 | 1800.77] loss=1.58 avg=1.85
+[982 | 1802.40] loss=1.65 avg=1.85
+[983 | 1804.03] loss=1.53 avg=1.84
+[984 | 1805.66] loss=1.60 avg=1.84
+[985 | 1807.28] loss=1.85 avg=1.84
+[986 | 1808.91] loss=1.81 avg=1.84
+[987 | 1810.53] loss=2.12 avg=1.84
+[988 | 1812.16] loss=1.91 avg=1.84
+[989 | 1813.79] loss=1.84 avg=1.84
+[990 | 1815.42] loss=2.22 avg=1.85
+[991 | 1817.05] loss=2.14 avg=1.85
+[992 | 1818.68] loss=1.90 avg=1.85
+[993 | 1820.30] loss=2.07 avg=1.85
+[994 | 1821.93] loss=2.01 avg=1.85
+[995 | 1823.56] loss=1.76 avg=1.85
+[996 | 1825.18] loss=1.77 avg=1.85
+[997 | 1826.81] loss=1.74 avg=1.85
+[998 | 1828.43] loss=1.54 avg=1.85
+[999 | 1830.06] loss=1.42 avg=1.84
+Saving checkpoint/run1/model-1000
+Generating samples...
+======== SAMPLE 1 ========
+ fluorescent
+a star
+<|endoftext|>
+
+afternoon tea
+no longer a work
+day
+<|endoftext|>
+
+afternoon drizzle . . .
+I tell the man
+who didn?t believe
+<|endoftext|>
+
+first date . . .
+fooling around
+with a mirror
+<|endoftext|>
+
+new friends
+a new car
+on the beach
+<|endoftext|>
+
+filling in
+a few blanks
+the garden
+<|endoftext|>
+
+dusk
+his dark eyes
+watch me
+<|endoftext|>
+
+new door
+a breeze sets in
+the old door
+<|endoftext|>
+
+afternoon rain
+a girl with long, black hair
+knits clothes
+<|endoftext|>
+
+morning fog
+another
+wink
+<|endoftext|>
+
+cold rain
+circles
+on the bridge
+<|endoftext|>
+
+spring wind
+a blue butterfly lands
+on my sleeve
+<|endoftext|>
+
+winter sunset
+his long brown hair
+sets fire to leaves
+<|endoftext|>
+
+spring rain
+a cat licks
+the sunflower
+<|endoftext|>
+
+winter sunset
+his gray fur
+on the hedge
+<|endoftext|>
+
+distant stars
+a man turns
+a few
+<|endoftext|>
+
+snowflakes . . .
+a piper's hands
+curl around a pole
+<|endoftext|>
+
+tuggy old cat
+waiting for the sun
+to rise
+<|endoftext|>
+
+tuggy old cat
+waiting for the sun
+to rise
+<|endoftext|>
+
+winter moon
+a cat digs
+in snow
+<|endoftext|>
+
+winter rain . . .
+the cat looks more worn
+than ever
+<|endoftext|>
+
+autumn night
+a girl lights a cigarette
+on the railroad tracks
+<|endoftext|>
+
+winter rain
+a snow man lights a 
+candle
+<|endoftext|>
+
+rainy street
+dinner
+with a girl friend
+<|endoftext|>
+
+a few more leaves
+the house full
+of winter stars
+<|endoftext|>
+
+autumn sea
+the sound of a surfboard
+flashing red
+<|endoftext|>
+
+winter clouds
+she tells me more
+about herself
+<|endoftext|>
+
+dusk
+dinner at the beach
+without mirrors
+<|endoftext|>
+
+snow-caked windows
+my cat
+reading to me
+<|endoftext|>
+
+winter stars
+snow's white light
+on the pond
+<|endoftext|>
+
+waking wet
+on top of a dry rock
+another day
+<|endoftext|>
+
+deep in thought
+another star
+louder
+<|endoftext|>
+
+waking wet
+my dog's nose
+is pointing down
+<|endoftext|>
+
+a crow
+on someone's shoulder.
+i want to be there . . .
+<|endoftext|>
+
+a dead leaf
+in the wind
+first fall.
+<|endoftext|>
+
+my daughter has an idea
+for a new toy.
+winter clouds.
+<|endoftext|>
+
+a new car
+in the driveway
+a snow bank
+<|endoftext|>
+
+pink moon . . .
+the snowman
+has teeth
+<|endoftext|>
+
+winter sky
+a rainbow
+coming down
+<|endoftext|>
+
+muggy morning
+a dog barkes
+under his breath
+<|endoftext|>
+
+afternoon sun
+a cat climbs
+a building
+<|endoftext|>
+
+snowy knoll
+no one has
+the heart to leave
+<|endoftext|>
+
+winter sun
+i can?t help myself
+from the garden
+<|endoftext|>
+
+a white moth
+on my windscreen
+mating season
+<|endoftext|>
+
+a bird's call
+through the stillness
+a storm begins
+<|endoftext|>
+
+somewhere
+between snowflakes
+a snow angel
+<|endoftext|>
+
+crowded bus
+she repeats
+her lesson
+<|endof
+
+[1000 | 1866.08] loss=2.20 avg=1.85
+[1001 | 1867.75] loss=1.78 avg=1.85
+[1002 | 1869.43] loss=1.62 avg=1.85
+[1003 | 1871.09] loss=1.72 avg=1.84
+[1004 | 1872.75] loss=1.34 avg=1.84
+[1005 | 1874.41] loss=1.79 avg=1.84
+[1006 | 1876.07] loss=1.62 avg=1.84
+[1007 | 1877.72] loss=1.54 avg=1.83
+[1008 | 1879.37] loss=1.74 avg=1.83
+[1009 | 1881.00] loss=2.22 avg=1.84
+[1010 | 1882.64] loss=1.55 avg=1.83
+[1011 | 1884.28] loss=2.26 avg=1.84
+[1012 | 1885.91] loss=1.35 avg=1.83
+[1013 | 1887.54] loss=1.52 avg=1.83
+[1014 | 1889.17] loss=1.60 avg=1.83
+[1015 | 1890.80] loss=1.78 avg=1.83
+[1016 | 1892.43] loss=2.12 avg=1.83
+[1017 | 1894.05] loss=1.88 avg=1.83
+[1018 | 1895.67] loss=1.98 avg=1.83
+[1019 | 1897.29] loss=2.05 avg=1.83
+[1020 | 1898.91] loss=1.62 avg=1.83
+[1021 | 1900.53] loss=1.77 avg=1.83
+[1022 | 1902.15] loss=2.28 avg=1.84
+[1023 | 1903.77] loss=1.56 avg=1.83
+[1024 | 1905.38] loss=1.55 avg=1.83
+[1025 | 1906.99] loss=1.75 avg=1.83
+[1026 | 1908.60] loss=2.09 avg=1.83
+[1027 | 1910.22] loss=1.74 avg=1.83
+[1028 | 1911.83] loss=1.71 avg=1.83
+[1029 | 1913.43] loss=1.52 avg=1.83
+[1030 | 1915.05] loss=2.16 avg=1.83
+[1031 | 1916.66] loss=1.93 avg=1.83
+[1032 | 1918.27] loss=1.64 avg=1.83
+[1033 | 1919.89] loss=2.03 avg=1.83
+[1034 | 1921.50] loss=1.99 avg=1.83
+[1035 | 1923.11] loss=2.08 avg=1.83
+[1036 | 1924.72] loss=1.73 avg=1.83
+[1037 | 1926.34] loss=1.43 avg=1.83
+[1038 | 1927.95] loss=1.73 avg=1.83
+[1039 | 1929.56] loss=1.58 avg=1.83
+[1040 | 1931.18] loss=2.44 avg=1.83
+[1041 | 1932.80] loss=1.51 avg=1.83
+[1042 | 1934.42] loss=2.00 avg=1.83
+[1043 | 1936.04] loss=1.84 avg=1.83
+[1044 | 1937.66] loss=2.04 avg=1.83
+[1045 | 1939.29] loss=1.96 avg=1.83
+[1046 | 1940.91] loss=1.75 avg=1.83
+[1047 | 1942.53] loss=1.51 avg=1.83
+[1048 | 1944.16] loss=1.84 avg=1.83
+[1049 | 1945.78] loss=1.70 avg=1.83
+[1050 | 1947.41] loss=2.19 avg=1.83
+[1051 | 1949.04] loss=1.61 avg=1.83
+[1052 | 1950.66] loss=1.52 avg=1.83
+[1053 | 1952.28] loss=1.80 avg=1.83
+[1054 | 1953.91] loss=1.52 avg=1.82
+[1055 | 1955.54] loss=1.66 avg=1.82
+[1056 | 1957.17] loss=2.17 avg=1.83
+[1057 | 1958.80] loss=1.60 avg=1.82
+[1058 | 1960.43] loss=1.89 avg=1.82
+[1059 | 1962.06] loss=2.18 avg=1.83
+[1060 | 1963.70] loss=1.77 avg=1.83
+[1061 | 1965.34] loss=2.00 avg=1.83
+[1062 | 1966.96] loss=1.78 avg=1.83
+[1063 | 1968.59] loss=1.81 avg=1.83
+[1064 | 1970.22] loss=1.58 avg=1.83
+[1065 | 1971.85] loss=1.82 avg=1.83
+[1066 | 1973.48] loss=1.68 avg=1.82
+[1067 | 1975.12] loss=1.74 avg=1.82
+[1068 | 1976.74] loss=1.62 avg=1.82
+[1069 | 1978.37] loss=1.53 avg=1.82
+[1070 | 1980.00] loss=1.57 avg=1.82
+[1071 | 1981.63] loss=1.89 avg=1.82
+[1072 | 1983.25] loss=1.71 avg=1.82
+[1073 | 1984.87] loss=1.38 avg=1.81
+[1074 | 1986.50] loss=1.45 avg=1.81
+[1075 | 1988.13] loss=1.84 avg=1.81
+[1076 | 1989.76] loss=2.03 avg=1.81
+[1077 | 1991.38] loss=1.72 avg=1.81
+[1078 | 1993.01] loss=1.84 avg=1.81
+[1079 | 1994.63] loss=1.87 avg=1.81
+[1080 | 1996.25] loss=1.67 avg=1.81
+[1081 | 1997.88] loss=1.92 avg=1.81
+[1082 | 1999.51] loss=2.06 avg=1.81
+[1083 | 2001.14] loss=1.94 avg=1.81
+[1084 | 2002.76] loss=1.58 avg=1.81
+[1085 | 2004.39] loss=2.17 avg=1.82
+[1086 | 2006.01] loss=1.87 avg=1.82
+[1087 | 2007.64] loss=1.59 avg=1.81
+[1088 | 2009.26] loss=1.81 avg=1.81
+[1089 | 2010.89] loss=1.80 avg=1.81
+[1090 | 2012.51] loss=1.48 avg=1.81
+[1091 | 2014.13] loss=1.37 avg=1.81
+[1092 | 2015.76] loss=1.71 avg=1.80
+[1093 | 2017.39] loss=1.74 avg=1.80
+[1094 | 2019.01] loss=1.21 avg=1.80
+[1095 | 2020.64] loss=1.75 avg=1.80
+[1096 | 2022.27] loss=2.17 avg=1.80
+[1097 | 2023.89] loss=1.98 avg=1.80
+[1098 | 2025.51] loss=1.99 avg=1.81
+[1099 | 2027.14] loss=2.18 avg=1.81
+Generating samples...
+======== SAMPLE 1 ========
+>
+
+daffodil
+i notice
+the dog who didn't
+touch the cat
+<|endoftext|>
+
+lilacs with a little frost
+the carpenter
+makes me laugh
+<|endoftext|>
+
+rain on the lake?
+the old man repeats
+the same old joke
+<|endoftext|>
+
+dawn...
+the sun on her shoulder
+is the only thing
+<|endoftext|>
+
+crickets
+the first bird song
+i hear
+<|endoftext|>
+
+mid-day...
+the sun above the clouds
+and i
+<|endoftext|>
+
+morning sun...
+the water
+too hot for my shade
+<|endoftext|>
+
+morning rush?
+the dog sniffs
+my purse
+<|endoftext|>
+
+evening sun?
+my neighbor's cat watches
+my daughter's swimming
+<|endoftext|>
+
+pink morning glories
+i wonder where
+all the bluebells have gone?
+<|endoftext|>
+
+late summer
+the way she twirls
+a pink ball
+<|endoftext|>
+
+summer solstice
+the silence
+of a tree
+<|endoftext|>
+
+spring morning
+an acorn
+is missing
+<|endoftext|>
+
+foggy day
+snowflakes dot the street
+where the circus used to end
+<|endoftext|>
+
+a little star?
+on another planet
+the world of dreams
+<|endoftext|>
+
+summer rain...
+some old friends
+come out of retirement
+<|endoftext|>
+
+first warm evening?
+the old woman's dog barks
+at two boys
+<|endoftext|>
+
+winter solstice
+the smell
+of dry leaves
+<|endoftext|>
+
+new year's eve
+my husband shows me
+the first box of matches
+<|endoftext|>
+
+first snow
+i wonder where
+that snow belongs
+<|endoftext|>
+
+spring rain
+our kitchen is so large
+for Christmas
+<|endoftext|>
+
+winter night?
+a fly arrives
+on the mantel
+<|endoftext|>
+
+foggy morning
+the smell
+of a white pine stump
+<|endoftext|>
+
+winter solstice
+a dog barks
+at two children
+<|endoftext|>
+
+a long driveway
+i walk alone
+the morning's first snow
+<|endoftext|>
+
+first snow
+my stepchild and i
+go through the motions
+<|endoftext|>
+
+summer solstice
+she says she hates me
+more now
+<|endoftext|>
+
+winter mist
+the silence
+of a river
+<|endoftext|>
+
+snow cover
+a boy catches the drift
+of the river's sound
+<|endoftext|>
+
+winter solstice
+the smell of onions
+on his shoes
+<|endoftext|>
+
+winter sunrise
+the old couple eat cake
+together
+<|endoftext|>
+
+winter solstice
+i think of
+our last day on this island
+<|endoftext|>
+
+winter solstice
+she tells me
+i should be doing something else
+<|endoftext|>
+
+a glimpse of spring
+the way she carries
+the baby
+<|endoftext|>
+
+moonlight
+on my hair
+after its fade
+<|endoftext|>
+
+
+summer solstice
+the heat
+from the icicle
+<|endoftext|>
+
+a small white flower
+before sunset
+father-in-law
+<|endoftext|>
+
+moonrise 
+the sound of a canoe
+turning east-west
+<|endoftext|>
+
+winter thunderstorm --
+my dog shakes
+my hand
+<|endoftext|>
+
+tulip bulbs
+in the snow
+a white deer
+<|endoftext|>
+
+dawn . . .
+i turn the radio down
+to low volume
+<|endoftext|>
+
+spring wind
+the cat's leash
+dangles
+<|endoftext|>
+
+winter rain . . .
+she asks:
+"whose room?"
+<|endoftext|>
+
+spring morning
+the smell of hay
+through the old door
+<|endoftext|>
+
+spring wind
+an old soldier
+looks over his shoulder
+
+
+[1100 | 2050.79] loss=1.63 avg=1.81
+[1101 | 2052.41] loss=1.83 avg=1.81
+[1102 | 2054.04] loss=1.56 avg=1.80
+[1103 | 2055.66] loss=2.03 avg=1.81
+[1104 | 2057.28] loss=1.88 avg=1.81
+[1105 | 2058.91] loss=1.72 avg=1.81
+[1106 | 2060.53] loss=1.82 avg=1.81
+[1107 | 2062.15] loss=1.76 avg=1.81
+[1108 | 2063.77] loss=1.37 avg=1.80
+[1109 | 2065.39] loss=1.52 avg=1.80
+[1110 | 2067.01] loss=1.81 avg=1.80
+[1111 | 2068.64] loss=1.60 avg=1.80
+[1112 | 2070.26] loss=1.78 avg=1.80
+[1113 | 2071.87] loss=2.07 avg=1.80
+[1114 | 2073.49] loss=1.69 avg=1.80
+[1115 | 2075.12] loss=1.59 avg=1.80
+[1116 | 2076.74] loss=1.90 avg=1.80
+[1117 | 2078.35] loss=1.74 avg=1.80
+[1118 | 2079.98] loss=1.81 avg=1.80
+[1119 | 2081.59] loss=1.84 avg=1.80
+[1120 | 2083.22] loss=1.72 avg=1.80
+[1121 | 2084.84] loss=1.74 avg=1.80
+[1122 | 2086.47] loss=1.74 avg=1.80
+[1123 | 2088.09] loss=2.22 avg=1.80
+[1124 | 2089.71] loss=1.85 avg=1.80
+[1125 | 2091.33] loss=1.81 avg=1.80
+[1126 | 2092.95] loss=1.80 avg=1.80
+[1127 | 2094.57] loss=1.37 avg=1.80
+[1128 | 2096.19] loss=1.90 avg=1.80
+[1129 | 2097.81] loss=1.53 avg=1.80
+[1130 | 2099.42] loss=1.71 avg=1.79
+[1131 | 2101.04] loss=1.63 avg=1.79
+[1132 | 2102.66] loss=1.68 avg=1.79
+[1133 | 2104.28] loss=1.99 avg=1.79
+[1134 | 2105.90] loss=2.02 avg=1.80
+[1135 | 2107.52] loss=1.87 avg=1.80
+[1136 | 2109.14] loss=1.93 avg=1.80
+[1137 | 2110.76] loss=1.67 avg=1.80
+[1138 | 2112.38] loss=2.08 avg=1.80
+[1139 | 2114.00] loss=1.43 avg=1.80
+[1140 | 2115.62] loss=1.49 avg=1.79
+[1141 | 2117.24] loss=1.53 avg=1.79
+[1142 | 2118.86] loss=1.83 avg=1.79
+[1143 | 2120.48] loss=1.83 avg=1.79
+[1144 | 2122.10] loss=1.45 avg=1.79
+[1145 | 2123.72] loss=1.20 avg=1.78
+[1146 | 2125.34] loss=1.47 avg=1.78
+[1147 | 2126.96] loss=1.55 avg=1.78
+[1148 | 2128.58] loss=2.16 avg=1.78
+[1149 | 2130.20] loss=1.51 avg=1.78
+[1150 | 2131.82] loss=1.25 avg=1.77
+[1151 | 2133.44] loss=2.00 avg=1.77
+[1152 | 2135.06] loss=1.52 avg=1.77
+[1153 | 2136.67] loss=1.68 avg=1.77
+[1154 | 2138.30] loss=1.94 avg=1.77
+[1155 | 2139.92] loss=1.74 avg=1.77
+[1156 | 2141.54] loss=2.05 avg=1.77
+[1157 | 2143.16] loss=1.82 avg=1.78
+[1158 | 2144.78] loss=1.38 avg=1.77
+[1159 | 2146.40] loss=1.49 avg=1.77
+[1160 | 2148.02] loss=1.40 avg=1.76
+[1161 | 2149.63] loss=1.53 avg=1.76
+[1162 | 2151.25] loss=2.22 avg=1.77
+[1163 | 2152.87] loss=1.73 avg=1.77
+[1164 | 2154.49] loss=1.62 avg=1.77
+[1165 | 2156.11] loss=1.59 avg=1.76
+[1166 | 2157.73] loss=1.45 avg=1.76
+[1167 | 2159.35] loss=1.79 avg=1.76
+[1168 | 2160.97] loss=1.74 avg=1.76
+[1169 | 2162.59] loss=1.75 avg=1.76
+[1170 | 2164.21] loss=1.84 avg=1.76
+[1171 | 2165.83] loss=1.72 avg=1.76
+[1172 | 2167.45] loss=1.79 avg=1.76
+[1173 | 2169.08] loss=1.60 avg=1.76
+[1174 | 2170.69] loss=1.92 avg=1.76
+[1175 | 2172.32] loss=1.99 avg=1.76
+[1176 | 2173.93] loss=1.81 avg=1.76
+[1177 | 2175.55] loss=1.99 avg=1.77
+[1178 | 2177.17] loss=1.61 avg=1.76
+[1179 | 2178.79] loss=1.86 avg=1.77
+[1180 | 2180.41] loss=1.68 avg=1.76
+[1181 | 2182.03] loss=2.01 avg=1.77
+[1182 | 2183.66] loss=1.79 avg=1.77
+[1183 | 2185.28] loss=1.35 avg=1.76
+[1184 | 2186.90] loss=1.60 avg=1.76
+[1185 | 2188.52] loss=1.59 avg=1.76
+[1186 | 2190.14] loss=1.99 avg=1.76
+[1187 | 2191.76] loss=1.75 avg=1.76
+[1188 | 2193.39] loss=2.32 avg=1.77
+[1189 | 2195.01] loss=1.77 avg=1.77
+[1190 | 2196.63] loss=2.27 avg=1.77
+[1191 | 2198.25] loss=1.70 avg=1.77
+[1192 | 2199.87] loss=1.96 avg=1.77
+[1193 | 2201.50] loss=1.73 avg=1.77
+[1194 | 2203.12] loss=1.86 avg=1.77
+[1195 | 2204.74] loss=1.68 avg=1.77
+[1196 | 2206.36] loss=1.68 avg=1.77
+[1197 | 2207.98] loss=1.82 avg=1.77
+[1198 | 2209.61] loss=2.17 avg=1.78
+[1199 | 2211.24] loss=2.01 avg=1.78
+Generating samples...
+======== SAMPLE 1 ========
+oftext|>
+
+snowfall -
+the sound of a dog's
+wagging tail
+<|endoftext|>
+
+spring night -
+the sound of a snowman's
+ice-cream tongue
+<|endoftext|>
+
+a dead mouse
+in my notebook-
+how to start
+<|endoftext|>
+
+sandy beach-
+the sand
+a bit too coarse
+<|endoftext|>
+
+the heat of tomorrow -
+how the sky will blue
+in the evening sky
+<|endoftext|>
+
+cold spring rain -
+the long way
+to work
+<|endoftext|>
+
+old pine path-
+one small dark stone
+left unbroken
+<|endoftext|>
+
+tangled roots -
+two men climb a tree
+to get to the truth
+<|endoftext|>
+
+winter twilight -
+the smell of an old friend
+on my tongue
+<|endoftext|>
+
+mushrooms -
+the light from the road
+an hour later
+<|endoftext|>
+
+new year's eve -
+a woman in a pink hat
+giggles
+<|endoftext|>
+
+moths -
+snow melting
+under the eaves
+<|endoftext|>
+
+the dog's tail -
+that was the smell
+of winter
+<|endoftext|>
+
+snowed in -
+a black cat
+cries out
+<|endoftext|>
+
+pumpkin lights
+i turn the heater
+evening sleet
+<|endoftext|>
+
+snowed in
+light from the fireworks
+is everywhere
+<|endoftext|>
+
+winter beach
+the warmth
+of the firewood
+<|endoftext|>
+
+snow moon
+a wind blowing in
+from somewhere else
+<|endoftext|>
+
+first winter rain
+the new dog treats me well
+a few weeks
+<|endoftext|>
+
+the smell of the old home
+new dog food
+in the dishwasher
+<|endoftext|>
+
+first snowfall
+i take the dog
+out for a drink
+<|endoftext|>
+
+first light
+the blue needle on the
+phosphor stains
+<|endoftext|>
+
+my daughter turns three
+i tell the world
+the moon is green
+<|endoftext|>
+
+the first of many
+the snowman
+takes it flat
+<|endoftext|>
+
+mixed rain
+a man with a white cane
+at the traffic light
+<|endoftext|>
+
+sunshine on the windows
+a stray dog
+chases the birdwatchers
+<|endoftext|>
+
+last of the snow
+a white spider moves
+the candle flame
+<|endoftext|>
+
+the redness
+of old tears
+the blackness of night
+<|endoftext|>
+
+winter sunrise
+trees with shadow
+go up in smoke
+<|endoftext|>
+
+winter rain
+the smell of pine cones
+along the road
+<|endoftext|>
+
+winter's end-
+the wind
+is too strong
+<|endoftext|>
+
+march dusk
+a stray dog
+calls to home
+<|endoftext|>
+
+gathering light -
+her new tattoo
+the owl
+<|endoftext|>
+
+first love -
+my dream comes true
+sunny moon on the bay
+<|endoftext|>
+
+snowed in -
+the white rose
+wobbles a little
+<|endoftext|>
+
+the smell
+of new bread. . .
+morning tea
+<|endoftext|>
+
+cold evening
+diving into
+a thick ale
+<|endoftext|>
+
+morning rain
+the blue balloons drift higher
+and higher
+<|endoftext|>
+
+winter sky -
+pale circles of jellyfish
+stopped by the tide
+<|endoftext|>
+
+waking from a dream -
+a white dove
+taps my shoulder
+<|endoftext|>
+
+windless day
+a white feather floating
+in space
+<|endoftext|>
+
+winter sunset -
+the same bird.
+same song
+<|endoftext|>
+
+february afternoon -
+a fly buzzing
+in my ear
+<|endoftext|>
+
+march clouds -
+the same fly
+on the other end
+<|endoftext|>
+
+
+[1200 | 2234.92] loss=2.12 avg=1.78
+[1201 | 2236.53] loss=1.55 avg=1.78
+[1202 | 2238.15] loss=1.97 avg=1.78
+[1203 | 2239.77] loss=1.89 avg=1.78
+[1204 | 2241.39] loss=1.56 avg=1.78
+[1205 | 2243.01] loss=2.19 avg=1.78
+[1206 | 2244.63] loss=1.92 avg=1.79
+[1207 | 2246.24] loss=1.62 avg=1.78
+[1208 | 2247.86] loss=1.87 avg=1.79
+[1209 | 2249.48] loss=2.14 avg=1.79
+[1210 | 2251.09] loss=1.68 avg=1.79
+[1211 | 2252.70] loss=1.92 avg=1.79
+[1212 | 2254.32] loss=1.45 avg=1.79
+[1213 | 2255.94] loss=1.57 avg=1.78
+[1214 | 2257.55] loss=1.65 avg=1.78
+[1215 | 2259.17] loss=1.69 avg=1.78
+[1216 | 2260.79] loss=1.38 avg=1.78
+[1217 | 2262.41] loss=1.87 avg=1.78
+[1218 | 2264.02] loss=1.45 avg=1.77
+[1219 | 2265.64] loss=1.41 avg=1.77
+[1220 | 2267.26] loss=1.38 avg=1.77
+[1221 | 2268.88] loss=1.68 avg=1.77
+[1222 | 2270.50] loss=2.02 avg=1.77
+[1223 | 2272.11] loss=2.18 avg=1.77
+[1224 | 2273.73] loss=2.16 avg=1.78
+[1225 | 2275.34] loss=1.86 avg=1.78
+[1226 | 2276.96] loss=1.53 avg=1.78
+[1227 | 2278.58] loss=1.67 avg=1.77
+[1228 | 2280.20] loss=1.78 avg=1.77
+[1229 | 2281.81] loss=1.48 avg=1.77
+[1230 | 2283.43] loss=1.51 avg=1.77
+[1231 | 2285.05] loss=1.38 avg=1.76
+[1232 | 2286.66] loss=1.60 avg=1.76
+[1233 | 2288.29] loss=1.51 avg=1.76
+[1234 | 2289.90] loss=1.49 avg=1.76
+[1235 | 2291.52] loss=1.48 avg=1.76
+[1236 | 2293.15] loss=1.78 avg=1.76
+[1237 | 2294.77] loss=1.44 avg=1.75
+[1238 | 2296.38] loss=1.55 avg=1.75
+[1239 | 2298.00] loss=1.69 avg=1.75
+[1240 | 2299.63] loss=1.56 avg=1.75
+[1241 | 2301.25] loss=1.71 avg=1.75
+[1242 | 2302.87] loss=1.81 avg=1.75
+[1243 | 2304.49] loss=1.83 avg=1.75
+[1244 | 2306.11] loss=2.10 avg=1.75
+[1245 | 2307.74] loss=1.54 avg=1.75
+[1246 | 2309.36] loss=1.17 avg=1.74
+[1247 | 2310.98] loss=1.66 avg=1.74
+[1248 | 2312.61] loss=1.76 avg=1.74
+[1249 | 2314.23] loss=1.97 avg=1.75
+[1250 | 2315.85] loss=1.58 avg=1.74
+[1251 | 2317.48] loss=1.58 avg=1.74
+[1252 | 2319.10] loss=1.45 avg=1.74
+[1253 | 2320.72] loss=1.69 avg=1.74
+[1254 | 2322.34] loss=1.36 avg=1.74
+[1255 | 2323.97] loss=1.87 avg=1.74
+[1256 | 2325.59] loss=1.94 avg=1.74
+[1257 | 2327.21] loss=2.06 avg=1.74
+[1258 | 2328.83] loss=1.90 avg=1.74
+[1259 | 2330.45] loss=1.69 avg=1.74
+[1260 | 2332.08] loss=2.37 avg=1.75
+[1261 | 2333.70] loss=1.47 avg=1.75
+[1262 | 2335.33] loss=2.73 avg=1.76
+[1263 | 2336.95] loss=2.27 avg=1.76
+[1264 | 2338.58] loss=1.61 avg=1.76
+[1265 | 2340.20] loss=1.82 avg=1.76
+[1266 | 2341.83] loss=1.77 avg=1.76
+[1267 | 2343.45] loss=1.83 avg=1.76
+[1268 | 2345.08] loss=1.50 avg=1.76
+[1269 | 2346.70] loss=1.45 avg=1.76
+[1270 | 2348.32] loss=1.40 avg=1.75
+[1271 | 2349.94] loss=1.41 avg=1.75
+[1272 | 2351.57] loss=1.43 avg=1.75
+[1273 | 2353.19] loss=1.32 avg=1.74
+[1274 | 2354.82] loss=1.47 avg=1.74
+[1275 | 2356.45] loss=1.49 avg=1.74
+[1276 | 2358.07] loss=1.58 avg=1.73
+[1277 | 2359.70] loss=2.10 avg=1.74
+[1278 | 2361.32] loss=1.27 avg=1.73
+[1279 | 2362.95] loss=1.88 avg=1.73
+[1280 | 2364.57] loss=2.09 avg=1.74
+[1281 | 2366.19] loss=1.93 avg=1.74
+[1282 | 2367.81] loss=1.70 avg=1.74
+[1283 | 2369.44] loss=1.58 avg=1.74
+[1284 | 2371.06] loss=1.98 avg=1.74
+[1285 | 2372.69] loss=1.89 avg=1.74
+[1286 | 2374.32] loss=1.52 avg=1.74
+[1287 | 2375.94] loss=1.16 avg=1.73
+[1288 | 2377.57] loss=1.91 avg=1.74
+[1289 | 2379.19] loss=1.73 avg=1.74
+[1290 | 2380.82] loss=1.25 avg=1.73
+[1291 | 2382.44] loss=1.70 avg=1.73
+[1292 | 2384.07] loss=1.91 avg=1.73
+[1293 | 2385.69] loss=1.77 avg=1.73
+[1294 | 2387.31] loss=1.72 avg=1.73
+[1295 | 2388.95] loss=1.76 avg=1.73
+[1296 | 2390.57] loss=1.34 avg=1.73
+[1297 | 2392.20] loss=1.44 avg=1.73
+[1298 | 2393.83] loss=1.89 avg=1.73
+[1299 | 2395.46] loss=1.70 avg=1.73
+Generating samples...
+======== SAMPLE 1 ========
+ wind of a passing train.
+the moon at her sides.
+spring rain
+<|endoftext|>
+
+afternoon sun . . .
+the old man
+holding his umbrella
+<|endoftext|>
+
+turtle's back
+the wind at my back.
+new year's day
+<|endoftext|>
+
+new snow:
+the turtle waits
+for me
+<|endoftext|>
+
+first spring day . . .
+i tell the turtle
+how much i love her
+<|endoftext|>
+
+the old barn . . .
+the turtle's back
+all the way out
+<|endoftext|>
+
+she has a smile
+on her face
+i have a heart attack
+<|endoftext|>
+
+weighing up
+an egg for her thawing
+morning light
+<|endoftext|>
+
+weeding the garden . . .
+hazy stars
+in the spring rain
+<|endoftext|>
+
+a snowflake
+dangles below
+the falling door
+<|endoftext|>
+
+a little too close
+to the wind
+winter moon
+<|endoftext|>
+
+early thaw . . .
+a drop of spring water
+on my hand
+<|endoftext|>
+
+the last of the ink
+blackens the page . . .
+snow storm
+<|endoftext|>
+
+a long silence
+and then a rustle
+of radishes . . .
+grandad's birthday
+<|endoftext|>
+
+winter dawn-
+the dog barks
+at a light
+<|endoftext|>
+
+winter morning-
+the snowman's eyes
+hover without motion
+<|endoftext|>
+
+snow clouds
+the old couple
+with the baby
+<|endoftext|>
+
+first snowfall
+the new nurse-to
+won't go out
+<|endoftext|>
+
+a new moon-
+the cat leaves
+a trail
+<|endoftext|>
+
+crescent moon
+a few dry grasshoppers
+in the sun
+<|endoftext|>
+
+winter stars . . .
+mother's voice
+sighs
+<|endoftext|>
+
+crescent moon
+a few dry grasshoppers
+in the sun
+summer heat
+<|endoftext|>
+
+heat day
+the cat stays
+outside
+<|endoftext|>
+
+windsweep
+windsweeping leaves
+through the fence
+<|endoftext|>
+
+cold wind
+the dog's fur
+under the maple
+<|endoftext|>
+
+morning chill
+a fly gets caught
+somewhere
+<|endoftext|>
+
+morning train
+a rider on the platform
+sighs
+<|endoftext|>
+
+morning heat
+frost has set in the clouds
+a little deeper
+<|endoftext|>
+
+drought's end?
+the river's silence
+lost in morning frost
+<|endoftext|>
+
+drought's end?
+the brown leaves
+still lingering
+<|endoftext|>
+
+dirt road
+through the cornfield
+the last time my sister's name
+<|endoftext|>
+
+morning sun
+a lawn gnat
+and i
+<|endoftext|>
+
+morning snow
+a white feather
+hidden by the rest
+<|endoftext|>
+
+morning sun
+windrows of straw
+through the balsam fir
+<|endoftext|>
+
+morning glories
+swimming and singing through
+a rippled cloud
+<|endoftext|>
+
+banging on the door
+my child cries again
+morning glories
+<|endoftext|>
+
+morning sun
+the new nurse
+stopping to cry
+<|endoftext|>
+
+morning rain
+the new nurse
+gives me a kiss
+<|endoftext|>
+
+sunlight
+a hummingbird drops
+a leaf
+<|endoftext|>
+
+a blue heron's
+flapping wings
+summer haze
+<|endoftext|>
+
+snowmelt
+the old cat
+on the toilet
+<|endoftext|>
+
+first morning
+the dog's scent
+frozen on a loon's beak
+<|endoftext|>
+
+winter clouds
+just about every sound
+has its cause
+<|endoftext|>
+
+my daughter's graduation
+pigeons flap
+from gate to gate
+<|
+
+[1300 | 2419.23] loss=1.59 avg=1.73
+[1301 | 2420.86] loss=1.69 avg=1.73
+[1302 | 2422.48] loss=1.59 avg=1.72
+[1303 | 2424.10] loss=1.14 avg=1.72
+[1304 | 2425.72] loss=1.37 avg=1.72
+[1305 | 2427.33] loss=1.34 avg=1.71
+[1306 | 2428.94] loss=1.47 avg=1.71
+[1307 | 2430.56] loss=1.83 avg=1.71
+[1308 | 2432.18] loss=2.00 avg=1.71
+[1309 | 2433.79] loss=1.90 avg=1.71
+[1310 | 2435.41] loss=1.68 avg=1.71
+[1311 | 2437.02] loss=1.43 avg=1.71
+[1312 | 2438.63] loss=1.60 avg=1.71
+[1313 | 2440.26] loss=1.76 avg=1.71
+[1314 | 2441.87] loss=1.42 avg=1.71
+[1315 | 2443.49] loss=1.76 avg=1.71
+[1316 | 2445.10] loss=1.68 avg=1.71
+[1317 | 2446.72] loss=2.13 avg=1.71
+[1318 | 2448.34] loss=1.69 avg=1.71
+[1319 | 2449.95] loss=1.78 avg=1.71
+[1320 | 2451.57] loss=1.50 avg=1.71
+[1321 | 2453.19] loss=1.71 avg=1.71
+[1322 | 2454.80] loss=1.60 avg=1.71
+[1323 | 2456.42] loss=1.45 avg=1.71
+[1324 | 2458.04] loss=1.59 avg=1.71
+[1325 | 2459.66] loss=1.31 avg=1.70
+[1326 | 2461.28] loss=2.11 avg=1.71
+[1327 | 2462.90] loss=1.47 avg=1.70
+[1328 | 2464.52] loss=1.28 avg=1.70
+[1329 | 2466.14] loss=1.15 avg=1.69
+[1330 | 2467.76] loss=1.51 avg=1.69
+[1331 | 2469.38] loss=1.65 avg=1.69
+[1332 | 2471.00] loss=1.07 avg=1.69
+[1333 | 2472.63] loss=1.52 avg=1.68
+[1334 | 2474.25] loss=1.69 avg=1.68
+[1335 | 2475.87] loss=1.63 avg=1.68
+[1336 | 2477.49] loss=2.04 avg=1.69
+[1337 | 2479.12] loss=1.50 avg=1.69
+[1338 | 2480.74] loss=1.50 avg=1.68
+[1339 | 2482.36] loss=1.65 avg=1.68
+[1340 | 2483.99] loss=2.08 avg=1.69
+[1341 | 2485.61] loss=1.55 avg=1.69
+[1342 | 2487.24] loss=2.08 avg=1.69
+[1343 | 2488.86] loss=1.80 avg=1.69
+[1344 | 2490.48] loss=1.56 avg=1.69
+[1345 | 2492.11] loss=1.46 avg=1.69
+[1346 | 2493.73] loss=1.71 avg=1.69
+[1347 | 2495.35] loss=1.55 avg=1.69
+[1348 | 2496.98] loss=1.36 avg=1.68
+[1349 | 2498.61] loss=1.66 avg=1.68
+[1350 | 2500.23] loss=1.59 avg=1.68
+[1351 | 2501.86] loss=1.86 avg=1.68
+[1352 | 2503.49] loss=2.37 avg=1.69
+[1353 | 2505.12] loss=1.43 avg=1.69
+[1354 | 2506.74] loss=1.64 avg=1.69
+[1355 | 2508.37] loss=1.80 avg=1.69
+[1356 | 2509.99] loss=1.83 avg=1.69
+[1357 | 2511.62] loss=1.32 avg=1.69
+[1358 | 2513.25] loss=1.84 avg=1.69
+[1359 | 2514.87] loss=1.54 avg=1.69
+[1360 | 2516.50] loss=2.26 avg=1.69
+[1361 | 2518.13] loss=1.89 avg=1.69
+[1362 | 2519.76] loss=2.36 avg=1.70
+[1363 | 2521.39] loss=1.50 avg=1.70
+[1364 | 2523.02] loss=1.52 avg=1.70
+[1365 | 2524.65] loss=1.85 avg=1.70
+[1366 | 2526.28] loss=1.50 avg=1.70
+[1367 | 2527.91] loss=1.43 avg=1.69
+[1368 | 2529.54] loss=1.55 avg=1.69
+[1369 | 2531.17] loss=2.31 avg=1.70
+[1370 | 2532.80] loss=1.81 avg=1.70
+[1371 | 2534.43] loss=1.56 avg=1.70
+[1372 | 2536.06] loss=1.43 avg=1.70
+[1373 | 2537.68] loss=1.30 avg=1.69
+[1374 | 2539.31] loss=1.38 avg=1.69
+[1375 | 2540.94] loss=1.30 avg=1.68
+[1376 | 2542.57] loss=1.29 avg=1.68
+[1377 | 2544.20] loss=1.37 avg=1.68
+[1378 | 2545.83] loss=2.07 avg=1.68
+[1379 | 2547.46] loss=1.64 avg=1.68
+[1380 | 2549.09] loss=1.42 avg=1.68
+[1381 | 2550.72] loss=1.64 avg=1.68
+[1382 | 2552.34] loss=1.54 avg=1.68
+[1383 | 2553.97] loss=1.79 avg=1.68
+[1384 | 2555.60] loss=1.29 avg=1.67
+[1385 | 2557.23] loss=1.78 avg=1.67
+[1386 | 2558.86] loss=1.21 avg=1.67
+[1387 | 2560.48] loss=1.45 avg=1.67
+[1388 | 2562.11] loss=1.27 avg=1.66
+[1389 | 2563.74] loss=0.95 avg=1.66
+[1390 | 2565.37] loss=1.70 avg=1.66
+[1391 | 2567.00] loss=1.31 avg=1.65
+[1392 | 2568.62] loss=1.67 avg=1.65
+[1393 | 2570.25] loss=1.30 avg=1.65
+[1394 | 2571.88] loss=1.95 avg=1.65
+[1395 | 2573.51] loss=1.61 avg=1.65
+[1396 | 2575.13] loss=1.33 avg=1.65
+[1397 | 2576.75] loss=1.10 avg=1.64
+[1398 | 2578.38] loss=1.88 avg=1.65
+[1399 | 2580.00] loss=1.49 avg=1.64
+Generating samples...
+======== SAMPLE 1 ========
+<>
+
+an empty can
+caught on fire . . .
+<|endoftext|>
+
+a snail
+on fire . . .
+snowflakes
+<|endoftext|>
+
+fog over the bay?
+the smell of it
+where the smell of
+<|endoftext|>
+
+tobacco harvest
+a long line of smokers
+in front of the
+<|endoftext|>
+
+snow on the mountains?
+the white cat
+cries out
+<|endoftext|>
+
+blue sky
+the sound of frogs
+inside the cave
+<|endoftext|>
+
+the dog
+on his lead
+the gray sun
+<|endoftext|>
+
+hazy bay?
+fog drifting in
+with a wave
+<|endoftext|>
+
+dusting the leaves
+blue sky
+in the harbor
+<|endoftext|>
+
+the moon
+still just as blue
+what's for dinner
+<|endoftext|>
+
+late autumn?
+a fisherman
+in slow motion
+<|endoftext|>
+
+morning fog
+the moon dances
+around a spinning fire
+<|endoftext|>
+
+garden trail
+crescent craters
+twinkle-topped with snow
+<|endoftext|>
+
+wildflowers
+in the path
+fade into darkness
+<|endoftext|>
+
+foggy morning
+in a flower shop
+a white butterfly
+<|endoftext|>
+
+the city lights
+and the moon
+in their petals
+<|endoftext|>
+
+summer rain?
+a kid tries on
+a new pair of shorts
+<|endoftext|>
+
+evening fog
+the dog walks
+into a dream
+<|endoftext|>
+
+a summer night
+a red bus stop
+on the island
+<|endoftext|>
+
+the beach
+just for a minute
+the stars
+<|endoftext|>
+
+late June?
+the sun-struck ripple
+of a white cactus
+<|endoftext|>
+
+summer afternoon?
+dumping rain barrels
+in the middle of the night
+<|endoftext|>
+
+sunny day
+insects clump up
+in the sunflower field
+<|endoftext|>
+
+the first night?
+his scent lingers
+in the garden
+<|endoftext|>
+
+first snow?
+the silence
+of the park
+<|endoftext|>
+
+evening shadows?
+a passing boat
+lifts a ring
+<|endoftext|>
+
+dense fog
+a child's wooden straw
+filled with earth
+<|endoftext|>
+
+on the edge
+snow still falling
+ice cream scooped
+<|endoftext|>
+
+in the middle of it all
+a black centipede
+eyes frozen
+<|endoftext|>
+
+snowflake?
+a fly
+in the snowstorm
+<|endoftext|>
+
+deep night
+a mosquito's web
+begins to appear
+<|endoftext|>
+
+in my dreams
+a child's footsteps
+slowly drag
+<|endoftext|>
+
+my dream
+of a kingfisher
+suddenly
+<|endoftext|>
+
+rain in the valley
+drum sound fades
+into the evening
+<|endoftext|>
+
+cold rain
+a moth moves slowly
+across my sleep
+<|endoftext|>
+
+the smell of smoke
+in the morning gloom
+that pine smells
+<|endoftext|>
+
+the cold night air
+all you can see
+is snow
+<|endoftext|>
+
+muggy morning?
+a fly buzzing
+in the corner of my eye
+<|endoftext|>
+
+muggy afternoon?
+a cricket's sharp calls
+from the train window
+<|endoftext|>
+
+summer rain?
+a child asks if
+pizzas are pizza
+<|endoftext|>
+
+evening shadows?
+a mosquito's web
+dangles in the night
+<|endoftext|>
+
+dusk?
+the car radio blinks
+to another station
+<|endoftext|>
+
+evening rain?
+dirt from an old fight
+filled with water
+<|endoftext|>
+
+in the path of thunder
+a small black butterfly
+lifts a paw
+<|endoftext|>
+
+eclipse?
+in
+
+[1400 | 2603.62] loss=1.33 avg=1.64
+[1401 | 2605.24] loss=1.38 avg=1.64
+[1402 | 2606.86] loss=1.77 avg=1.64
+[1403 | 2608.47] loss=1.53 avg=1.64
+[1404 | 2610.09] loss=1.37 avg=1.64
+[1405 | 2611.70] loss=1.37 avg=1.63
+[1406 | 2613.31] loss=1.62 avg=1.63
+[1407 | 2614.93] loss=1.90 avg=1.64
+[1408 | 2616.54] loss=1.80 avg=1.64
+[1409 | 2618.16] loss=1.73 avg=1.64
+[1410 | 2619.76] loss=1.56 avg=1.64
+[1411 | 2621.37] loss=1.99 avg=1.64
+[1412 | 2622.98] loss=2.45 avg=1.65
+[1413 | 2624.59] loss=1.61 avg=1.65
+[1414 | 2626.21] loss=1.19 avg=1.64
+[1415 | 2627.82] loss=2.04 avg=1.65
+[1416 | 2629.44] loss=1.62 avg=1.65
+[1417 | 2631.06] loss=1.47 avg=1.65
+[1418 | 2632.67] loss=1.99 avg=1.65
+[1419 | 2634.29] loss=1.53 avg=1.65
+[1420 | 2635.91] loss=1.72 avg=1.65
+[1421 | 2637.53] loss=1.38 avg=1.65
+[1422 | 2639.15] loss=1.07 avg=1.64
+[1423 | 2640.78] loss=1.46 avg=1.64
+[1424 | 2642.40] loss=1.39 avg=1.64
+[1425 | 2644.02] loss=1.50 avg=1.64
+[1426 | 2645.64] loss=1.50 avg=1.63
+[1427 | 2647.27] loss=1.89 avg=1.64
+[1428 | 2648.90] loss=1.26 avg=1.63
+[1429 | 2650.53] loss=1.61 avg=1.63
+[1430 | 2652.16] loss=1.79 avg=1.63
+[1431 | 2653.78] loss=1.74 avg=1.64
+[1432 | 2655.41] loss=1.19 avg=1.63
+[1433 | 2657.04] loss=1.51 avg=1.63
+[1434 | 2658.67] loss=1.30 avg=1.63
+[1435 | 2660.31] loss=1.27 avg=1.62
+[1436 | 2661.93] loss=1.81 avg=1.62
+[1437 | 2663.56] loss=1.86 avg=1.63
+[1438 | 2665.19] loss=2.45 avg=1.64
+[1439 | 2666.81] loss=1.29 avg=1.63
+[1440 | 2668.45] loss=1.86 avg=1.63
+[1441 | 2670.07] loss=1.83 avg=1.64
+[1442 | 2671.70] loss=1.59 avg=1.64
+[1443 | 2673.33] loss=1.35 avg=1.63
+[1444 | 2674.95] loss=1.37 avg=1.63
+[1445 | 2676.58] loss=1.66 avg=1.63
+[1446 | 2678.20] loss=1.07 avg=1.62
+[1447 | 2679.83] loss=1.77 avg=1.63
+[1448 | 2681.46] loss=1.48 avg=1.62
+[1449 | 2683.09] loss=1.36 avg=1.62
+[1450 | 2684.71] loss=1.58 avg=1.62
+[1451 | 2686.33] loss=2.08 avg=1.63
+[1452 | 2687.96] loss=1.79 avg=1.63
+[1453 | 2689.58] loss=1.68 avg=1.63
+[1454 | 2691.21] loss=2.24 avg=1.63
+[1455 | 2692.83] loss=1.90 avg=1.64
+[1456 | 2694.45] loss=1.96 avg=1.64
+[1457 | 2696.07] loss=1.75 avg=1.64
+[1458 | 2697.69] loss=1.46 avg=1.64
+[1459 | 2699.31] loss=1.76 avg=1.64
+[1460 | 2700.94] loss=2.31 avg=1.65
+[1461 | 2702.56] loss=1.51 avg=1.65
+[1462 | 2704.18] loss=1.47 avg=1.64
+[1463 | 2705.80] loss=1.47 avg=1.64
+[1464 | 2707.42] loss=1.22 avg=1.64
+[1465 | 2709.05] loss=1.40 avg=1.64
+[1466 | 2710.66] loss=1.62 avg=1.64
+[1467 | 2712.29] loss=1.36 avg=1.63
+[1468 | 2713.91] loss=1.68 avg=1.63
+[1469 | 2715.53] loss=1.67 avg=1.63
+[1470 | 2717.15] loss=1.60 avg=1.63
+[1471 | 2718.77] loss=1.44 avg=1.63
+[1472 | 2720.39] loss=1.58 avg=1.63
+[1473 | 2722.01] loss=2.29 avg=1.64
+[1474 | 2723.63] loss=1.37 avg=1.64
+[1475 | 2725.26] loss=1.46 avg=1.63
+[1476 | 2726.87] loss=1.76 avg=1.63
+[1477 | 2728.50] loss=1.17 avg=1.63
+[1478 | 2730.12] loss=1.22 avg=1.63
+[1479 | 2731.75] loss=1.62 avg=1.63
+[1480 | 2733.37] loss=1.60 avg=1.63
+[1481 | 2734.99] loss=1.68 avg=1.63
+[1482 | 2736.61] loss=1.40 avg=1.62
+[1483 | 2738.22] loss=1.29 avg=1.62
+[1484 | 2739.84] loss=1.65 avg=1.62
+[1485 | 2741.47] loss=1.83 avg=1.62
+[1486 | 2743.09] loss=1.50 avg=1.62
+[1487 | 2744.71] loss=1.68 avg=1.62
+[1488 | 2746.33] loss=1.54 avg=1.62
+[1489 | 2747.95] loss=1.70 avg=1.62
+[1490 | 2749.57] loss=1.15 avg=1.62
+[1491 | 2751.19] loss=1.56 avg=1.62
+[1492 | 2752.81] loss=1.55 avg=1.62
+[1493 | 2754.42] loss=1.38 avg=1.61
+[1494 | 2756.05] loss=1.23 avg=1.61
+[1495 | 2757.66] loss=1.35 avg=1.61
+[1496 | 2759.28] loss=1.39 avg=1.61
+[1497 | 2760.89] loss=1.64 avg=1.61
+[1498 | 2762.51] loss=1.57 avg=1.61
+[1499 | 2764.13] loss=1.25 avg=1.60
+Generating samples...
+======== SAMPLE 1 ========
+|end of text
+
+an earthenware pond
+tries to express
+my feelings
+<|end of text|>
+
+wobbly hands?
+a small red dog
+pursues a ball
+<|end of text|>
+
+on the train
+?even the youngest raven?
+gathers the evening rain
+<|end of text|>
+
+first light -
+a sparrow's beak
+cleaning the window
+<|end of text|>
+
+raindrops touching
+my cheek, and my hand,
+?even now my breath
+<|end of text|>
+
+summer sun?
+a white leaf lands
+on my face
+<|end of text|>
+
+a new year's day...
+my old scythe
+in new black hands
+<|end of text|>
+
+wobbly hands?
+a fisherman
+on his back
+<|end of text|>
+
+a new sparrow
+on the wind
+first light
+<|end of text|>
+
+a new sparrow
+in the old sparrow's song
+first sparkle
+<|end of text|>
+
+a new sparrow
+in the old sparrow's song
+first sparkle
+<|end of text|>
+
+morning light
+he stills his coffee
+<|end of text|>
+
+after last
+the old man's coffee-cup
+<|end of text|>
+
+summer rain?
+the car in front
+shakes a little
+<|end of text|>
+
+a cloud moves
+my husband strokes
+the clouds away
+<|end of text|>
+
+cloudburst -
+someone is talking
+in the barn
+<|end of text|>
+
+dry brush
+the rasp of an oak leaf
+missing its pi
+<|end of text|>
+
+dry brush
+the drift of rain
+across the meadow
+<|end of text|>
+
+the wind
+touches my face
+the moon
+<|end of text|>
+
+tired hands
+i tell him
+father's day
+<|end of text|>
+
+the road ahead
+a bird on the wire
+breaks the song
+<|end of text|>
+
+the moon
+all that's left
+of the sky
+<|end of text|>
+
+the snow storm ends -
+frecklefin ducks
+all over the beach
+<|end of text|>
+
+this cold morning
+the stove
+cold to the touch
+<|end of text|>
+
+summer night
+a blackbird sings
+my morning prayer
+<|end of text|>
+
+cold rain -
+the way the butterfly
+falls from the net
+<|end of text|>
+
+a bird on the line -
+the long line
+to get on the other side
+<|end of text|>
+
+a long line -
+a man standing at the end
+of summer
+<|end of text|>
+
+her husband in jail -
+her hair
+washed and uncured
+<|end of text|>
+
+dawn---
+the old fence covered
+by an oak
+<|end of text|>
+
+nightfall---
+an ant moves
+from one pine cone to another
+<|end of text|>
+
+late night---
+the heat
+of the moon
+<|end of text|>
+
+the distance---
+a moth
+on the window
+<|end of text|>
+
+a long line -
+shadows of tulips
+begging rest
+<|end of text|>
+
+pink sky---
+a lone woman
+talks on her cell
+<|end of text|>
+
+morning fog---
+the car driven
+slow
+<|end of text|>
+
+a new moon -
+the color was
+just right
+<|end of text|>
+
+moon phase---
+something else
+was going on
+<|end of text|>
+
+late winter---
+even the wind
+is quiet
+<|end of text|>
+
+cold morning---
+the dog
+has changed
+<|end of text|>
+
+late night---
+my husband leaves
+his bathrobe on
+<|end of text|>
+
+crescent moon -
+she wants to know more
+about you
+<|end of text|>
+
+my husband leaves home
+to hunt alone -
+white horses
+<|end of text|>
+
+sultry day---
+the farmer wears
+an orange tie
+<|end of text|>
+
+a warm cup of coffee
+of the great geologist---
+solar eclipse
+<
+
+[1500 | 2787.70] loss=1.41 avg=1.60
+[1501 | 2789.32] loss=1.05 avg=1.59
+[1502 | 2790.94] loss=1.43 avg=1.59
+[1503 | 2792.55] loss=1.40 avg=1.59
+[1504 | 2794.18] loss=1.59 avg=1.59
+[1505 | 2795.79] loss=1.55 avg=1.59
+[1506 | 2797.41] loss=1.35 avg=1.59
+[1507 | 2799.04] loss=1.65 avg=1.59
+[1508 | 2800.65] loss=2.06 avg=1.59
+[1509 | 2802.27] loss=1.73 avg=1.59
+[1510 | 2803.89] loss=2.15 avg=1.60
+[1511 | 2805.51] loss=1.52 avg=1.60
+[1512 | 2807.12] loss=1.35 avg=1.60
+[1513 | 2808.74] loss=1.26 avg=1.59
+[1514 | 2810.36] loss=1.68 avg=1.59
+[1515 | 2811.98] loss=1.33 avg=1.59
+[1516 | 2813.60] loss=1.74 avg=1.59
+[1517 | 2815.21] loss=1.49 avg=1.59
+[1518 | 2816.83] loss=1.03 avg=1.59
+[1519 | 2818.45] loss=1.36 avg=1.58
+[1520 | 2820.07] loss=1.25 avg=1.58
+[1521 | 2821.69] loss=1.59 avg=1.58
+[1522 | 2823.31] loss=1.66 avg=1.58
+[1523 | 2824.93] loss=1.32 avg=1.58
+[1524 | 2826.55] loss=1.78 avg=1.58
+[1525 | 2828.17] loss=1.49 avg=1.58
+[1526 | 2829.78] loss=1.72 avg=1.58
+[1527 | 2831.40] loss=1.69 avg=1.58
+[1528 | 2833.02] loss=1.13 avg=1.58
+[1529 | 2834.64] loss=1.14 avg=1.57
+[1530 | 2836.26] loss=1.87 avg=1.58
+[1531 | 2837.88] loss=1.56 avg=1.58
+[1532 | 2839.50] loss=1.81 avg=1.58
+[1533 | 2841.12] loss=1.36 avg=1.58
+[1534 | 2842.74] loss=1.07 avg=1.57
+[1535 | 2844.36] loss=1.58 avg=1.57
+[1536 | 2845.97] loss=1.05 avg=1.57
+[1537 | 2847.60] loss=1.75 avg=1.57
+[1538 | 2849.21] loss=1.40 avg=1.57
+[1539 | 2850.83] loss=1.25 avg=1.56
+[1540 | 2852.45] loss=1.46 avg=1.56
+[1541 | 2854.08] loss=1.97 avg=1.57
+[1542 | 2855.70] loss=1.56 avg=1.57
+[1543 | 2857.32] loss=1.15 avg=1.56
+[1544 | 2858.94] loss=1.28 avg=1.56
+[1545 | 2860.56] loss=1.15 avg=1.56
+[1546 | 2862.18] loss=1.34 avg=1.55
+[1547 | 2863.79] loss=1.55 avg=1.55
+[1548 | 2865.42] loss=2.14 avg=1.56
+[1549 | 2867.04] loss=1.24 avg=1.56
+[1550 | 2868.66] loss=1.50 avg=1.56
+[1551 | 2870.27] loss=1.27 avg=1.55
+[1552 | 2871.90] loss=1.91 avg=1.56
+[1553 | 2873.52] loss=1.13 avg=1.55
+[1554 | 2875.14] loss=1.32 avg=1.55
+[1555 | 2876.76] loss=1.88 avg=1.55
+[1556 | 2878.38] loss=1.32 avg=1.55
+[1557 | 2880.00] loss=1.27 avg=1.55
+[1558 | 2881.62] loss=1.52 avg=1.55
+[1559 | 2883.24] loss=1.19 avg=1.54
+[1560 | 2884.87] loss=1.19 avg=1.54
+[1561 | 2886.49] loss=1.65 avg=1.54
+[1562 | 2888.11] loss=1.92 avg=1.54
+[1563 | 2889.73] loss=1.21 avg=1.54
+[1564 | 2891.35] loss=1.80 avg=1.54
+[1565 | 2892.97] loss=1.45 avg=1.54
+[1566 | 2894.60] loss=1.50 avg=1.54
+[1567 | 2896.22] loss=1.45 avg=1.54
+[1568 | 2897.85] loss=1.76 avg=1.54
+[1569 | 2899.46] loss=1.25 avg=1.54
+[1570 | 2901.09] loss=1.40 avg=1.54
+[1571 | 2902.72] loss=1.35 avg=1.54
+[1572 | 2904.34] loss=1.63 avg=1.54
+[1573 | 2905.96] loss=1.42 avg=1.54
+[1574 | 2907.59] loss=1.54 avg=1.54
+[1575 | 2909.21] loss=1.41 avg=1.54
+[1576 | 2910.84] loss=1.84 avg=1.54
+[1577 | 2912.46] loss=1.48 avg=1.54
+[1578 | 2914.08] loss=1.88 avg=1.54
+[1579 | 2915.71] loss=1.42 avg=1.54
+[1580 | 2917.33] loss=1.25 avg=1.54
+[1581 | 2918.95] loss=1.52 avg=1.54
+[1582 | 2920.57] loss=1.11 avg=1.53
+[1583 | 2922.19] loss=1.24 avg=1.53
+[1584 | 2923.82] loss=1.33 avg=1.53
+[1585 | 2925.44] loss=1.43 avg=1.53
+[1586 | 2927.06] loss=2.05 avg=1.53
+[1587 | 2928.68] loss=1.61 avg=1.53
+[1588 | 2930.31] loss=1.20 avg=1.53
+[1589 | 2931.94] loss=1.11 avg=1.53
+[1590 | 2933.56] loss=2.31 avg=1.53
+[1591 | 2935.18] loss=0.81 avg=1.53
+[1592 | 2936.80] loss=1.71 avg=1.53
+[1593 | 2938.42] loss=1.28 avg=1.53
+[1594 | 2940.04] loss=1.26 avg=1.52
+[1595 | 2941.67] loss=1.38 avg=1.52
+[1596 | 2943.29] loss=1.60 avg=1.52
+[1597 | 2944.91] loss=1.79 avg=1.53
+[1598 | 2946.53] loss=1.09 avg=1.52
+[1599 | 2948.16] loss=1.67 avg=1.52
+Generating samples...
+======== SAMPLE 1 ========
+
+<|endoftext|>
+
+the first star
+in its northern sky . . .
+frost flurries
+<|endoftext|>
+
+gathering dusk
+the jigsaw puzzle pieces
+come together
+<|endoftext|>
+
+toward a moonless night
+the blue line of the mine gate
+fades
+<|endoftext|>
+
+cold winter moon
+the smell of his hair . . .
+the smell of snow
+<|endoftext|>
+
+the first swallow
+a flicker of light
+from a lighted window
+<|endoftext|>
+
+the smell of snow
+walking through
+the memory of snow
+<|endoftext|>
+
+new snow
+a fox outside my window
+hunts fox
+<|endoftext|>
+
+wet snow
+my face
+under a sheet
+<|endoftext|>
+
+snow cover
+the long shadow
+of a fallen tree
+<|endoftext|>
+
+fallen leaves
+the sound of a bird
+still on the wire
+<|endoftext|>
+
+first flakes
+the heat ring
+still attached
+<|endoftext|>
+
+mild winter
+my daughter speaks to
+a talking dog
+<|endoftext|>
+
+winter dusk
+moldering meat
+on the charcoal griddle
+<|endoftext|>
+
+mild sun
+a mouse has moved
+into the cat bowl
+<|endoftext|>
+
+winter rain
+a drop of pond
+stirred by the brim
+<|endoftext|>
+
+daylight moon
+she tosses
+me off the couch
+<|endoftext|>
+
+morning rain
+the tinkle of her heels
+across the street
+<|endoftext|>
+
+autumn dusk
+snow falls faster
+than the moon
+<|endoftext|>
+
+daybreak . . . 
+a squirrel climbs
+the chain link fence
+<|endoftext|>
+
+frosted windows
+a taste
+of wildflower honey
+<|endoftext|>
+
+tired hands
+the orange tree
+maintains a bright branch 
+<|endoftext|>
+
+windrows . . .
+the blue-eyed duck
+in a long line of ducks
+<|endoftext|>
+
+a leafless tree
+my breath
+returned to nothing
+<|endoftext|>
+
+shoveling snow
+i do not know which tree
+is which
+<|endoftext|>
+
+summer dawn
+from the driveway
+a white wolf
+<|endoftext|>
+
+carpooling . . .
+the silence
+between us
+<|endoftext|>
+
+freetime snow
+the mother goose
+shifts her skin
+<|endoftext|>
+
+moonlit day
+the smell
+of jasmine
+<|endoftext|>
+
+night rain
+a red dragonfly climbs
+the steel ladder
+<|endoftext|>
+
+wild fawns . . .
+the rain
+sparkling
+<|endoftext|>
+
+hot mittens
+i slip under a blanket
+to check the weather
+<|endoftext|>
+
+hot night
+finally, my cry
+saved
+<|endoftext|>
+
+first snow
+my dog wags his tail
+to confuse us
+<|endoftext|>
+
+crickets in the hollow
+how many winters
+have passed since
+<|endoftext|>
+
+first snow
+filling the whole house
+with snow?
+<|endoftext|>
+
+sunset
+the sound of my
+freckling egg hatches
+<|endoftext|>
+
+crickets cicada
+all i see are shadows
+on the white sheet
+<|endoftext|>
+
+late summer,
+i watch the moon
+smudged by rain
+<|endoftext|>
+
+a small box
+the smell of it fills up
+the entire bedroom
+<|endoftext|>
+
+a large truck
+loads pine cones
+on the line
+<|endoftext|>
+
+summer camp
+a woman singing
+to her daughter
+<|endoftext|>
+
+summer solstice
+the day's temperature
+not a surprise
+<|endoftext|>
+
+new coolness
+the scent of thyme and oregano
+on my fingers
+<|endoftext|>
+
+morning frost
+the snow depth
+a fraction
+<
+
+[1600 | 2971.82] loss=1.26 avg=1.52
+[1601 | 2973.44] loss=1.66 avg=1.52
+[1602 | 2975.05] loss=1.40 avg=1.52
+[1603 | 2976.67] loss=1.18 avg=1.52
+[1604 | 2978.29] loss=1.01 avg=1.51
+[1605 | 2979.91] loss=1.08 avg=1.51
+[1606 | 2981.53] loss=1.73 avg=1.51
+[1607 | 2983.14] loss=1.26 avg=1.51
+[1608 | 2984.76] loss=1.13 avg=1.50
+[1609 | 2986.38] loss=1.35 avg=1.50
+[1610 | 2988.00] loss=0.92 avg=1.50
+[1611 | 2989.62] loss=1.28 avg=1.49
+[1612 | 2991.23] loss=1.55 avg=1.49
+[1613 | 2992.85] loss=1.77 avg=1.50
+[1614 | 2994.46] loss=1.56 avg=1.50
+[1615 | 2996.08] loss=1.55 avg=1.50
+[1616 | 2997.71] loss=1.36 avg=1.50
+[1617 | 2999.32] loss=0.95 avg=1.49
+[1618 | 3000.95] loss=1.80 avg=1.49
+[1619 | 3002.57] loss=1.57 avg=1.49
+[1620 | 3004.20] loss=1.34 avg=1.49
+[1621 | 3005.82] loss=1.91 avg=1.50
+[1622 | 3007.44] loss=1.25 avg=1.49
+[1623 | 3009.06] loss=1.23 avg=1.49
+[1624 | 3010.68] loss=1.94 avg=1.50
+[1625 | 3012.31] loss=1.45 avg=1.50
+[1626 | 3013.93] loss=1.75 avg=1.50
+[1627 | 3015.56] loss=0.89 avg=1.49
+[1628 | 3017.18] loss=1.56 avg=1.49
+[1629 | 3018.81] loss=1.60 avg=1.49
+[1630 | 3020.43] loss=1.39 avg=1.49
+[1631 | 3022.05] loss=1.73 avg=1.50
+[1632 | 3023.67] loss=1.04 avg=1.49
+[1633 | 3025.30] loss=1.10 avg=1.49
+[1634 | 3026.92] loss=1.47 avg=1.49
+[1635 | 3028.55] loss=1.83 avg=1.49
+[1636 | 3030.18] loss=1.36 avg=1.49
+[1637 | 3031.80] loss=1.31 avg=1.49
+[1638 | 3033.43] loss=1.07 avg=1.48
+[1639 | 3035.06] loss=1.26 avg=1.48
+[1640 | 3036.69] loss=1.77 avg=1.48
+[1641 | 3038.32] loss=1.63 avg=1.49
+[1642 | 3039.96] loss=1.21 avg=1.48
+[1643 | 3041.59] loss=1.54 avg=1.48
+[1644 | 3043.21] loss=1.25 avg=1.48
+[1645 | 3044.86] loss=1.29 avg=1.48
+[1646 | 3046.49] loss=1.65 avg=1.48
+[1647 | 3048.11] loss=1.06 avg=1.48
+[1648 | 3049.74] loss=1.18 avg=1.47
+[1649 | 3051.37] loss=1.58 avg=1.47
+[1650 | 3052.99] loss=1.75 avg=1.48
+[1651 | 3054.63] loss=1.19 avg=1.47
+[1652 | 3056.25] loss=1.47 avg=1.47
+[1653 | 3057.89] loss=2.07 avg=1.48
+[1654 | 3059.52] loss=2.29 avg=1.49
+[1655 | 3061.14] loss=1.08 avg=1.48
+[1656 | 3062.78] loss=1.44 avg=1.48
+[1657 | 3064.41] loss=1.19 avg=1.48
+[1658 | 3066.04] loss=1.03 avg=1.48
+[1659 | 3067.66] loss=1.93 avg=1.48
+[1660 | 3069.29] loss=1.29 avg=1.48
+[1661 | 3070.92] loss=1.71 avg=1.48
+[1662 | 3072.56] loss=1.67 avg=1.48
+[1663 | 3074.20] loss=1.71 avg=1.49
+[1664 | 3075.83] loss=1.34 avg=1.48
+[1665 | 3077.46] loss=1.37 avg=1.48
+[1666 | 3079.09] loss=2.58 avg=1.49
+[1667 | 3080.71] loss=1.73 avg=1.50
+[1668 | 3082.35] loss=0.94 avg=1.49
+[1669 | 3083.97] loss=1.75 avg=1.49
+[1670 | 3085.60] loss=0.82 avg=1.49
+[1671 | 3087.23] loss=1.52 avg=1.49
+[1672 | 3088.85] loss=1.73 avg=1.49
+[1673 | 3090.48] loss=1.36 avg=1.49
+[1674 | 3092.11] loss=1.31 avg=1.49
+[1675 | 3093.74] loss=2.42 avg=1.50
+[1676 | 3095.37] loss=1.53 avg=1.50
+[1677 | 3097.00] loss=1.36 avg=1.49
+[1678 | 3098.62] loss=1.47 avg=1.49
+[1679 | 3100.25] loss=1.18 avg=1.49
+[1680 | 3101.88] loss=1.63 avg=1.49
+[1681 | 3103.51] loss=1.77 avg=1.50
+[1682 | 3105.14] loss=1.69 avg=1.50
+[1683 | 3106.76] loss=1.64 avg=1.50
+[1684 | 3108.39] loss=1.39 avg=1.50
+[1685 | 3110.02] loss=1.17 avg=1.49
+[1686 | 3111.64] loss=1.68 avg=1.50
+[1687 | 3113.27] loss=1.29 avg=1.49
+[1688 | 3114.90] loss=1.46 avg=1.49
+[1689 | 3116.53] loss=1.37 avg=1.49
+[1690 | 3118.16] loss=1.23 avg=1.49
+[1691 | 3119.78] loss=1.55 avg=1.49
+[1692 | 3121.41] loss=1.35 avg=1.49
+[1693 | 3123.04] loss=1.50 avg=1.49
+[1694 | 3124.66] loss=1.51 avg=1.49
+[1695 | 3126.29] loss=1.42 avg=1.49
+[1696 | 3127.92] loss=1.47 avg=1.49
+[1697 | 3129.54] loss=1.28 avg=1.49
+[1698 | 3131.17] loss=1.30 avg=1.48
+[1699 | 3132.79] loss=1.12 avg=1.48
+Generating samples...
+======== SAMPLE 1 ========
+
+of
+<|endoftext|>
+
+mueslums
+on my father's grave
+i wait for him
+<|endoftext|>
+
+solar eclipse
+the red light
+at the end of the corduroy
+<|endoftext|>
+
+first light . . .
+the smell of rosemary
+on my fingers
+<|endoftext|>
+
+scent of new leaves
+i learn to ride a scooter
+outside
+<|endoftext|>
+
+vacation's end
+the scent of the old house
+on my skin
+<|endoftext|>
+
+fading summer light
+on the hearse
+her portrait
+<|endoftext|>
+
+sunday noon
+the jingle of turntables
+in the parking lot
+<|endoftext|>
+
+a breeze
+the way it comes in
+says nothing
+<|endoftext|>
+
+a small pond
+where the rain
+was. . .
+<|endoftext|>
+
+midday
+the sound of a sparrow
+searching for a twig
+<|endoftext|>
+
+all saints'? day
+a spider looks
+for a hummingbird
+<|endoftext|>
+
+afternoon breeze
+the sound of a sparrow
+searching for
+<|endoftext|>
+
+sunset . . .
+the bluefin tuna
+taps my side of the moon
+<|endoftext|>
+
+sunset
+to find myself
+in the fullness of spring
+<|endoftext|>
+
+first frost
+all the things i could
+think of in winter
+<|endoftext|>
+
+winter stars
+my son's smile
+the third-largest in the family
+<|endoftext|>
+
+spring morning
+a spoonful of sugar
+takes the place of the spoons
+<|endoftext|>
+
+scent of almonds
+i turn my face
+to heaven
+<|endoftext|>
+
+pushing the snow
+around the shed
+weighy of yearlings
+<|endoftext|>
+
+first snow
+my words
+sneeze
+<|endoftext|>
+
+first kiss
+my shadow
+flickers on the ceiling
+<|endoftext|>
+
+first steps
+the sound of the river
+bending
+<|endoftext|>
+
+winter birdsong
+we part
+across the water
+<|endoftext|>
+
+winter sun
+the first rabbit ears
+touch my chin
+<|endoftext|>
+
+autumn afternoon
+i am cold
+covered in leaves
+<|endoftext|>
+
+wild firelight
+a tree pruned
+from a hillside
+<|endoftext|>
+
+end of summer
+we negotiate
+a fog bank
+<|endoftext|>
+
+forest swallows
+a crow searches
+the sky for a rainbow
+<|endoftext|>
+
+crescent moon . . .
+a babbling brook
+for human voices
+<|endoftext|>
+
+all souls? day
+the sound of children's voices
+summering spring streams
+<|endoftext|>
+
+my hands
+are almost touching
+the fire escape
+<|endoftext|>
+
+all souls? day
+a butterfly lands
+on my window
+<|endoftext|>
+
+the end of summer
+all that remains
+is a white butterfly
+<|endoftext|>
+
+autumn sky
+a butterfly lands
+on my window
+<|endoftext|>
+
+end of the year . . .
+more stars shine
+in the garden
+<|endoftext|>
+
+evening rain
+the cat goes to the toilet
+on the verandah
+<|endoftext|>
+
+winter light
+the smell of hay
+from the field
+<|endoftext|>
+
+evening rain
+a butterfly hurls itself
+into the moonlight
+<|endoftext|>
+
+evening bus
+an inch of snow
+on the windshield
+<|endoftext|>
+
+a tiny star
+blooms in the darkness
+the long night
+<|endoftext|>
+
+winter haze . . .
+a wind chime tinkles
+in the hall
+<|endoftext|>
+
+autumn equinox
+a butterfly returns
+to the garden
+<|endoftext|>
+
+sun after night
+the smell of the fields
+across the road
+<|endoftext|>
+
+crick
+
+[1700 | 3156.49] loss=1.18 avg=1.48
+[1701 | 3158.11] loss=1.37 avg=1.48
+[1702 | 3159.73] loss=0.81 avg=1.47
+[1703 | 3161.34] loss=1.79 avg=1.47
+[1704 | 3162.96] loss=1.05 avg=1.47
+[1705 | 3164.58] loss=1.17 avg=1.47
+[1706 | 3166.19] loss=2.36 avg=1.48
+[1707 | 3167.81] loss=1.42 avg=1.47
+[1708 | 3169.42] loss=1.21 avg=1.47
+[1709 | 3171.04] loss=1.99 avg=1.48
+[1710 | 3172.65] loss=1.47 avg=1.48
+[1711 | 3174.26] loss=1.40 avg=1.48
+[1712 | 3175.88] loss=1.59 avg=1.48
+[1713 | 3177.49] loss=1.23 avg=1.48
+[1714 | 3179.11] loss=1.43 avg=1.47
+[1715 | 3180.73] loss=1.31 avg=1.47
+[1716 | 3182.35] loss=1.37 avg=1.47
+[1717 | 3183.96] loss=1.05 avg=1.47
+[1718 | 3185.58] loss=1.87 avg=1.47
+[1719 | 3187.20] loss=1.32 avg=1.47
+[1720 | 3188.82] loss=1.37 avg=1.47
+[1721 | 3190.44] loss=2.26 avg=1.48
+[1722 | 3192.07] loss=1.28 avg=1.48
+[1723 | 3193.69] loss=1.18 avg=1.47
+[1724 | 3195.31] loss=1.72 avg=1.47
+[1725 | 3196.93] loss=1.69 avg=1.48
+[1726 | 3198.55] loss=1.56 avg=1.48
+[1727 | 3200.18] loss=0.92 avg=1.47
+[1728 | 3201.80] loss=2.17 avg=1.48
+[1729 | 3203.42] loss=1.22 avg=1.48
+[1730 | 3205.04] loss=1.08 avg=1.47
+[1731 | 3206.66] loss=1.12 avg=1.47
+[1732 | 3208.28] loss=1.82 avg=1.47
+[1733 | 3209.91] loss=1.59 avg=1.47
+[1734 | 3211.54] loss=1.73 avg=1.48
+[1735 | 3213.16] loss=1.27 avg=1.47
+[1736 | 3214.78] loss=1.44 avg=1.47
+[1737 | 3216.41] loss=1.20 avg=1.47
+[1738 | 3218.03] loss=1.38 avg=1.47
+[1739 | 3219.66] loss=2.41 avg=1.48
+[1740 | 3221.29] loss=1.40 avg=1.48
+[1741 | 3222.92] loss=1.29 avg=1.48
+[1742 | 3224.55] loss=0.90 avg=1.47
+[1743 | 3226.18] loss=1.55 avg=1.47
+[1744 | 3227.81] loss=2.03 avg=1.48
+[1745 | 3229.44] loss=0.80 avg=1.47
+[1746 | 3231.06] loss=1.19 avg=1.47
+[1747 | 3232.69] loss=1.30 avg=1.47
+[1748 | 3234.32] loss=1.24 avg=1.46
+[1749 | 3235.95] loss=2.42 avg=1.47
+[1750 | 3237.58] loss=0.97 avg=1.47
+[1751 | 3239.21] loss=1.15 avg=1.47
+[1752 | 3240.83] loss=1.89 avg=1.47
+[1753 | 3242.47] loss=0.84 avg=1.46
+[1754 | 3244.09] loss=1.00 avg=1.46
+[1755 | 3245.72] loss=0.93 avg=1.45
+[1756 | 3247.35] loss=1.40 avg=1.45
+[1757 | 3248.98] loss=1.73 avg=1.46
+[1758 | 3250.61] loss=1.63 avg=1.46
+[1759 | 3252.24] loss=1.00 avg=1.45
+[1760 | 3253.87] loss=1.36 avg=1.45
+[1761 | 3255.50] loss=1.42 avg=1.45
+[1762 | 3257.13] loss=1.20 avg=1.45
+[1763 | 3258.76] loss=1.17 avg=1.45
+[1764 | 3260.39] loss=1.83 avg=1.45
+[1765 | 3262.03] loss=1.88 avg=1.45
+[1766 | 3263.66] loss=1.58 avg=1.46
+[1767 | 3265.28] loss=1.66 avg=1.46
+[1768 | 3266.92] loss=1.21 avg=1.46
+[1769 | 3268.55] loss=1.22 avg=1.45
+[1770 | 3270.18] loss=1.39 avg=1.45
+[1771 | 3271.81] loss=1.50 avg=1.45
+[1772 | 3273.44] loss=1.44 avg=1.45
+[1773 | 3275.07] loss=1.56 avg=1.45
+[1774 | 3276.70] loss=0.84 avg=1.45
+[1775 | 3278.33] loss=1.29 avg=1.45
+[1776 | 3279.96] loss=1.49 avg=1.45
+[1777 | 3281.59] loss=1.15 avg=1.44
+[1778 | 3283.22] loss=1.01 avg=1.44
+[1779 | 3284.85] loss=0.93 avg=1.43
+[1780 | 3286.47] loss=2.62 avg=1.45
+[1781 | 3288.10] loss=1.51 avg=1.45
+[1782 | 3289.73] loss=1.38 avg=1.45
+[1783 | 3291.36] loss=1.48 avg=1.45
+[1784 | 3292.98] loss=1.40 avg=1.45
+[1785 | 3294.61] loss=0.69 avg=1.44
+[1786 | 3296.24] loss=1.21 avg=1.44
+[1787 | 3297.87] loss=1.63 avg=1.44
+[1788 | 3299.50] loss=1.33 avg=1.44
+[1789 | 3301.13] loss=1.12 avg=1.43
+[1790 | 3302.76] loss=1.23 avg=1.43
+[1791 | 3304.39] loss=1.52 avg=1.43
+[1792 | 3306.02] loss=1.57 avg=1.43
+[1793 | 3307.65] loss=1.21 avg=1.43
+[1794 | 3309.28] loss=1.33 avg=1.43
+[1795 | 3310.91] loss=1.44 avg=1.43
+[1796 | 3312.54] loss=1.59 avg=1.43
+[1797 | 3314.17] loss=1.20 avg=1.43
+[1798 | 3315.80] loss=1.34 avg=1.43
+[1799 | 3317.42] loss=1.35 avg=1.43
+Generating samples...
+======== SAMPLE 1 ========
+ .>
+wondering
+who the wind chime
+is for
+<|endoftext|>
+
+lazy
+the morning's news
+in slow motion
+<|endoftext|>
+
+morning meditation
+the full moon
+a little bigger
+<|endoftext|>
+
+a little hot
+yet my thoughts stay
+in hot tea
+<|endoftext|>
+
+a little sun at the end of the
+pipe and the cow.
+evening walk to work
+<|endoftext|>
+
+no one's numbers ...
+a little sand
+at the bottom of the cairn
+<|endoftext|>
+
+late fall
+the old woman reads
+the morning paper
+<|endoftext|>
+
+salt spray ...
+the quiet lake
+one solitary sound
+<|endoftext|>
+
+autumn winds
+the old man talks
+to his cane
+<|endoftext|>
+
+last night
+the last light of day
+on a blue shell
+<|endoftext|>
+
+old pond
+all that is left
+is the shadows
+<|endoftext|>
+
+morning glory
+the kitten stutters
+to say hello
+<|endoftext|>
+
+falling stars
+the last thing
+you will say to mom
+<|endoftext|>
+
+autumn rain
+you forgot how
+much i care
+<|endoftext|>
+
+first cicada
+the sound of water lilies
+on a birch branch
+<|endoftext|>
+
+the warm dampness
+in the palm of my hand
+sunday morning
+<|endoftext|>
+
+cicada shells
+in the youth's hands
+the smell of rain
+<|endoftext|>
+
+morning rush-
+just a little more
+of this coffee in my cup
+<|endoftext|>
+
+autumn chill
+this city stirs
+with crickets
+<|endoftext|>
+
+lazy morning
+the redness of irises
+under the maple
+<|endoftext|>
+
+crash site
+the scent of hot tar
+in a cow skull
+<|endoftext|>
+
+prairie dust
+the softness of her hand
+in mine
+<|endoftext|>
+
+evening walk
+remembering
+my grandmother
+<|endoftext|>
+
+the last redwing
+sets off his song
+autumn morning
+<|endoftext|>
+
+crash site
+the squeak of tin cans
+in the mine
+<|endoftext|>
+
+autumn rain
+the sun on a pipe
+shapes a cone
+<|endoftext|>
+
+morning prayer
+a child prays by himself
+pumps ink
+<|endoftext|>
+
+tumbleded corn
+my son reads
+a century book
+<|endoftext|>
+
+the dog's eyes
+the last time the owl
+cried
+<|endoftext|>
+
+the glow of a child
+splitting the bush
+this new day feels great
+<|endoftext|>
+
+summer clouds
+the trail we trod
+in headstones
+<|endoftext|>
+
+new coolness
+the smell of a garden
+where the dog was
+<|endoftext|>
+
+the first of many
+lapping the deck
+swimming pools
+<|endoftext|>
+
+a dog's snarl
+the blue blur of a canoe
+in the canoe hole
+<|endoftext|>
+
+first day of the week
+the cat in the garage
+sleeping dogs
+<|endoftext|>
+
+first day of the week
+the same rain
+no bass
+<|endoftext|>
+
+summer's end
+a fly passes through
+both hands
+<|endoftext|>
+
+heat lightning
+a cloud of leaf fragments
+crisscrosses the sky
+<|endoftext|>
+
+sunset
+the sound of a mosquito
+returns
+<|endoftext|>
+
+crows at dawn
+sipping from hand-prints
+in the rain
+<|endoftext|>
+
+scent of rain
+waiting for a moon
+to pass
+<|endoftext|>
+
+thick fog
+a small stone pierces
+the white ship
+<|endoftext|>
+
+starry sky
+my son's volleyball team
+play in the hall
+<|endoftext|>
+
+a fisherman
+weaving his way
+into fog
+<|endoftext
+
+[1800 | 3341.10] loss=2.43 avg=1.44
+[1801 | 3342.72] loss=1.77 avg=1.44
+[1802 | 3344.34] loss=1.28 avg=1.44
+[1803 | 3345.96] loss=1.58 avg=1.44
+[1804 | 3347.58] loss=1.64 avg=1.44
+[1805 | 3349.20] loss=1.11 avg=1.44
+[1806 | 3350.81] loss=0.95 avg=1.44
+[1807 | 3352.42] loss=1.23 avg=1.43
+[1808 | 3354.05] loss=1.59 avg=1.43
+[1809 | 3355.66] loss=1.32 avg=1.43
+[1810 | 3357.28] loss=1.43 avg=1.43
+[1811 | 3358.90] loss=1.69 avg=1.44
+[1812 | 3360.51] loss=1.11 avg=1.43
+[1813 | 3362.12] loss=1.15 avg=1.43
+[1814 | 3363.74] loss=1.36 avg=1.43
+[1815 | 3365.36] loss=1.19 avg=1.43
+[1816 | 3366.98] loss=1.07 avg=1.42
+[1817 | 3368.60] loss=1.66 avg=1.43
+[1818 | 3370.22] loss=0.91 avg=1.42
+[1819 | 3371.84] loss=1.51 avg=1.42
+[1820 | 3373.46] loss=1.08 avg=1.42
+[1821 | 3375.09] loss=1.49 avg=1.42
+[1822 | 3376.72] loss=1.07 avg=1.42
+[1823 | 3378.34] loss=1.31 avg=1.41
+[1824 | 3379.96] loss=1.21 avg=1.41
+[1825 | 3381.59] loss=1.57 avg=1.41
+[1826 | 3383.21] loss=1.78 avg=1.42
+[1827 | 3384.84] loss=1.17 avg=1.41
+[1828 | 3386.46] loss=1.32 avg=1.41
+[1829 | 3388.09] loss=1.42 avg=1.41
+[1830 | 3389.72] loss=1.06 avg=1.41
+[1831 | 3391.35] loss=1.09 avg=1.41
+[1832 | 3392.97] loss=1.71 avg=1.41
+[1833 | 3394.60] loss=1.58 avg=1.41
+[1834 | 3396.23] loss=1.04 avg=1.41
+[1835 | 3397.86] loss=1.28 avg=1.41
+[1836 | 3399.49] loss=1.63 avg=1.41
+[1837 | 3401.12] loss=1.45 avg=1.41
+[1838 | 3402.74] loss=1.71 avg=1.41
+[1839 | 3404.37] loss=1.08 avg=1.41
+[1840 | 3406.00] loss=1.98 avg=1.42
+[1841 | 3407.64] loss=1.72 avg=1.42
+[1842 | 3409.27] loss=1.64 avg=1.42
+[1843 | 3410.90] loss=1.48 avg=1.42
+[1844 | 3412.53] loss=1.36 avg=1.42
+[1845 | 3414.15] loss=1.49 avg=1.42
+[1846 | 3415.78] loss=0.80 avg=1.41
+[1847 | 3417.41] loss=1.28 avg=1.41
+[1848 | 3419.03] loss=1.34 avg=1.41
+[1849 | 3420.66] loss=0.90 avg=1.41
+[1850 | 3422.28] loss=1.07 avg=1.40
+[1851 | 3423.91] loss=1.64 avg=1.41
+[1852 | 3425.54] loss=1.57 avg=1.41
+[1853 | 3427.17] loss=1.52 avg=1.41
+[1854 | 3428.80] loss=0.99 avg=1.41
+[1855 | 3430.43] loss=1.28 avg=1.40
+[1856 | 3432.06] loss=1.28 avg=1.40
+[1857 | 3433.69] loss=1.46 avg=1.40
+[1858 | 3435.32] loss=1.43 avg=1.40
+[1859 | 3436.95] loss=1.06 avg=1.40
+[1860 | 3438.58] loss=1.10 avg=1.40
+[1861 | 3440.21] loss=0.99 avg=1.39
+[1862 | 3441.83] loss=0.83 avg=1.39
+[1863 | 3443.46] loss=1.25 avg=1.39
+[1864 | 3445.09] loss=1.30 avg=1.39
+[1865 | 3446.72] loss=1.13 avg=1.38
+[1866 | 3448.35] loss=1.18 avg=1.38
+[1867 | 3449.98] loss=1.07 avg=1.38
+[1868 | 3451.61] loss=1.51 avg=1.38
+[1869 | 3453.24] loss=1.81 avg=1.38
+[1870 | 3454.87] loss=1.50 avg=1.38
+[1871 | 3456.50] loss=1.18 avg=1.38
+[1872 | 3458.13] loss=1.47 avg=1.38
+[1873 | 3459.75] loss=1.36 avg=1.38
+[1874 | 3461.39] loss=1.74 avg=1.39
+[1875 | 3463.01] loss=1.24 avg=1.38
+[1876 | 3464.64] loss=1.50 avg=1.39
+[1877 | 3466.27] loss=2.09 avg=1.39
+[1878 | 3467.90] loss=0.83 avg=1.39
+[1879 | 3469.53] loss=1.29 avg=1.39
+[1880 | 3471.16] loss=1.78 avg=1.39
+[1881 | 3472.79] loss=1.15 avg=1.39
+[1882 | 3474.43] loss=1.20 avg=1.39
+[1883 | 3476.05] loss=0.99 avg=1.38
+[1884 | 3477.68] loss=1.39 avg=1.38
+[1885 | 3479.31] loss=1.10 avg=1.38
+[1886 | 3480.94] loss=1.58 avg=1.38
+[1887 | 3482.57] loss=2.05 avg=1.39
+[1888 | 3484.20] loss=1.35 avg=1.39
+[1889 | 3485.82] loss=1.08 avg=1.38
+[1890 | 3487.45] loss=2.14 avg=1.39
+[1891 | 3489.08] loss=1.17 avg=1.39
+[1892 | 3490.71] loss=0.99 avg=1.39
+[1893 | 3492.34] loss=0.95 avg=1.38
+[1894 | 3493.97] loss=1.73 avg=1.39
+[1895 | 3495.60] loss=0.83 avg=1.38
+[1896 | 3497.23] loss=1.45 avg=1.38
+[1897 | 3498.86] loss=1.38 avg=1.38
+[1898 | 3500.48] loss=1.73 avg=1.38
+[1899 | 3502.11] loss=2.00 avg=1.39
+Generating samples...
+======== SAMPLE 1 ========
+text|>
+
+the sound of a paperclip
+twirling
+in the laundry
+<|endoftext|>
+
+winter day
+one of the girls
+letting his shirt come down
+<|endoftext|>
+
+the first star
+first blackbird
+first whisper
+<|endoftext|>
+
+pinch of salt
+makes the whole dish
+winter soup
+<|endoftext|>
+
+the smell of winter
+in my hair
+first snow
+<|endoftext|>
+
+first kiss
+my neighbor's cat finishes
+the dishes
+<|endoftext|>
+
+new love
+i find myself forgetting
+my age
+<|endoftext|>
+
+old pond
+the same bird song
+every night
+<|endoftext|>
+
+frost-streaked windowspan . . .
+the sound of a hair
+pulled in the dryer
+<|endoftext|>
+
+first snow . . .
+the faint whirr
+of a fan blade
+<|endoftext|>
+
+factory silence
+the rain is too heavy
+to lift my gaze
+<|endoftext|>
+
+the dog in me
+thrives to hear the rain
+again this spring
+<|endoftext|>
+
+new leaves . . .
+my neighbors call me
+a "breezy girl"
+<|endoftext|>
+
+backstroke
+she adds . . .
+she adds the love song
+<|endoftext|>
+
+morning mist . . .
+the muezzin's prayer
+is interrupted
+<|endoftext|>
+
+spring showers
+the preacher's wife
+turns down the volume
+<|endoftext|>
+
+sunny day
+i slip into
+my summer blue
+<|endoftext|>
+
+hermitage rust
+a lone deer
+pursuing wild flowers
+<|endoftext|>
+
+spring rain
+dancing among
+old boots
+<|endoftext|>
+
+old photo
+unpacking
+fresh blueberries
+<|endoftext|>
+
+breezy afternoon
+the shape of the crumbs
+on the table
+<|endoftext|>
+
+the wind shifts his weight
+around the flower pot
+spring rain
+<|endoftext|>
+
+late morning sun
+i can still
+pick the right flower
+<|endoftext|>
+
+spring fever
+another gift
+from my grandmother
+<|endoftext|>
+
+new bride
+the long wait
+at the altar
+<|endoftext|>
+
+the sweet three sugars
+a brief moment before
+their sugar takes over
+<|endoftext|>
+
+after the ceremony
+taking a quick walk
+with the bees
+<|endoftext|>
+
+morning haze
+a fly beats
+against my window
+<|endoftext|>
+
+winter morning sun
+his coat flapping
+along all the flights of stairs
+<|endoftext|>
+
+cold night grass
+the stench of rotting food
+and sleep
+<|endoftext|>
+
+spring fever
+a little bird says it will study
+everything
+<|endoftext|>
+
+fading light
+the wayward dog
+follows the path
+<|endoftext|>
+
+snowy rain
+the sound of my pen
+missing a beat
+<|endoftext|>
+
+spring morning
+the rain-pigeons' songs
+going viral
+<|endoftext|>
+
+spring day
+getting started on my thesis
+in the open
+<|endoftext|>
+
+freezing rain
+i just popped back
+my cicada
+<|endoftext|>
+
+summer solstice
+a small crack
+in the chain mail
+<|endoftext|>
+
+sunrise . . .
+the warm glow
+of a school bus
+<|endoftext|>
+
+winter sunset
+a red fawn
+tiptoes out of view
+<|endoftext|>
+
+sunset over the lake
+snowflakes drift
+into darkness
+<|endoftext|>
+
+first light . . .
+a spring bird soars
+where there was silence
+<|endoftext|>
+
+blue morning light
+that feels wrong in the middle
+of the night
+<|endoftext|>
+
+a long breath
+between us . . .
+the rustle of branches
+<|endoftext|>
+
+autumn deepens
+my favorite song
+settles
+<|endoftext|>
+
+faint flowers
+
+[1900 | 3525.74] loss=1.18 avg=1.39
+[1901 | 3527.36] loss=1.75 avg=1.39
+[1902 | 3528.98] loss=1.07 avg=1.39
+[1903 | 3530.60] loss=1.22 avg=1.39
+[1904 | 3532.22] loss=1.08 avg=1.38
+[1905 | 3533.84] loss=1.11 avg=1.38
+[1906 | 3535.46] loss=0.98 avg=1.38
+[1907 | 3537.07] loss=1.04 avg=1.37
+[1908 | 3538.68] loss=0.93 avg=1.37
+[1909 | 3540.30] loss=1.09 avg=1.37
+[1910 | 3541.92] loss=1.28 avg=1.37
+[1911 | 3543.54] loss=1.00 avg=1.36
+[1912 | 3545.15] loss=1.68 avg=1.36
+[1913 | 3546.77] loss=1.12 avg=1.36
+[1914 | 3548.38] loss=0.65 avg=1.36
+[1915 | 3550.00] loss=1.83 avg=1.36
+[1916 | 3551.61] loss=1.31 avg=1.36
+[1917 | 3553.23] loss=0.84 avg=1.35
+[1918 | 3554.85] loss=1.01 avg=1.35
+[1919 | 3556.47] loss=0.69 avg=1.34
+[1920 | 3558.09] loss=1.03 avg=1.34
+[1921 | 3559.71] loss=1.41 avg=1.34
+[1922 | 3561.33] loss=1.25 avg=1.34
+[1923 | 3562.95] loss=1.99 avg=1.35
+[1924 | 3564.57] loss=1.11 avg=1.34
+[1925 | 3566.19] loss=1.50 avg=1.35
+[1926 | 3567.81] loss=0.53 avg=1.34
+[1927 | 3569.44] loss=1.93 avg=1.34
+[1928 | 3571.06] loss=1.03 avg=1.34
+[1929 | 3572.68] loss=1.10 avg=1.34
+[1930 | 3574.31] loss=1.00 avg=1.34
+[1931 | 3575.93] loss=1.59 avg=1.34
+[1932 | 3577.56] loss=1.06 avg=1.34
+[1933 | 3579.18] loss=1.38 avg=1.34
+[1934 | 3580.81] loss=1.73 avg=1.34
+[1935 | 3582.43] loss=1.52 avg=1.34
+[1936 | 3584.06] loss=1.28 avg=1.34
+[1937 | 3585.68] loss=1.53 avg=1.34
+[1938 | 3587.30] loss=1.39 avg=1.34
+[1939 | 3588.93] loss=0.90 avg=1.34
+[1940 | 3590.56] loss=1.66 avg=1.34
+[1941 | 3592.18] loss=1.08 avg=1.34
+[1942 | 3593.81] loss=1.33 avg=1.34
+[1943 | 3595.44] loss=0.90 avg=1.33
+[1944 | 3597.07] loss=1.51 avg=1.34
+[1945 | 3598.69] loss=0.82 avg=1.33
+[1946 | 3600.32] loss=2.17 avg=1.34
+[1947 | 3601.95] loss=1.26 avg=1.34
+[1948 | 3603.58] loss=1.64 avg=1.34
+[1949 | 3605.21] loss=0.87 avg=1.34
+[1950 | 3606.84] loss=0.89 avg=1.33
+[1951 | 3608.47] loss=1.65 avg=1.34
+[1952 | 3610.10] loss=1.09 avg=1.33
+[1953 | 3611.73] loss=1.64 avg=1.34
+[1954 | 3613.37] loss=1.10 avg=1.33
+[1955 | 3615.00] loss=1.22 avg=1.33
+[1956 | 3616.63] loss=1.29 avg=1.33
+[1957 | 3618.26] loss=1.39 avg=1.33
+[1958 | 3619.89] loss=1.14 avg=1.33
+[1959 | 3621.53] loss=1.41 avg=1.33
+[1960 | 3623.15] loss=1.10 avg=1.33
+[1961 | 3624.79] loss=1.27 avg=1.33
+[1962 | 3626.42] loss=2.09 avg=1.34
+[1963 | 3628.05] loss=1.29 avg=1.34
+[1964 | 3629.68] loss=1.13 avg=1.33
+[1965 | 3631.31] loss=0.84 avg=1.33
+[1966 | 3632.93] loss=1.18 avg=1.33
+[1967 | 3634.56] loss=0.91 avg=1.32
+[1968 | 3636.19] loss=0.81 avg=1.32
+[1969 | 3637.81] loss=1.00 avg=1.32
+[1970 | 3639.44] loss=1.23 avg=1.31
+[1971 | 3641.07] loss=1.30 avg=1.31
+[1972 | 3642.70] loss=1.18 avg=1.31
+[1973 | 3644.33] loss=1.00 avg=1.31
+[1974 | 3645.95] loss=1.06 avg=1.31
+[1975 | 3647.58] loss=1.52 avg=1.31
+[1976 | 3649.21] loss=1.14 avg=1.31
+[1977 | 3650.83] loss=1.29 avg=1.31
+[1978 | 3652.47] loss=1.83 avg=1.31
+[1979 | 3654.09] loss=1.27 avg=1.31
+[1980 | 3655.72] loss=1.94 avg=1.32
+[1981 | 3657.35] loss=0.83 avg=1.31
+[1982 | 3658.98] loss=1.44 avg=1.31
+[1983 | 3660.61] loss=1.10 avg=1.31
+[1984 | 3662.24] loss=1.30 avg=1.31
+[1985 | 3663.87] loss=1.34 avg=1.31
+[1986 | 3665.50] loss=0.91 avg=1.31
+[1987 | 3667.13] loss=0.98 avg=1.31
+[1988 | 3668.76] loss=1.54 avg=1.31
+[1989 | 3670.39] loss=1.97 avg=1.31
+[1990 | 3672.02] loss=2.04 avg=1.32
+[1991 | 3673.64] loss=1.22 avg=1.32
+[1992 | 3675.28] loss=1.10 avg=1.32
+[1993 | 3676.91] loss=1.40 avg=1.32
+[1994 | 3678.54] loss=0.90 avg=1.32
+[1995 | 3680.16] loss=1.36 avg=1.32
+[1996 | 3681.79] loss=1.43 avg=1.32
+[1997 | 3683.42] loss=1.10 avg=1.31
+[1998 | 3685.06] loss=1.31 avg=1.31
+[1999 | 3686.69] loss=1.29 avg=1.31
+Saving checkpoint/run1/model-2000
+Generating samples...
+======== SAMPLE 1 ========
+|<|endoftext|>
+
+winter solstice
+the snow has no name
+what's lost
+in fog
+<|endoftext|>
+
+morning sun
+his back against a tree
+and the moon
+<|endoftext|>
+
+snow on a ridge
+in our teacup
+starless night
+<|endoftext|>
+
+first light
+my daughter's hand
+on my knee
+<|endoftext|>
+
+afternoon stillness
+a squirrel nibbles
+the still grain of the leaves
+<|endoftext|>
+
+in the twilight
+a crow's lonely cry
+loud enough for the street
+<|endoftext|>
+
+night rain
+the cat's last whimper
+in the open window
+<|endoftext|>
+
+hugs
+and kisses . . .
+still the stars
+<|endoftext|>
+
+first light
+the old couple hug
+for a moment only
+<|endoftext|>
+
+mourning hours
+the sound of rain
+from above the hill
+<|endoftext|>
+
+morning moon
+gulls follow
+the retreating tide
+<|endoftext|>
+
+old postcard
+an empty mailbox
+wet with dew
+<|endoftext|>
+
+lilac dusk
+one side of the class
+you're in
+<|endoftext|>
+
+the sound of a child
+reading a bedtime story
+spring snow
+<|endoftext|>
+
+spring frost
+a squirrel collects
+all his bits
+<|endoftext|>
+
+a butterfly
+left on the window screen
+new year's day
+<|endoftext|>
+
+no moon
+only the scent of
+gathering lambs
+<|endoftext|>
+
+dusk-
+a dog and I walk
+together
+<|endoftext|>
+
+faded postcard
+the family dog
+holds a ruminant
+<|endoftext|>
+
+new year's eve
+a snowman decorates
+the TV remote
+<|endoftext|>
+
+first snow
+my children's shoes
+in the snow
+<|endoftext|>
+
+late in gathering
+we open our presents
+to find snow men
+<|endoftext|>
+
+frost-
+the smell of bacon
+in the kitchen
+<|endoftext|>
+
+cold snap
+the cat comes back
+with an appetite
+<|endoftext|>
+
+dawn
+a fire started
+by wish making
+<|endoftext|>
+
+the river
+not narrow . . . but deep
+and wide
+<|endoftext|>
+
+the length of his coat
+in the doorway
+?new year's kiss?
+<|endoftext|>
+
+morning sun . . .
+a skunk's buzz
+over the fence
+<|endoftext|>
+
+winter
+the cat's tail
+fades before my eyes
+<|endoftext|>
+
+dawn
+a skunk's buzz
+fades to white
+<|endoftext|>
+
+winter night
+the sound of typewriters
+blowing snow
+<|endoftext|>
+
+winter night
+a snowman snowflakes
+into a puddle
+<|endoftext|>
+
+incoming tide
+a new song comes to me
+in the koi pond
+<|endoftext|>
+
+miles of silence
+the sound of my hand
+on her breast
+<|endoftext|>
+
+snowmelt
+the slow fall of rain
+into pails
+<|endoftext|>
+
+miles of silence
+the sound of my hand
+closing my eyes
+<|endoftext|>
+
+my hand on her hip
+the sound of her breathing
+and the creases in her shirt
+<|endoftext|>
+
+a crow lands
+on my jacket pocket
+the rain begins to fall
+<|endoftext|>
+
+a snow angel
+sends warm sleet
+to church
+<|endoftext|>
+
+church down the road
+an empty pew
+fills quickly
+<|endoftext|>
+
+a sudden rainstorm
+my neighbor brings home
+a half baked loaf
+<|endoftext|>
+
+midsummer bonfire
+the smoke rises
+to the top of the tower
+<|endoftext|>
+
+a snow patch
+where the maple once stood
+and i?d forgotten where
+<|endoftext|>
+
+a small town apple
+
+[2000 | 3721.66] loss=1.13 avg=1.31
+[2001 | 3723.34] loss=1.11 avg=1.31
+[2002 | 3725.00] loss=1.69 avg=1.31
+[2003 | 3726.67] loss=1.75 avg=1.32
+[2004 | 3728.33] loss=1.18 avg=1.32
+[2005 | 3729.98] loss=1.09 avg=1.31
+[2006 | 3731.62] loss=1.99 avg=1.32
+[2007 | 3733.26] loss=1.33 avg=1.32
+[2008 | 3734.91] loss=1.22 avg=1.32
+[2009 | 3736.55] loss=1.20 avg=1.32
+[2010 | 3738.18] loss=1.23 avg=1.32
+[2011 | 3739.82] loss=0.87 avg=1.31
+[2012 | 3741.45] loss=1.06 avg=1.31
+[2013 | 3743.08] loss=0.84 avg=1.31
+[2014 | 3744.71] loss=1.20 avg=1.31
+[2015 | 3746.34] loss=1.21 avg=1.30
+[2016 | 3747.97] loss=1.38 avg=1.31
+[2017 | 3749.60] loss=2.02 avg=1.31
+[2018 | 3751.22] loss=1.07 avg=1.31
+[2019 | 3752.85] loss=1.99 avg=1.32
+[2020 | 3754.47] loss=1.31 avg=1.32
+[2021 | 3756.09] loss=1.04 avg=1.31
+[2022 | 3757.71] loss=1.60 avg=1.32
+[2023 | 3759.32] loss=1.68 avg=1.32
+[2024 | 3760.94] loss=1.57 avg=1.32
+[2025 | 3762.55] loss=0.92 avg=1.32
+[2026 | 3764.17] loss=1.15 avg=1.32
+[2027 | 3765.78] loss=1.45 avg=1.32
+[2028 | 3767.39] loss=0.92 avg=1.31
+[2029 | 3769.01] loss=1.35 avg=1.32
+[2030 | 3770.63] loss=1.23 avg=1.31
+[2031 | 3772.24] loss=1.26 avg=1.31
+[2032 | 3773.86] loss=0.99 avg=1.31
+[2033 | 3775.48] loss=1.14 avg=1.31
+[2034 | 3777.09] loss=0.96 avg=1.31
+[2035 | 3778.71] loss=1.68 avg=1.31
+[2036 | 3780.33] loss=1.10 avg=1.31
+[2037 | 3781.95] loss=0.98 avg=1.30
+[2038 | 3783.58] loss=1.00 avg=1.30
+[2039 | 3785.20] loss=1.27 avg=1.30
+[2040 | 3786.82] loss=0.97 avg=1.30
+[2041 | 3788.44] loss=1.14 avg=1.30
+[2042 | 3790.06] loss=0.90 avg=1.29
+[2043 | 3791.68] loss=0.92 avg=1.29
+[2044 | 3793.31] loss=0.94 avg=1.28
+[2045 | 3794.93] loss=1.35 avg=1.28
+[2046 | 3796.55] loss=1.97 avg=1.29
+[2047 | 3798.17] loss=0.98 avg=1.29
+[2048 | 3799.79] loss=0.88 avg=1.28
+[2049 | 3801.42] loss=1.27 avg=1.28
+[2050 | 3803.04] loss=1.16 avg=1.28
+[2051 | 3804.66] loss=0.97 avg=1.28
+[2052 | 3806.28] loss=0.69 avg=1.27
+[2053 | 3807.91] loss=1.36 avg=1.27
+[2054 | 3809.53] loss=0.87 avg=1.27
+[2055 | 3811.16] loss=1.04 avg=1.27
+[2056 | 3812.78] loss=1.81 avg=1.27
+[2057 | 3814.40] loss=0.69 avg=1.27
+[2058 | 3816.03] loss=1.40 avg=1.27
+[2059 | 3817.66] loss=1.14 avg=1.27
+[2060 | 3819.28] loss=1.19 avg=1.27
+[2061 | 3820.91] loss=1.65 avg=1.27
+[2062 | 3822.53] loss=1.65 avg=1.27
+[2063 | 3824.16] loss=1.08 avg=1.27
+[2064 | 3825.78] loss=1.20 avg=1.27
+[2065 | 3827.41] loss=1.16 avg=1.27
+[2066 | 3829.04] loss=1.19 avg=1.27
+[2067 | 3830.66] loss=1.21 avg=1.27
+[2068 | 3832.29] loss=0.95 avg=1.27
+[2069 | 3833.91] loss=1.04 avg=1.26
+[2070 | 3835.54] loss=1.30 avg=1.26
+[2071 | 3837.16] loss=1.49 avg=1.27
+[2072 | 3838.79] loss=0.83 avg=1.26
+[2073 | 3840.42] loss=0.82 avg=1.26
+[2074 | 3842.04] loss=0.99 avg=1.26
+[2075 | 3843.67] loss=1.26 avg=1.26
+[2076 | 3845.29] loss=1.93 avg=1.26
+[2077 | 3846.92] loss=0.81 avg=1.26
+[2078 | 3848.55] loss=0.91 avg=1.25
+[2079 | 3850.18] loss=0.86 avg=1.25
+[2080 | 3851.80] loss=1.28 avg=1.25
+[2081 | 3853.43] loss=1.00 avg=1.25
+[2082 | 3855.05] loss=1.54 avg=1.25
+[2083 | 3856.68] loss=0.95 avg=1.25
+[2084 | 3858.31] loss=0.74 avg=1.24
+[2085 | 3859.94] loss=1.40 avg=1.24
+[2086 | 3861.57] loss=1.05 avg=1.24
+[2087 | 3863.21] loss=1.30 avg=1.24
+[2088 | 3864.83] loss=1.56 avg=1.25
+[2089 | 3866.47] loss=1.15 avg=1.25
+[2090 | 3868.09] loss=1.05 avg=1.24
+[2091 | 3869.72] loss=1.83 avg=1.25
+[2092 | 3871.35] loss=1.05 avg=1.25
+[2093 | 3872.98] loss=0.84 avg=1.24
+[2094 | 3874.61] loss=1.31 avg=1.24
+[2095 | 3876.24] loss=0.84 avg=1.24
+[2096 | 3877.87] loss=1.60 avg=1.24
+[2097 | 3879.50] loss=1.01 avg=1.24
+[2098 | 3881.13] loss=1.29 avg=1.24
+[2099 | 3882.77] loss=1.01 avg=1.24
+Generating samples...
+======== SAMPLE 1 ========
+orns
+that never quite dry
+<|endoftext|>
+
+the soft whines of seals
+a half-dozen empty boats
+in the bay
+<|endoftext|>
+
+sundown--
+the shadows of pigeons
+in the fog
+<|endoftext|>
+
+a dead sparrow
+caught by my finger--
+hint of spring
+<|endoftext|>
+
+first light . . .
+so much more than
+the stars . . .
+<|endoftext|>
+
+spring has arrived
+a half-naked woman
+at the bus stop
+<|endoftext|>
+
+daylight savings
+the beggar with her breasts
+beyond the crossroads
+<|endoftext|>
+
+the morning after
+a drunk goes to jail
+or dies, it doesn?t matter
+<|endoftext|>
+
+a yellowed piece
+of trash from the garage
+the street artist
+<|endoftext|>
+
+the first day
+without a dog
+yellow rose leaves
+<|endoftext|>
+
+the old man at the temple
+greets me by my address
+in katakana
+<|endoftext|>
+
+the moon
+behind the temple
+a small house in the
+<|endoftext|>
+
+the baby steps at home
+first ice cream
+bought too soon
+<|endoftext|>
+
+spring storm--
+a fisherman's voice
+from somewhere
+<|endoftext|>
+
+the sound
+of a lawn darting
+far from here
+<|endoftext|>
+
+frost moon
+the sound of a skunk
+giggling
+<|endoftext|>
+
+first day of school
+a butterfly
+just opened
+<|endoftext|>
+
+cold rain
+a cat sleeps on the curb
+her shadow
+<|endoftext|>
+
+spring break
+a fisherman's voice
+half moon
+<|endoftext|>
+
+the red hair
+of a dead relative -
+a little nearer
+<|endoftext|>
+
+morning mist
+her first kiss
+without the fan
+<|endoftext|>
+
+new home
+the bird's first call
+an old cat
+<|endoftext|>
+
+the slow drip
+of an apple berry
+sunrise
+<|endoftext|>
+
+after the storm
+the dog's toothbrush
+still wet
+<|endoftext|>
+
+the day after the storm
+a little boy finds
+a birthday card from me
+<|endoftext|>
+
+spring drizzle --
+an empty brown paper bag
+at the bottom of the puddle
+<|endoftext|>
+
+spring drizzle --
+another brown owl finds
+my body
+<|endoftext|>
+
+paddy fields
+more and more people
+speak my language
+<|endoftext|>
+
+scent of apples...
+i know what to do
+with the pebbles
+<|endoftext|>
+
+heat wave
+she points out one temple
+where i should go
+<|endoftext|>
+
+the boy finds
+a lost stone on the beach
+summer solstice
+<|endoftext|>
+
+spring sun -
+my finger crosses
+the garden
+<|endoftext|>
+
+summer day
+a new flower in the rose garden
+a new tooth to chew
+<|endoftext|>
+
+a little speech
+in the yawn
+afternoon fog
+<|endoftext|>
+
+dusk - 
+the smell of tea
+in aunt's perfume
+<|endoftext|>
+
+after the storm
+snow after snow
+furniture store
+<|endoftext|>
+
+first frost
+the sunflowers
+painted pink
+<|endoftext|>
+
+the same old smell
+of soap and wind
+winter solstice
+<|endoftext|>
+
+my wife and i
+sleep on different sides
+of the seashell
+<|endoftext|>
+
+my mother-in-law's grave
+just enough grey
+for the crows
+<|endoftext|>
+
+cold day --
+tart tomato plants
+left in bloom
+<|endoftext|>
+
+night breeze --
+a butterfly's shadow
+over the cemetery
+<|endoftext|>
+
+winter solstice
+the length
+of the bench
+<|endoftext|>
+
+first snow
+the dog's paws deep
+in the grass
+<|endoftext|>
+
+
+
+[2100 | 3906.54] loss=1.70 avg=1.24
+[2101 | 3908.17] loss=0.89 avg=1.24
+[2102 | 3909.79] loss=1.21 avg=1.24
+[2103 | 3911.41] loss=0.92 avg=1.24
+[2104 | 3913.02] loss=0.87 avg=1.23
+[2105 | 3914.64] loss=1.61 avg=1.24
+[2106 | 3916.26] loss=1.06 avg=1.24
+[2107 | 3917.87] loss=1.01 avg=1.23
+[2108 | 3919.49] loss=0.96 avg=1.23
+[2109 | 3921.11] loss=0.85 avg=1.23
+[2110 | 3922.73] loss=1.34 avg=1.23
+[2111 | 3924.35] loss=0.80 avg=1.22
+[2112 | 3925.96] loss=0.90 avg=1.22
+[2113 | 3927.58] loss=1.22 avg=1.22
+[2114 | 3929.19] loss=1.67 avg=1.22
+[2115 | 3930.81] loss=1.95 avg=1.23
+[2116 | 3932.43] loss=1.31 avg=1.23
+[2117 | 3934.04] loss=1.55 avg=1.24
+[2118 | 3935.67] loss=1.36 avg=1.24
+[2119 | 3937.28] loss=0.78 avg=1.23
+[2120 | 3938.90] loss=1.06 avg=1.23
+[2121 | 3940.52] loss=1.54 avg=1.23
+[2122 | 3942.14] loss=1.18 avg=1.23
+[2123 | 3943.76] loss=1.24 avg=1.23
+[2124 | 3945.38] loss=0.68 avg=1.23
+[2125 | 3947.00] loss=1.21 avg=1.23
+[2126 | 3948.62] loss=1.17 avg=1.23
+[2127 | 3950.25] loss=0.95 avg=1.22
+[2128 | 3951.87] loss=1.18 avg=1.22
+[2129 | 3953.50] loss=1.19 avg=1.22
+[2130 | 3955.13] loss=1.03 avg=1.22
+[2131 | 3956.75] loss=1.09 avg=1.22
+[2132 | 3958.38] loss=1.18 avg=1.22
+[2133 | 3960.01] loss=1.15 avg=1.22
+[2134 | 3961.64] loss=1.16 avg=1.22
+[2135 | 3963.27] loss=0.94 avg=1.22
+[2136 | 3964.90] loss=0.83 avg=1.21
+[2137 | 3966.53] loss=1.89 avg=1.22
+[2138 | 3968.17] loss=1.25 avg=1.22
+[2139 | 3969.79] loss=1.31 avg=1.22
+[2140 | 3971.43] loss=1.20 avg=1.22
+[2141 | 3973.06] loss=1.62 avg=1.22
+[2142 | 3974.69] loss=1.22 avg=1.22
+[2143 | 3976.32] loss=0.87 avg=1.22
+[2144 | 3977.96] loss=0.79 avg=1.22
+[2145 | 3979.59] loss=1.41 avg=1.22
+[2146 | 3981.22] loss=1.26 avg=1.22
+[2147 | 3982.85] loss=1.15 avg=1.22
+[2148 | 3984.48] loss=1.72 avg=1.22
+[2149 | 3986.10] loss=1.16 avg=1.22
+[2150 | 3987.74] loss=0.85 avg=1.22
+[2151 | 3989.37] loss=1.07 avg=1.22
+[2152 | 3991.00] loss=0.75 avg=1.21
+[2153 | 3992.63] loss=1.30 avg=1.21
+[2154 | 3994.25] loss=0.94 avg=1.21
+[2155 | 3995.88] loss=1.14 avg=1.21
+[2156 | 3997.51] loss=1.82 avg=1.22
+[2157 | 3999.14] loss=0.95 avg=1.21
+[2158 | 4000.76] loss=1.31 avg=1.21
+[2159 | 4002.39] loss=1.19 avg=1.21
+[2160 | 4004.02] loss=1.57 avg=1.22
+[2161 | 4005.64] loss=1.21 avg=1.22
+[2162 | 4007.27] loss=1.54 avg=1.22
+[2163 | 4008.90] loss=0.67 avg=1.21
+[2164 | 4010.53] loss=1.28 avg=1.22
+[2165 | 4012.16] loss=1.42 avg=1.22
+[2166 | 4013.79] loss=1.54 avg=1.22
+[2167 | 4015.41] loss=0.89 avg=1.22
+[2168 | 4017.04] loss=1.10 avg=1.22
+[2169 | 4018.67] loss=0.96 avg=1.21
+[2170 | 4020.29] loss=0.75 avg=1.21
+[2171 | 4021.91] loss=1.78 avg=1.21
+[2172 | 4023.54] loss=0.83 avg=1.21
+[2173 | 4025.16] loss=1.04 avg=1.21
+[2174 | 4026.78] loss=0.98 avg=1.21
+[2175 | 4028.41] loss=1.48 avg=1.21
+[2176 | 4030.03] loss=1.14 avg=1.21
+[2177 | 4031.66] loss=0.56 avg=1.20
+[2178 | 4033.28] loss=1.17 avg=1.20
+[2179 | 4034.90] loss=0.92 avg=1.20
+[2180 | 4036.53] loss=0.73 avg=1.19
+[2181 | 4038.15] loss=1.23 avg=1.20
+[2182 | 4039.78] loss=1.18 avg=1.19
+[2183 | 4041.40] loss=0.97 avg=1.19
+[2184 | 4043.02] loss=1.72 avg=1.20
+[2185 | 4044.64] loss=1.27 avg=1.20
+[2186 | 4046.26] loss=1.21 avg=1.20
+[2187 | 4047.88] loss=0.74 avg=1.19
+[2188 | 4049.51] loss=1.40 avg=1.20
+[2189 | 4051.13] loss=0.67 avg=1.19
+[2190 | 4052.75] loss=1.01 avg=1.19
+[2191 | 4054.38] loss=0.78 avg=1.19
+[2192 | 4055.99] loss=0.64 avg=1.18
+[2193 | 4057.62] loss=0.82 avg=1.18
+[2194 | 4059.24] loss=1.04 avg=1.17
+[2195 | 4060.87] loss=0.92 avg=1.17
+[2196 | 4062.49] loss=1.39 avg=1.17
+[2197 | 4064.12] loss=0.78 avg=1.17
+[2198 | 4065.74] loss=1.37 avg=1.17
+[2199 | 4067.36] loss=1.03 avg=1.17
+Generating samples...
+======== SAMPLE 1 ========
+
+>
+
+snow in the forecast
+a snow drainer
+for the dog's hair
+<|endoftext|>
+
+evening rain
+my neighbor leaves
+<|endoftext|>
+
+winter night
+the car on fire
+i remember my keys
+<|endoftext|>
+
+winter rain
+the baby's first cry
+leaves the stream
+<|endoftext|>
+
+first snow
+the scent of fish
+we've never smelled
+<|endoftext|>
+
+snow flurries --
+my daughter starts nursery business
+at twilight
+<|endoftext|>
+
+winter morning
+my neighbor brings in the birds
+with wren feather
+<|endoftext|>
+
+sunlit sky
+the cuckoo's alarm
+saturates the house
+<|endoftext|>
+
+new moon --
+the baby's heartbeat
+in the dark
+<|endoftext|>
+
+evening shadows --
+a blind man passes me
+by the station wagon
+<|endoftext|>
+
+cold creek bed -
+my walking stick
+drowns a deer
+<|endoftext|>
+
+winter rain
+the sound of high heels
+from the kitchen
+<|endoftext|>
+
+winter rain --
+i remember my wallet
+better than slippers
+<|endoftext|>
+
+new year's eve --
+the red mist lifts
+from the dead cow
+<|endoftext|>
+
+snow moon --
+the baby's first stir
+surprises me
+<|endoftext|>
+
+morning haze --
+how long
+until christmas comes around?
+<|endoftext|>
+
+christmas morning --
+the traffic noise stops
+for a crow
+<|endoftext|>
+
+last light -
+a blue heron pauses
+for a ebb tide
+<|endoftext|>
+
+snow cover...
+she still looks
+tender old age
+<|endoftext|>
+
+my wife's obituary --
+'mother's little girl'
+remains unknown
+<|endoftext|>
+
+fading light -
+a crow by the window
+sits silent
+<|endoftext|>
+
+a new year's
+the sound of the fire hydrant
+rising water
+<|endoftext|>
+
+a dead squirrel's paw
+on the new year's eve
+liquid snow
+<|endoftext|>
+
+liquid snow --
+the forest for sale
+end of the road
+<|endoftext|>
+
+end of the road
+moving at top speed
+the moon passes under
+
+
+the mountains
+<|endoftext|>
+
+cold rainy night
+the smell of woodsmoke
+settlers' hut
+<|endoftext|>
+
+warm night
+a woodpecker
+hops a fence
+<|endoftext|>
+
+pond path...
+as usual
+dead wood
+<|endoftext|>
+
+winter solstice
+first light seeps
+
+
+under the stars
+<|endoftext|>
+
+winter solstice
+one dead tree
+sits unused
+<|endoftext|>
+
+autumn equinox
+a coyote howls
+in the dark
+<|endoftext|>
+
+autumn equinox
+the newborn's first howl
+suddenly louder
+
+
+<|endoftext|>
+
+autumn equinox
+the baby's slow heartbeat
+in his fur?
+<|endoftext|>
+
+night rain
+the cat's eyes
+focus
+<|endoftext|>
+
+autumn equinox
+my wife
+in divorce court
+<|endoftext|>
+
+solstice
+the baby's tiny hands
+working
+<|endoftext|>
+
+autumn equinox
+a moth leans in
+to whisper
+<|endoftext|>
+
+autumn equinox
+a koi swims away
+into a tree
+<|endoftext|>
+
+moonbeams . . .
+how easy it is
+for a kite to stop
+<|endoftext|>
+
+autumn equinox
+a kite snaps
+between branches
+<|endoftext|>
+
+autumn solstice
+a kite falls from the sky
+into a pond
+<|endoftext|>
+
+autumn solstice
+a field of wild raspberries
+in the summer sky
+<|endoftext|>
+
+cloudburst
+the sound of rain
+from nowhere
+<|endoftext|>
+
+aut
+
+[2200 | 4091.10] loss=1.05 avg=1.17
+[2201 | 4092.72] loss=1.41 avg=1.17
+[2202 | 4094.35] loss=1.82 avg=1.18
+[2203 | 4095.97] loss=1.01 avg=1.18
+[2204 | 4097.59] loss=1.36 avg=1.18
+[2205 | 4099.21] loss=1.35 avg=1.18
+[2206 | 4100.84] loss=1.43 avg=1.18
+[2207 | 4102.45] loss=1.07 avg=1.18
+[2208 | 4104.08] loss=1.82 avg=1.19
+[2209 | 4105.69] loss=1.04 avg=1.19
+[2210 | 4107.32] loss=0.93 avg=1.18
+[2211 | 4108.94] loss=1.05 avg=1.18
+[2212 | 4110.55] loss=1.23 avg=1.18
+[2213 | 4112.17] loss=1.06 avg=1.18
+[2214 | 4113.78] loss=0.96 avg=1.18
+[2215 | 4115.40] loss=0.91 avg=1.18
+[2216 | 4117.01] loss=0.83 avg=1.17
+[2217 | 4118.63] loss=0.85 avg=1.17
+[2218 | 4120.25] loss=0.82 avg=1.17
+[2219 | 4121.86] loss=1.07 avg=1.17
+[2220 | 4123.48] loss=1.09 avg=1.17
+[2221 | 4125.10] loss=1.85 avg=1.17
+[2222 | 4126.71] loss=1.74 avg=1.18
+[2223 | 4128.33] loss=1.18 avg=1.18
+[2224 | 4129.95] loss=2.05 avg=1.19
+[2225 | 4131.57] loss=0.72 avg=1.18
+[2226 | 4133.19] loss=0.84 avg=1.18
+[2227 | 4134.80] loss=1.13 avg=1.18
+[2228 | 4136.42] loss=1.31 avg=1.18
+[2229 | 4138.04] loss=2.10 avg=1.19
+[2230 | 4139.67] loss=1.16 avg=1.19
+[2231 | 4141.28] loss=1.05 avg=1.19
+[2232 | 4142.90] loss=1.11 avg=1.19
+[2233 | 4144.52] loss=0.88 avg=1.18
+[2234 | 4146.15] loss=0.89 avg=1.18
+[2235 | 4147.76] loss=0.71 avg=1.18
+[2236 | 4149.38] loss=0.85 avg=1.17
+[2237 | 4151.00] loss=1.24 avg=1.17
+[2238 | 4152.63] loss=1.14 avg=1.17
+[2239 | 4154.25] loss=0.85 avg=1.17
+[2240 | 4155.87] loss=0.81 avg=1.17
+[2241 | 4157.49] loss=0.65 avg=1.16
+[2242 | 4159.12] loss=1.20 avg=1.16
+[2243 | 4160.74] loss=0.65 avg=1.16
+[2244 | 4162.36] loss=1.24 avg=1.16
+[2245 | 4163.98] loss=0.95 avg=1.15
+[2246 | 4165.60] loss=1.13 avg=1.15
+[2247 | 4167.22] loss=1.69 avg=1.16
+[2248 | 4168.85] loss=0.62 avg=1.15
+[2249 | 4170.47] loss=1.24 avg=1.16
+[2250 | 4172.09] loss=0.68 avg=1.15
+[2251 | 4173.72] loss=1.76 avg=1.16
+[2252 | 4175.34] loss=1.22 avg=1.16
+[2253 | 4176.96] loss=2.35 avg=1.17
+[2254 | 4178.58] loss=1.10 avg=1.17
+[2255 | 4180.21] loss=0.68 avg=1.16
+[2256 | 4181.84] loss=1.81 avg=1.17
+[2257 | 4183.46] loss=0.91 avg=1.17
+[2258 | 4185.09] loss=1.07 avg=1.17
+[2259 | 4186.71] loss=0.86 avg=1.16
+[2260 | 4188.34] loss=1.23 avg=1.16
+[2261 | 4189.96] loss=1.55 avg=1.17
+[2262 | 4191.59] loss=1.39 avg=1.17
+[2263 | 4193.21] loss=0.71 avg=1.17
+[2264 | 4194.84] loss=1.17 avg=1.17
+[2265 | 4196.46] loss=1.27 avg=1.17
+[2266 | 4198.08] loss=1.01 avg=1.17
+[2267 | 4199.71] loss=0.80 avg=1.16
+[2268 | 4201.33] loss=1.52 avg=1.16
+[2269 | 4202.95] loss=0.78 avg=1.16
+[2270 | 4204.57] loss=1.18 avg=1.16
+[2271 | 4206.19] loss=1.21 avg=1.16
+[2272 | 4207.82] loss=1.92 avg=1.17
+[2273 | 4209.45] loss=1.75 avg=1.18
+[2274 | 4211.08] loss=1.17 avg=1.18
+[2275 | 4212.70] loss=1.04 avg=1.17
+[2276 | 4214.34] loss=1.18 avg=1.17
+[2277 | 4215.96] loss=0.83 avg=1.17
+[2278 | 4217.58] loss=0.92 avg=1.17
+[2279 | 4219.21] loss=0.72 avg=1.16
+[2280 | 4220.83] loss=1.59 avg=1.17
+[2281 | 4222.46] loss=1.18 avg=1.17
+[2282 | 4224.09] loss=1.01 avg=1.17
+[2283 | 4225.72] loss=1.16 avg=1.17
+[2284 | 4227.35] loss=1.32 avg=1.17
+[2285 | 4228.98] loss=0.53 avg=1.16
+[2286 | 4230.61] loss=1.86 avg=1.17
+[2287 | 4232.23] loss=0.69 avg=1.16
+[2288 | 4233.86] loss=1.15 avg=1.16
+[2289 | 4235.49] loss=0.97 avg=1.16
+[2290 | 4237.12] loss=1.79 avg=1.17
+[2291 | 4238.75] loss=1.04 avg=1.17
+[2292 | 4240.38] loss=0.99 avg=1.17
+[2293 | 4242.01] loss=0.92 avg=1.16
+[2294 | 4243.64] loss=1.32 avg=1.16
+[2295 | 4245.27] loss=0.84 avg=1.16
+[2296 | 4246.89] loss=0.73 avg=1.16
+[2297 | 4248.52] loss=0.92 avg=1.15
+[2298 | 4250.14] loss=0.85 avg=1.15
+[2299 | 4251.77] loss=1.55 avg=1.16
+Generating samples...
+======== SAMPLE 1 ========
+<|endoftext|>
+
+cold and grey
+two hens with one
+egg
+<|endoftext|>
+
+old garden shed
+the last time
+you smiled
+<|endoftext|>
+
+foggy morning
+the old couple kiss
+without tears
+<|endoftext|>
+
+first light
+the scent
+of jasmine
+<|endoftext|>
+
+a heifer
+cups its white pelts . . .
+soft rain
+<|endoftext|>
+
+the heirloom ring
+it was made from
+moss
+<|endoftext|>
+
+sunrise . . .
+the call of wild flowers
+from the jungle
+<|endoftext|>
+
+the sheen
+of a jellyfish
+dusk
+<|endoftext|>
+
+scent of japan
+a glass bowl full
+of japanese
+<|endoftext|>
+
+first autumn rain . . .
+cattle bells
+bowing
+<|endoftext|>
+
+moonlight . . .
+the old man's book
+left on the bed
+<|endoftext|>
+
+mating flights
+of cormorants
+morning
+<|endoftext|>
+
+long shadows
+the heifer popsicle
+sticks
+<|endoftext|>
+
+foggy dawn
+a cat drinks
+from the garbage bag
+<|endoftext|>
+
+sun-bright night
+a rheing chime
+from the flute
+<|endoftext|>
+
+first autumn rain
+the cat
+wipes away
+dirt
+<|endoftext|>
+
+foggy morning...
+the scent
+of my toenails
+<|endoftext|>
+
+sunny corner
+of the ward room
+a haystack
+<|endoftext|>
+
+foggy morning
+a lizard has spread
+its legs
+<|endoftext|>
+
+morning fog
+the man who honks at
+every bus
+<|endoftext|>
+
+cicada chorus
+a white bird with a gray face
+leaves the nest)
+<|endoftext|>
+
+autumn equinox
+the sound of splitting nettles
+moves me
+<|endoftext|>
+
+autumn chill
+the sound of a crow
+closes its beak
+<|endoftext|>
+
+moonless night . . .
+a wind turbine sways
+from bridge to bridge
+<|endoftext|>
+
+autumn wind
+the roosting ducks
+swallow their inedibles
+<|endoftext|>
+
+autumn equinox
+i tell the children
+my son is a pig
+<|endoftext|>
+
+autumn chill
+the tinkling of beads
+in a boiling pot
+<|endoftext|>
+
+autumn light
+a blackbird's nest
+drifts in water
+<|endoftext|>
+
+haloed sun
+tulips bend
+their waist
+<|endoftext|>
+
+autumn chill
+i tell the grandchildren
+what i know
+<|endoftext|>
+
+sleepless night
+one horn bluer
+<|endoftext|>
+
+autumn light
+the mosquito
+has come back
+<|endoftext|>
+
+falling leaves
+shred the blackboard
+with their buzzing
+<|endoftext|>
+
+falling leaves
+i take their advice
+and ignore
+<|endoftext|>
+
+harvest moon
+a crow takes the wing
+i left
+<|endoftext|>
+
+autumn cool
+the dog and i
+pack our boxes
+<|endoftext|>
+
+midsummer lake
+the white flannel sheets
+washed and dried
+<|endoftext|>
+
+autumn chill
+a wading fawn
+takes its time
+<|endoftext|>
+
+the road home
+dark thaws
+on the fences
+<|endoftext|>
+
+honeymoon
+the sound of icicles
+taking its time
+<|endoftext|>
+
+autumn sun
+i collect cranes
+to build my nest
+<|endoftext|>
+
+snowbound
+a wolf spider
+across the skylight
+<|endoftext|>
+
+the moon's brightness
+before fawning tears
+?i didn?t tell my wife
+<|endoftext|>
+
+autumn twilight
+the sound of a wren
+faded in
+
+[2300 | 4275.58] loss=1.15 avg=1.16
+[2301 | 4277.21] loss=0.90 avg=1.15
+[2302 | 4278.83] loss=1.28 avg=1.15
+[2303 | 4280.45] loss=1.13 avg=1.15
+[2304 | 4282.07] loss=1.48 avg=1.16
+[2305 | 4283.69] loss=1.09 avg=1.16
+[2306 | 4285.30] loss=1.89 avg=1.16
+[2307 | 4286.92] loss=1.03 avg=1.16
+[2308 | 4288.54] loss=0.94 avg=1.16
+[2309 | 4290.15] loss=1.12 avg=1.16
+[2310 | 4291.77] loss=1.11 avg=1.16
+[2311 | 4293.39] loss=1.10 avg=1.16
+[2312 | 4295.00] loss=1.06 avg=1.16
+[2313 | 4296.62] loss=1.47 avg=1.16
+[2314 | 4298.23] loss=0.65 avg=1.16
+[2315 | 4299.85] loss=1.10 avg=1.15
+[2316 | 4301.46] loss=0.99 avg=1.15
+[2317 | 4303.08] loss=0.99 avg=1.15
+[2318 | 4304.70] loss=1.06 avg=1.15
+[2319 | 4306.32] loss=1.12 avg=1.15
+[2320 | 4307.94] loss=1.59 avg=1.15
+[2321 | 4309.57] loss=1.16 avg=1.15
+[2322 | 4311.20] loss=1.25 avg=1.16
+[2323 | 4312.82] loss=0.81 avg=1.15
+[2324 | 4314.45] loss=0.76 avg=1.15
+[2325 | 4316.07] loss=2.38 avg=1.16
+[2326 | 4317.70] loss=1.73 avg=1.17
+[2327 | 4319.32] loss=1.18 avg=1.17
+[2328 | 4320.95] loss=1.48 avg=1.17
+[2329 | 4322.58] loss=1.23 avg=1.17
+[2330 | 4324.20] loss=0.96 avg=1.17
+[2331 | 4325.83] loss=1.25 avg=1.17
+[2332 | 4327.46] loss=1.21 avg=1.17
+[2333 | 4329.09] loss=1.13 avg=1.17
+[2334 | 4330.72] loss=1.24 avg=1.17
+[2335 | 4332.35] loss=1.43 avg=1.17
+[2336 | 4333.98] loss=1.95 avg=1.18
+[2337 | 4335.61] loss=1.21 avg=1.18
+[2338 | 4337.24] loss=1.88 avg=1.19
+[2339 | 4338.87] loss=0.82 avg=1.18
+[2340 | 4340.50] loss=1.20 avg=1.18
+[2341 | 4342.13] loss=0.99 avg=1.18
+[2342 | 4343.76] loss=1.42 avg=1.18
+[2343 | 4345.39] loss=1.02 avg=1.18
+[2344 | 4347.01] loss=0.73 avg=1.18
+[2345 | 4348.65] loss=0.96 avg=1.18
+[2346 | 4350.27] loss=0.93 avg=1.17
+[2347 | 4351.90] loss=1.08 avg=1.17
+[2348 | 4353.53] loss=0.90 avg=1.17
+[2349 | 4355.16] loss=1.50 avg=1.17
+[2350 | 4356.79] loss=0.79 avg=1.17
+[2351 | 4358.41] loss=0.92 avg=1.17
+[2352 | 4360.04] loss=1.58 avg=1.17
+[2353 | 4361.67] loss=0.96 avg=1.17
+[2354 | 4363.29] loss=0.90 avg=1.17
+[2355 | 4364.92] loss=1.22 avg=1.17
+[2356 | 4366.55] loss=0.82 avg=1.16
+[2357 | 4368.18] loss=1.26 avg=1.16
+[2358 | 4369.80] loss=0.67 avg=1.16
+[2359 | 4371.43] loss=0.79 avg=1.16
+[2360 | 4373.06] loss=0.73 avg=1.15
+[2361 | 4374.69] loss=1.05 avg=1.15
+[2362 | 4376.31] loss=1.81 avg=1.16
+[2363 | 4377.93] loss=0.97 avg=1.15
+[2364 | 4379.56] loss=0.65 avg=1.15
+[2365 | 4381.19] loss=1.47 avg=1.15
+[2366 | 4382.81] loss=0.80 avg=1.15
+[2367 | 4384.44] loss=0.65 avg=1.14
+[2368 | 4386.06] loss=1.03 avg=1.14
+[2369 | 4387.69] loss=1.16 avg=1.14
+[2370 | 4389.31] loss=0.61 avg=1.14
+[2371 | 4390.94] loss=0.76 avg=1.13
+[2372 | 4392.57] loss=0.91 avg=1.13
+[2373 | 4394.19] loss=0.73 avg=1.13
+[2374 | 4395.81] loss=0.74 avg=1.12
+[2375 | 4397.43] loss=1.18 avg=1.12
+[2376 | 4399.06] loss=0.77 avg=1.12
+[2377 | 4400.68] loss=0.98 avg=1.12
+[2378 | 4402.31] loss=0.90 avg=1.12
+[2379 | 4403.93] loss=1.16 avg=1.12
+[2380 | 4405.55] loss=1.05 avg=1.12
+[2381 | 4407.18] loss=0.93 avg=1.12
+[2382 | 4408.80] loss=0.53 avg=1.11
+[2383 | 4410.43] loss=1.54 avg=1.11
+[2384 | 4412.05] loss=0.62 avg=1.11
+[2385 | 4413.68] loss=0.63 avg=1.10
+[2386 | 4415.30] loss=1.17 avg=1.11
+[2387 | 4416.93] loss=1.02 avg=1.10
+[2388 | 4418.55] loss=0.83 avg=1.10
+[2389 | 4420.17] loss=0.69 avg=1.10
+[2390 | 4421.81] loss=1.14 avg=1.10
+[2391 | 4423.43] loss=0.63 avg=1.09
+[2392 | 4425.05] loss=0.72 avg=1.09
+[2393 | 4426.67] loss=0.70 avg=1.09
+[2394 | 4428.29] loss=1.13 avg=1.09
+[2395 | 4429.92] loss=1.04 avg=1.09
+[2396 | 4431.54] loss=0.92 avg=1.08
+[2397 | 4433.16] loss=1.73 avg=1.09
+[2398 | 4434.78] loss=1.31 avg=1.09
+[2399 | 4436.41] loss=1.13 avg=1.09
+Generating samples...
+======== SAMPLE 1 ========
+ite
+<|endoftext|>
+
+winter stars
+my son writes his initials
+on the kitchen marble
+<|endoftext|>
+
+in the fog
+a dead goose
+with an exclamation point
+<|endoftext|>
+
+garden gnarled
+by itself
+a rose geranium
+<|endoftext|>
+
+wakened by rain
+the scent of geraniums
+on her eyelashes
+<|endoftext|>
+
+spring
+the scent of a rose
+in her hair
+<|endoftext|>
+
+her story
+my mother's
+first words
+<|endoftext|>
+
+a butterfly
+in my lampshade
+summer's end
+<|endoftext|>
+
+her first words
+the sound of the boat
+going under
+<|endoftext|>
+
+black and white photo
+of a pregnant woman
+lingering
+<|endoftext|>
+
+march wind
+a white butterfly
+on the rail bridge
+<|endoftext|>
+
+seattle ferry
+the narrow passage
+where the caterpillars emerge
+<|endoftext|>
+
+midsummer
+the sound of bonfire smoke
+slowly fading
+<|endoftext|>
+
+midnight sleet
+the smell of snow
+from my mother's womb
+<|endoftext|>
+
+my hands
+full of hors d'oeuvres
+the nurse's cut
+<|endoftext|>
+
+the long night
+crickets can
+be heard all the way home
+<|endoftext|>
+
+hokusai's
+sword fights
+summer twilight
+<|endoftext|>
+
+endless rain
+crickets chirping
+near the basketball
+<|endoftext|>
+
+spring rain
+the shape of a grasshopper
+afterwards
+<|endoftext|>
+
+afternoon breeze
+the cricket's
+throatful
+<|endoftext|>
+
+sunlight
+through barbed wire
+the fragrance of lilacs
+<|endoftext|>
+
+spring rain
+dandelions
+in rows
+<|endoftext|>
+
+spring day
+snowflakes
+in the wind
+<|endoftext|>
+
+spring night
+clover in a bowl
+at the feet of sundry birds
+<|endoftext|>
+
+winter sunset
+the last light of day
+in a small branch
+<|endoftext|>
+
+the smell of blossoms
+before the gate
+has been cut
+<|endoftext|>
+
+first snowfall
+the haiku poet
+draws another
+<|endoftext|>
+
+after the funeral
+the old man's granddaughter sings
+herself happy
+<|endoftext|>
+
+spring snow
+on the mantelpiece
+the weight of time
+<|endoftext|>
+
+the warmth in
+the tea kettle
+the cold of autumn rain
+<|endoftext|>
+
+last day of school
+a recess idol
+opens its mouth
+<|endoftext|>
+
+lunar eclipse
+the slow circle
+of an insect
+<|endoftext|>
+
+the warm glow
+of the grandmother's brown paper bag
+soft rain
+<|endoftext|>
+
+hindsight
+our split
+peach kiss
+<|endoftext|>
+
+late for work
+the scent of thyme
+field mouse
+<|endoftext|>
+
+winter tide
+my son sings a haiku
+in the rain
+<|endoftext|>
+
+prairie fever
+white-tailed deer
+in a pink crop circle
+<|endoftext|>
+
+a ghost of a smile
+on my mother's face
+first flakes
+<|endoftext|>
+
+late evening
+a white curl
+caught on cottonwood leaves
+<|endoftext|>
+
+beach storm
+the wind chimes
+too close
+<|endoftext|>
+
+a little too late
+for a goodbye kiss
+late October wind
+<|endoftext|>
+
+garden path
+only the tops of leaves
+and branches
+<|endoftext|>
+
+the hawk's reflections
+in the clear pond
+wood thrush song
+<|endoftext|>
+
+baled hay
+stink of wet earth
+from a year ago
+<|endoftext|>
+
+in the hollow stump
+of the old maple
+a white birch
+<|endoftext|>
+
+afternoon fog
+an
+
+[2400 | 4460.09] loss=0.72 avg=1.09
+[2401 | 4461.71] loss=0.99 avg=1.09
+[2402 | 4463.33] loss=0.73 avg=1.08
+[2403 | 4464.96] loss=1.34 avg=1.09
+[2404 | 4466.58] loss=1.02 avg=1.09
+[2405 | 4468.20] loss=1.29 avg=1.09
+[2406 | 4469.81] loss=0.87 avg=1.09
+[2407 | 4471.44] loss=1.07 avg=1.09
+[2408 | 4473.06] loss=0.98 avg=1.09
+[2409 | 4474.67] loss=0.97 avg=1.08
+[2410 | 4476.30] loss=1.61 avg=1.09
+[2411 | 4477.91] loss=1.08 avg=1.09
+[2412 | 4479.53] loss=1.20 avg=1.09
+[2413 | 4481.16] loss=1.68 avg=1.10
+[2414 | 4482.77] loss=1.10 avg=1.10
+[2415 | 4484.39] loss=0.67 avg=1.09
+[2416 | 4486.01] loss=0.60 avg=1.09
+[2417 | 4487.63] loss=1.03 avg=1.09
+[2418 | 4489.25] loss=1.31 avg=1.09
+[2419 | 4490.88] loss=1.25 avg=1.09
+[2420 | 4492.50] loss=0.98 avg=1.09
+[2421 | 4494.11] loss=0.87 avg=1.09
+[2422 | 4495.74] loss=0.70 avg=1.08
+[2423 | 4497.36] loss=0.70 avg=1.08
+[2424 | 4498.98] loss=1.44 avg=1.08
+[2425 | 4500.60] loss=1.33 avg=1.09
+[2426 | 4502.22] loss=0.67 avg=1.08
+[2427 | 4503.83] loss=1.20 avg=1.08
+[2428 | 4505.45] loss=0.92 avg=1.08
+[2429 | 4507.07] loss=1.01 avg=1.08
+[2430 | 4508.69] loss=1.17 avg=1.08
+[2431 | 4510.30] loss=0.80 avg=1.08
+[2432 | 4511.93] loss=0.57 avg=1.07
+[2433 | 4513.54] loss=0.55 avg=1.07
+[2434 | 4515.16] loss=1.13 avg=1.07
+[2435 | 4516.78] loss=1.05 avg=1.07
+[2436 | 4518.40] loss=1.06 avg=1.07
+[2437 | 4520.01] loss=0.79 avg=1.07
+[2438 | 4521.64] loss=0.93 avg=1.06
+[2439 | 4523.25] loss=1.16 avg=1.07
+[2440 | 4524.87] loss=1.36 avg=1.07
+[2441 | 4526.50] loss=0.95 avg=1.07
+[2442 | 4528.11] loss=0.87 avg=1.06
+[2443 | 4529.74] loss=1.06 avg=1.06
+[2444 | 4531.35] loss=0.93 avg=1.06
+[2445 | 4532.98] loss=0.65 avg=1.06
+[2446 | 4534.59] loss=1.63 avg=1.07
+[2447 | 4536.22] loss=0.58 avg=1.06
+[2448 | 4537.83] loss=1.38 avg=1.06
+[2449 | 4539.45] loss=1.09 avg=1.06
+[2450 | 4541.07] loss=0.76 avg=1.06
+[2451 | 4542.69] loss=0.99 avg=1.06
+[2452 | 4544.31] loss=0.70 avg=1.06
+[2453 | 4545.93] loss=0.79 avg=1.05
+[2454 | 4547.55] loss=0.68 avg=1.05
+[2455 | 4549.17] loss=0.55 avg=1.04
+[2456 | 4550.79] loss=1.82 avg=1.05
+[2457 | 4552.42] loss=0.95 avg=1.05
+[2458 | 4554.04] loss=1.63 avg=1.06
+[2459 | 4555.66] loss=1.12 avg=1.06
+[2460 | 4557.28] loss=1.15 avg=1.06
+[2461 | 4558.90] loss=0.70 avg=1.06
+[2462 | 4560.53] loss=1.47 avg=1.06
+[2463 | 4562.15] loss=1.03 avg=1.06
+[2464 | 4563.77] loss=1.25 avg=1.06
+[2465 | 4565.39] loss=0.71 avg=1.06
+[2466 | 4567.01] loss=1.03 avg=1.06
+[2467 | 4568.63] loss=1.22 avg=1.06
+[2468 | 4570.25] loss=1.05 avg=1.06
+[2469 | 4571.87] loss=0.64 avg=1.05
+[2470 | 4573.50] loss=0.61 avg=1.05
+[2471 | 4575.12] loss=0.99 avg=1.05
+[2472 | 4576.74] loss=1.00 avg=1.05
+[2473 | 4578.36] loss=0.98 avg=1.05
+[2474 | 4579.99] loss=1.71 avg=1.06
+[2475 | 4581.62] loss=1.59 avg=1.06
+[2476 | 4583.24] loss=0.75 avg=1.06
+[2477 | 4584.86] loss=0.60 avg=1.05
+[2478 | 4586.48] loss=0.81 avg=1.05
+[2479 | 4588.10] loss=0.99 avg=1.05
+[2480 | 4589.72] loss=0.68 avg=1.05
+[2481 | 4591.34] loss=0.88 avg=1.04
+[2482 | 4592.96] loss=0.68 avg=1.04
+[2483 | 4594.59] loss=0.98 avg=1.04
+[2484 | 4596.21] loss=0.88 avg=1.04
+[2485 | 4597.84] loss=1.31 avg=1.04
+[2486 | 4599.46] loss=0.72 avg=1.04
+[2487 | 4601.08] loss=1.32 avg=1.04
+[2488 | 4602.71] loss=1.20 avg=1.04
+[2489 | 4604.32] loss=1.02 avg=1.04
+[2490 | 4605.95] loss=0.67 avg=1.04
+[2491 | 4607.57] loss=1.92 avg=1.05
+[2492 | 4609.20] loss=0.68 avg=1.04
+[2493 | 4610.82] loss=0.53 avg=1.04
+[2494 | 4612.44] loss=1.34 avg=1.04
+[2495 | 4614.06] loss=0.93 avg=1.04
+[2496 | 4615.69] loss=1.03 avg=1.04
+[2497 | 4617.31] loss=0.56 avg=1.04
+[2498 | 4618.93] loss=0.94 avg=1.03
+[2499 | 4620.55] loss=0.81 avg=1.03
+Generating samples...
+======== SAMPLE 1 ========
+
+<|endoftext|>
+
+pouring over old letters
+my mother's letter to me
+summer twilight . . .
+<|endoftext|>
+
+spring equinox
+the sound of grey reed as white
+between reeds
+<|endoftext|>
+
+crescent moon
+all my prayers
+going unheard
+<|endoftext|>
+
+new warmth
+the dry grass texture
+of my sleeping bag
+<|endoftext|>
+
+snow on the leaves
+my shadow
+also passes through
+<|endoftext|>
+
+the cold wind
+chokes the sunlight
+bluebird song
+<|endoftext|>
+
+warm breeze
+the garden
+so much simpler
+<|endoftext|>
+
+sundown
+the house window
+glows a deep blue
+<|endoftext|>
+
+morning star
+a snow shiver
+flickers on the bare snow
+<|endoftext|>
+
+winter sun
+pale lips
+powders the snow
+<|endoftext|>
+
+snowflakes
+preening themselves
+the great red fox
+<|endoftext|>
+
+winter moon
+the breath
+of new snow
+<|endoftext|>
+
+winter wind
+first kiss
+and then new love
+<|endoftext|>
+
+winter sunshine
+pink haze over
+the fallen maple
+<|endoftext|>
+
+raindrops
+in the palm of my hand
+snow melting
+<|endoftext|>
+
+the long night
+a red shawl moves
+from tree to tree
+<|endoftext|>
+
+deep winter
+a little snow
+makes the lilt in his voice
+<|endoftext|>
+
+snowy day
+tattoo'd man looks
+through his sweat
+<|endoftext|>
+
+morning in the city
+the man on the street
+lights up his street
+<|endoftext|>
+
+a rainbow
+shapes of old houses
+shifting"
+<|endoftext|>
+
+fog?
+how can we talk" of this"
+Winter"
+<|endoftext|>
+
+a new threat
+in the conflict?
+wild fire
+<|endoftext|>
+
+The streets
+of a refugee camp.
+Winter wind
+<|endoftext|>
+
+Christmas madness--
+over dinner
+we talk of war
+<|endoftext|>
+
+first kiss--
+never again
+white sardines
+<|endoftext|>
+
+snowstorm . . .
+a snowman
+penetrates glass
+<|endoftext|>
+
+new bottles?
+at the end of my rope
+a whale floats
+<|endoftext|>
+
+her last year at?
+a pale light waves through
+the glass door
+<|endoftext|>
+
+sounds of battle
+the echo of machine gun fire
+in my teacup
+<|endoftext|>
+
+in mid-air
+she balances on her back
+a parachute
+<|endoftext|>
+
+Christmas madness
+a red poppy wavers
+as it approaches
+<|endoftext|>
+
+Christmas morning
+cottonwood seeds landing
+in my cereal
+<|endoftext|>
+
+cracks in cement
+winter rain fills
+the iron net
+<|endoftext|>
+
+in a puddle
+a crow at dawn
+and pheasant at dusk
+<|endoftext|>
+
+prairie?
+old signs pointing
+to a flat earth
+<|endoftext|>
+
+cracks in the sidewalk
+the child wakened by
+white comellias
+<|endoftext|>
+
+autumn chill
+the slow circle
+of a coffee cup
+<|endoftext|>
+
+in a shopping cart?
+a cloud passes by
+the skyline of midtown
+<|endoftext|>
+
+on the way home
+slowly the shadow
+creaks
+<|endoftext|>
+
+prairie setting?
+an old fire ring
+fills with night
+<|endoftext|>
+
+between songs
+the howl of the mink
+swells
+<|endoftext|>
+
+troubled by words
+slowly the dawn
+waves the shore
+<|endoftext|>
+
+in the distance
+a creek weaves
+my thoughts
+<|endoftext|>
+
+midnight moon?
+the clattering of silverware
+in the kitchen
+<|
+
+[2500 | 4644.23] loss=0.96 avg=1.03
+[2501 | 4645.84] loss=0.86 avg=1.03
+[2502 | 4647.47] loss=1.30 avg=1.03
+[2503 | 4649.09] loss=0.80 avg=1.03
+[2504 | 4650.70] loss=1.12 avg=1.03
+[2505 | 4652.33] loss=1.25 avg=1.03
+[2506 | 4653.94] loss=0.54 avg=1.03
+[2507 | 4655.55] loss=0.98 avg=1.03
+[2508 | 4657.17] loss=1.34 avg=1.03
+[2509 | 4658.79] loss=0.72 avg=1.03
+[2510 | 4660.40] loss=1.02 avg=1.03
+[2511 | 4662.02] loss=0.71 avg=1.02
+[2512 | 4663.64] loss=1.00 avg=1.02
+[2513 | 4665.26] loss=0.89 avg=1.02
+[2514 | 4666.87] loss=1.06 avg=1.02
+[2515 | 4668.49] loss=1.03 avg=1.02
+[2516 | 4670.11] loss=0.74 avg=1.02
+[2517 | 4671.72] loss=0.60 avg=1.02
+[2518 | 4673.35] loss=0.81 avg=1.01
+[2519 | 4674.97] loss=1.71 avg=1.02
+[2520 | 4676.59] loss=0.62 avg=1.02
+[2521 | 4678.21] loss=0.77 avg=1.01
+[2522 | 4679.83] loss=1.01 avg=1.01
+[2523 | 4681.45] loss=0.71 avg=1.01
+[2524 | 4683.07] loss=1.25 avg=1.01
+[2525 | 4684.68] loss=0.83 avg=1.01
+[2526 | 4686.31] loss=0.96 avg=1.01
+[2527 | 4687.93] loss=0.87 avg=1.01
+[2528 | 4689.56] loss=1.14 avg=1.01
+[2529 | 4691.18] loss=0.71 avg=1.01
+[2530 | 4692.81] loss=1.27 avg=1.01
+[2531 | 4694.43] loss=0.94 avg=1.01
+[2532 | 4696.06] loss=0.65 avg=1.01
+[2533 | 4697.68] loss=0.80 avg=1.01
+[2534 | 4699.31] loss=1.11 avg=1.01
+[2535 | 4700.93] loss=0.87 avg=1.00
+[2536 | 4702.56] loss=0.97 avg=1.00
+[2537 | 4704.19] loss=0.68 avg=1.00
+[2538 | 4705.81] loss=0.70 avg=1.00
+[2539 | 4707.44] loss=0.83 avg=1.00
+[2540 | 4709.06] loss=0.59 avg=0.99
+[2541 | 4710.69] loss=0.89 avg=0.99
+[2542 | 4712.32] loss=1.12 avg=0.99
+[2543 | 4713.94] loss=0.49 avg=0.99
+[2544 | 4715.57] loss=0.95 avg=0.99
+[2545 | 4717.20] loss=0.86 avg=0.99
+[2546 | 4718.83] loss=0.91 avg=0.99
+[2547 | 4720.46] loss=1.06 avg=0.99
+[2548 | 4722.09] loss=1.38 avg=0.99
+[2549 | 4723.73] loss=0.80 avg=0.99
+[2550 | 4725.36] loss=0.95 avg=0.99
+[2551 | 4726.99] loss=0.67 avg=0.98
+[2552 | 4728.62] loss=1.37 avg=0.99
+[2553 | 4730.25] loss=0.70 avg=0.99
+[2554 | 4731.88] loss=0.88 avg=0.98
+[2555 | 4733.51] loss=0.88 avg=0.98
+[2556 | 4735.14] loss=1.22 avg=0.99
+[2557 | 4736.77] loss=0.66 avg=0.98
+[2558 | 4738.40] loss=1.34 avg=0.99
+[2559 | 4740.02] loss=0.99 avg=0.99
+[2560 | 4741.66] loss=0.91 avg=0.99
+[2561 | 4743.28] loss=0.75 avg=0.98
+[2562 | 4744.91] loss=1.27 avg=0.99
+[2563 | 4746.54] loss=1.29 avg=0.99
+[2564 | 4748.17] loss=0.92 avg=0.99
+[2565 | 4749.80] loss=0.91 avg=0.99
+[2566 | 4751.43] loss=1.74 avg=0.99
+[2567 | 4753.06] loss=1.74 avg=1.00
+[2568 | 4754.69] loss=0.86 avg=1.00
+[2569 | 4756.31] loss=0.83 avg=1.00
+[2570 | 4757.94] loss=1.27 avg=1.00
+[2571 | 4759.56] loss=0.92 avg=1.00
+[2572 | 4761.19] loss=0.74 avg=1.00
+[2573 | 4762.82] loss=0.64 avg=0.99
+[2574 | 4764.45] loss=1.25 avg=1.00
+[2575 | 4766.07] loss=0.68 avg=0.99
+[2576 | 4767.70] loss=0.78 avg=0.99
+[2577 | 4769.32] loss=1.32 avg=1.00
+[2578 | 4770.94] loss=0.71 avg=0.99
+[2579 | 4772.57] loss=1.45 avg=1.00
+[2580 | 4774.20] loss=0.61 avg=0.99
+[2581 | 4775.83] loss=1.16 avg=0.99
+[2582 | 4777.45] loss=0.55 avg=0.99
+[2583 | 4779.08] loss=0.55 avg=0.99
+[2584 | 4780.70] loss=0.86 avg=0.98
+[2585 | 4782.33] loss=0.75 avg=0.98
+[2586 | 4783.96] loss=0.94 avg=0.98
+[2587 | 4785.59] loss=0.88 avg=0.98
+[2588 | 4787.21] loss=0.63 avg=0.98
+[2589 | 4788.84] loss=1.38 avg=0.98
+[2590 | 4790.47] loss=0.66 avg=0.98
+[2591 | 4792.10] loss=0.76 avg=0.98
+[2592 | 4793.73] loss=1.08 avg=0.98
+[2593 | 4795.36] loss=0.99 avg=0.98
+[2594 | 4796.98] loss=0.79 avg=0.98
+interrupted
+Saving checkpoint/run1/model-2595
